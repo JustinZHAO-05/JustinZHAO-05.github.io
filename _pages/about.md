@@ -34,27 +34,33 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 
 **Conference**
 - **Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning** (co-first).  
-  *CSAI 2025 (poster).*  
+  *CSAI 2025 .*  
   *Batched Gazebo maps, SAC policy, curriculum/evaluation pipeline.*  
-  [[PDF]](#) · [[Poster]](#) · [[Code]](https://github.com/JustinZHAO-05/cisDRL-RobotNav) · [[BibTeX]](#bibtex-nondeadend)
+  [PDF](#) · [Poster](#) · [Code](https://github.com/JustinZHAO-05/cisDRL-RobotNav) · <a href="#" data-bs-toggle="modal" data-bs-target="#bibtex1">BibTeX</a>
 
-<details id="bibtex-nondeadend">
-<summary>BibTeX</summary>
-
-```bibtex
-@misc{denghan_nonholonomic_2025,
+<!-- Modal -->
+<div class="modal fade" id="bibtex1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">BibTeX Citation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<pre><code>@misc{denghan_nonholonomic_2025,
   title        = {Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning},
   author       = {Xiong, Denghan and Zhao, Yanzhe and Chen, Yutong and Wang, Zichun},
   year         = {2025},
   month        = nov,
   publisher    = {Zenodo},
   doi          = {10.5281/zenodo.17741676},
-  url          = {https://doi.org/10.5281/zenodo.17741676},
-  note         = {Preprint, accepted poster at CSAI 2025}
-}
-```
+  url          = {https://doi.org/10.5281/zenodo.17741676}
+}</code></pre>
+      </div>
+    </div>
+  </div>
+</div>
 
-</details>
 
 **Preprint (in preparation)**
 - **From SE(2) Hamilton Fast Marching to Mapless Control: Safe Expert-Guided TD3 for Narrow Dead-End Escape**.  
