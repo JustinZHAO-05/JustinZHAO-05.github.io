@@ -34,8 +34,6 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 
 
 
-## Publications & Preprints
-
 **Conference**  
 - **Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning** (co-first).  
   *CSAI 2025*  
@@ -48,6 +46,29 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 - **From SE(2) Hamilton Fast Marching to Mapless Control: Safe Expert-Guided TD3 for Narrow Dead-End Escape**.  
   *SE(2) HFM fields for reward shaping; safe action envelopes; TD3; mapless deployment; ablations.*  
   [[Preprint soon]](#) · [[Code soon]](#)
+
+
+---
+
+## Coursework & Skills
+**Certificates / in progress**: UW *Computational Neuroscience*; Stanford *Machine Learning* & *Deep Learning*; Stanford *Convex Optimization*.
+
+**Core at TJU (Control/Robotics)**:  
+**Automatic Control**; **Signals & Systems**; **Electrical Machines**; Analog & Digital Electronics; Mechanical Design; Electronics & Circuits; Mechanics; **Robot Kinematics & Dynamics**.
+
+**Math, Physics & CS Foundations @ TJU**  
+- **Mathematics** — Mathematical Analysis (Calculus + **ODEs** + intro Real Analysis + **Integral Transforms**); Advanced Linear Algebra (**Abstract Algebra** foundations); **Probability & Mathematical Statistics**; Mathematical Physics Equations (**PDEs**).  
+- **Physics** — **Mechanics**; Vibrations & Waves; Thermodynamics / Statistical Physics; **Electromagnetism**; Optics; **Quantum Mechanics**.  
+- **Computing** — **C++ (Programming Principles)**; **Discrete Mathematics** (Data Structures & Algorithms); **Computer Organization & Architecture**; **Numerical Analysis**.
+
+
+
+**Tools**: C++, Python (PyTorch), MATLAB/Simulink, ROS2, SolidWorks, Verilog, Docker, Linux.
+
+
+
+
+
 
 ---
 
@@ -78,6 +99,13 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 **My role.** Stack integration; demos; docs.  
 **Artifacts.** [[Video]](#) · [[Docs]](#)
 
+**Line-Following Drop-Off Car (embedded & mechatronics)**
+**Problem.** Autonomous line following with scheduled payload drop at designated points.
+**Method.** Arduino/C++ firmware; line sensing & motion control; marker-based triggering for drop; custom chassis in **SolidWorks**; simple electromechanical drop mechanism.
+**My role.** Firmware development (C++/Arduino), mechanical CAD, system integration; built a working prototype and demos.
+**Artifacts.** [[Video]](#) · [[Photos]](#) · [[Docs-CN]](#) · [[Code soon]](#)
+
+
 **Auto-tracking Phone Gimbal (embedded)**  
 **Problem.** Low-cost visual tracking with MCU + servos.  
 **Method.** Sensor fusion; control on MCU; rapid prototyping.  
@@ -98,22 +126,7 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 
 > More videos, posters, and short write-ups are in **Portfolio**.
 
----
 
-## Coursework & Skills
-**Certificates / in progress**: UW *Computational Neuroscience*; Stanford *Machine Learning* & *Deep Learning*; Stanford *Convex Optimization*.
-
-**Core at TJU (Control/Robotics)**:  
-**Automatic Control**; **Signals & Systems**; **Electrical Machines**; Analog & Digital Electronics; Mechanical Design; Electronics & Circuits; Mechanics; **Robot Kinematics & Dynamics**.
-
-**Math, Physics & CS Foundations @ TJU**  
-- **Mathematics** — Mathematical Analysis (Calculus + **ODEs** + intro Real Analysis + **Integral Transforms**); Advanced Linear Algebra (**Abstract Algebra** foundations); **Probability & Mathematical Statistics**; Mathematical Physics Equations (**PDEs**).  
-- **Physics** — **Mechanics**; Vibrations & Waves; Thermodynamics / Statistical Physics; **Electromagnetism**; Optics; **Quantum Mechanics**.  
-- **Computing** — **C++ (Programming Principles)**; **Discrete Mathematics** (Data Structures & Algorithms); **Computer Organization & Architecture**; **Numerical Analysis**.
-
-
-
-**Tools**: C++, Python (PyTorch), MATLAB/Simulink, ROS2, SolidWorks, Verilog, Docker, Linux.
 
 ---
 
