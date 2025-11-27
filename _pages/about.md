@@ -1,3 +1,4 @@
+---
 permalink: /
 title: "Yanzhe (Justin) Zhao"
 subtitle: "Neuro-AI × Robotics & Control — brain-inspired intelligence for embodied agents"
@@ -7,6 +8,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
 
 ### Hi — I’m **Yanzhe (Justin) Zhao** (赵彦喆)
 
