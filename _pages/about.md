@@ -23,7 +23,7 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 ---
 
 ## News
-- **2025-12-12 → 14** — *Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning* **accepted** at **CSAI 2025 (poster), Beijing**. [[PDF]](#) · [[Poster]](#) · [[Code]](https://github.com/JustinZHAO-05/cisDRL-RobotNav)
+- **2025-12-12 → 14** — *Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning* **accepted** at **CSAI 2025 (poster), Beijing**. [[PDF]](files/CA-212-Final.pdf) · [[Poster]](#) · [[Code]](https://github.com/JustinZHAO-05/cisDRL-RobotNav)
 - **Ongoing** — *From SE(2) Hamilton Fast Marching to Mapless Control: Safe Expert-Guided TD3 for Narrow Dead-End Escape* (HFM reward shaping; expert-guided off/online RL). [[Preprint soon]](#)
 - **Learning now** — UW **Computational Neuroscience**; Stanford **Machine Learning** & **Deep Learning** (certificate tracks).
 - **Seeking** — **2026 Summer Research** in **Neuro-AI / Robotics & Control**.
@@ -38,7 +38,7 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 - **Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning** (co-first).  
   *CSAI 2025*  
   *Batched Gazebo maps, SAC policy, curriculum/evaluation pipeline.*  
-  [[PDF]](#) · [[Poster]](#) · [[Code]](https://github.com/JustinZHAO-05/cisDRL-RobotNav) · [[BibTeX]](/files/bib/nonholonomic_deadend_2025.bib)
+  [[PDF]](files/CA-212-Final.pdf) · [[Poster]](#) · [[Code]](https://github.com/JustinZHAO-05/cisDRL-RobotNav) · [[BibTeX]](/files/bib/nonholonomic_deadend_2025.bib)
 
 
 
@@ -63,7 +63,7 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 
 
 
-**Tools**: C++, Python (PyTorch), MATLAB/Simulink, ROS2, SolidWorks, Verilog, Docker, Linux.
+**Tools**: C++, Python (PyTorch), MATLAB/Simulink, ROS2, ROS1, SolidWorks, Verilog, Docker, Linux.
 
 
 
@@ -131,7 +131,7 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 ---
 
 ## Open to Summer Research (2026)
-Seeking positions in **Neuro-AI / brain-inspired representation & control / embodied intelligence**.  
+Seeking positions in **Neuro-AI / brain-inspired representation & control / Machine Learning / embodied intelligence**.  
 Happy to share a **1-page research pitch** and prior artifacts (papers, code, videos). **Email me** to connect.
 
 ---
