@@ -32,18 +32,20 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 
 ## Publications & Preprints
 
+
+
 **Conference**
 - **Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning** (co-first).  
-  *CSAI 2025 .*  
+  *CSAI 2025 (poster).*  
   *Batched Gazebo maps, SAC policy, curriculum/evaluation pipeline.*  
-  [PDF](#) · [Poster](#) · [Code](https://github.com/JustinZHAO-05/cisDRL-RobotNav) · <a href="#" data-bs-toggle="modal" data-bs-target="#bibtex1">BibTeX</a>
+  [[PDF]](#) · [[Poster]](#) · [[Code]](https://github.com/JustinZHAO-05/cisDRL-RobotNav) · <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#bibtex1">[BibTeX]</a>
 
 <!-- Modal -->
-<div class="modal fade" id="bibtex1" tabindex="-1" aria-hidden="true">
+<div class="modal fade" id="bibtex1" tabindex="-1" aria-labelledby="bibtex1Label" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">BibTeX Citation</h5>
+        <h5 class="modal-title" id="bibtex1Label">BibTeX Citation</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -60,6 +62,7 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
     </div>
   </div>
 </div>
+
 
 
 **Preprint (in preparation)**
