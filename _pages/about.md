@@ -46,6 +46,9 @@ I study **Neuro-AI × Robotics & Control**: understanding neural/cognitive mecha
 
 ## Featured Projects (Engineering & Research)
 
+These projects **demonstrate a broad toolchain**: C++, Python, MATLAB, embedded development (MCU/Verilog), **basic AI** (computer vision & DRL), **ROS/robotics**, and **SolidWorks** for mechanism/CAD.
+
+
 **Eight-Cable-Driven Parallel Robot** — full-stack design & control  
 - Repo: <https://github.com/JustinZHAO-05/Eight-Cable-Driven-Parallel-Robot>  
 - *What I did*: mechanism & CAD (SolidWorks), kinematics/dynamics, motor control & drivers, embedded code, MATLAB/Sim; complete videos, photos, and Chinese documentation.  
@@ -78,9 +81,20 @@ I study **Neuro-AI × Robotics & Control**: understanding neural/cognitive mecha
 ---
 
 ## Coursework (selected & in-progress, certificate tracks)
-- **Computational Neuroscience** (UW) — neuron models, population coding, learning rules, perceptual decision.  
-- **Machine Learning** (Stanford) & **Deep Learning** — supervised/unsupervised, optimization, regularization; modern DL stacks.  
-- Control/Robotics foundations at TJU: **Automatic Control**, **Signals & Systems**, **Electronics & Circuits**, **Mechanics**, **Robot Kinematics & Dynamics**.
+
+- **Computational Neuroscience** (UW) — neuron models, population coding, learning rules, perceptual decision.
+- **Machine Learning** (Stanford) & **Deep Learning** — supervised/unsupervised, optimization, regularization; modern DL stacks.
+- **Convex Optimization**(Stanford)
+- **Control/Robotics at TJU** — Automatic Control, Signals & Systems, Electronics & Circuits, Mechanics, Robot Kinematics & Dynamics.
+
+**Mathematics, Physics & CS Foundations @ TJU**
+- **Mathematical Analysis** — Calculus + introductory Real Analysis + **Integral Transforms**  
+- **Advanced Linear Algebra** — Linear Algebra + **Abstract Algebra** (foundations)  
+- **Probability & Mathematical Statistics**  
+- **Mathematical Physics Equations** — **PDEs**  
+- **Fundamental Physics**  
+- **Computing Core** — **C++ (Programming Principles)**, **Discrete Mathematics** (Data Structures & Algorithms), **Computer Organization & Architecture**, **Numerical Analysis**
+
 
 ---
 
@@ -90,11 +104,6 @@ If you see a fit, please email me — I’m happy to share a 1-page research pit
 
 ---
 
-## Links
-- **Google Scholar** | **ORCID** | **GitHub** | **CV (PDF)** *(add links in the sidebar & here)*  
-- Email: *(add your preferred academic email)*
-
----
 
 ### (中文) 关于我（简要）
 我关注 **类脑智能与机器人控制**：一方面探索**大脑学习机制**（是否存在类反向传播的更新、如何进行高效分配与优化），另一方面用这些洞见去构建**更节省数据与算力、具备强泛化**的世界模型与决策系统，并将其**具身到机器人**。我已在 **CSAI 2025** 入选一篇 **非完整约束窄死胡同逃逸的深度强化学习** 论文（海报展示），并在开展 **基于 SE(2) Hamilton 快速行进法的安全专家引导 TD3** 新课题；工程侧完成多项机器人项目（绳驱并联、ROSLander 移动操作等），欢迎交流合作。
