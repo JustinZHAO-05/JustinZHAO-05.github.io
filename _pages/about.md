@@ -1,56 +1,100 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Yanzhe (Justin) Zhao"
+subtitle: "Neuro-AI × Robotics & Control — brain-inspired intelligence for embodied agents"
+description: "B.Eng. (Elite Honors Cohort), School of Future Technology, Tianjin University"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+### Hi — I’m **Yanzhe (Justin) Zhao** (赵彦喆)
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+**B.Eng. (Elite Honors Cohort), School of Future Technology, Tianjin University.**  
+I study **Neuro-AI × Robotics & Control**: understanding neural/cognitive mechanisms of human intelligence and using them to build **brain-inspired AI** embodied in **robots**.
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+- **Research focus**
+  - *Neural learning mechanisms*: Does the brain perform “backprop-like” updates or alternative optimization? What signals and architectures enable efficient credit assignment?
+  - *Data/compute-efficient world models & decision making*: brain-inspired representations and control for strong **generalization** under limited data/compute.
+  - *From neural dynamics to cognition & consciousness*: bridges from the “easy problems” to structures that support subjective experience and high-level cognition.
+  - *Robotics/control*: morphology & **optimal control** for robust closed-loop behavior; safe RL for nonholonomic navigation in **narrow dead-ends**.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+---
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+## News
+- **[Dec 12–14, 2025]** Our paper **“Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning”** is **accepted** to **The 9th International Conference on Computer Science and Artificial Intelligence (CSAI 2025)**, **poster** in Beijing.  
+  PDF/Poster and code below.
+- **Ongoing**: **From SE(2) Hamilton Fast Marching to Mapless Control: Safe Expert-Guided TD3 for Narrow Dead-End Escape** (reward shaping with Hamiltonian Fast Marching; expert-guided off/online RL).  
+- **Learning now**: UW **Computational Neuroscience**, Stanford **Machine Learning** and **Deep Learning** (certificate tracks).  
+- **Seeking 2026 Summer Research** in **Neuro-AI / Robotics & Control**.
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+---
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+## Selected Publication
+- **Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning** (co-first author), **CSAI 2025 (poster)**.  
+  *Gazebo training maps, SAC-based policy, batched curriculum & evaluation.*  
+  **Code:** <https://github.com/JustinZHAO-05/cisDRL-RobotNav>  
+  **Poster:** (to appear) • **PDF:** (to appear) • **BibTeX:** (to appear)
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+*Preprint in preparation*  
+- **From SE(2) Hamilton Fast Marching to Mapless Control: Safe Expert-Guided TD3 for Narrow Dead-End Escape**.  
+  *HFM reward shaping, safe expert envelopes, SE(2) anisotropy; mapless deployment with risk-aware policy improvement.*  
+  (TechRxiv/Zenodo preprint link to appear; code release planned.)
 
-**Markdown generator**
+---
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+## Featured Projects (Engineering & Research)
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+**Eight-Cable-Driven Parallel Robot** — full-stack design & control  
+- Repo: <https://github.com/JustinZHAO-05/Eight-Cable-Driven-Parallel-Robot>  
+- *What I did*: mechanism & CAD (SolidWorks), kinematics/dynamics, motor control & drivers, embedded code, MATLAB/Sim; complete videos, photos, and Chinese documentation.  
+- *Why it matters*: high-DOF cable robots demand precise state estimation + robust control under elasticity and coupling.
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+**Dead-End DRL Navigation (CSAI work, engineering side)**  
+- Repo: <https://github.com/JustinZHAO-05/cisDRL-RobotNav>  
+- *Contrib*: problem formulation, SAC pipeline, Gazebo **batched** training map generator, training/eval workflows, making poster.  
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+**Safe Expert-Guided TD3 with HFM Reward Shaping (ongoing)**  
+- *Contrib*: SE(2) HFM fields for reward shaping; safe action envelopes; TD3 training; mapless deployment; ablations.  
+- *Artifacts*: diagrams, experiments, preprint & code (to appear).
+
+**ROSlander Mobile Manipulation Demo**  
+- *What I did*: ROS/Ubuntu stack integration; **SLAM**, navigation, YOLO-based perception; arm pick-place; human-pose controlled gestures.  
+- *Artifacts*: demo videos & docs.
+
+**Auto-tracking Phone Gimbal (embedded)**  
+- MCU + servos + sensors; early prototype videos; Chinese docs (code to be cleaned and uploaded).  
+
+**Verilog image rotation (pure hardware)**  
+- Repo: <https://github.com/JustinZHAO-05/VeriRotate>  
+- *What I did*: 24-bit BMP **90° CCW rotation** pipeline in Verilog; timing & memory organization; Chinese documentation.
+
+**Robotic Manipulation assignments (NeoScholar × Imperial)**  
+- MATLAB simulation of a manipulator and custom gripper design (with high scores); reports + code available.
+
+> More videos, posters, and short write-ups are in **Portfolio**. Each project page lists: problem → method → results → **my contribution** → code/video.
+
+---
+
+## Coursework (selected & in-progress, certificate tracks)
+- **Computational Neuroscience** (UW) — neuron models, population coding, learning rules, perceptual decision.  
+- **Machine Learning** (Stanford) & **Deep Learning** — supervised/unsupervised, optimization, regularization; modern DL stacks.  
+- Control/Robotics foundations at TJU: **Automatic Control**, **Signals & Systems**, **Electronics & Circuits**, **Mechanics**, **Robot Kinematics & Dynamics**.
+
+---
+
+## Open to Summer Research (2026)
+I’m looking for **summer research** in labs working on **neural learning rules, brain-inspired representation & control, machine learning and embodied intelligence**.  
+If you see a fit, please email me — I’m happy to share a 1-page research pitch and prior artifacts (papers, code, videos).
+
+---
+
+## Links
+- **Google Scholar** | **ORCID** | **GitHub** | **CV (PDF)** *(add links in the sidebar & here)*  
+- Email: *(add your preferred academic email)*
+
+---
+
+### (中文) 关于我（简要）
+我关注 **类脑智能与机器人控制**：一方面探索**大脑学习机制**（是否存在类反向传播的更新、如何进行高效分配与优化），另一方面用这些洞见去构建**更节省数据与算力、具备强泛化**的世界模型与决策系统，并将其**具身到机器人**。我已在 **CSAI 2025** 入选一篇 **非完整约束窄死胡同逃逸的深度强化学习** 论文（海报展示），并在开展 **基于 SE(2) Hamilton 快速行进法的安全专家引导 TD3** 新课题；工程侧完成多项机器人项目（绳驱并联、ROSLander 移动操作等），欢迎交流合作。
