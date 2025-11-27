@@ -13,7 +13,7 @@ title                    : "Yanzhe Zhao · Neuro-AI & Robotics"
 title_separator          : "-"
 name                     : &name "Yanzhe Zhao"
 description              : &description "Neuro-AI for embodied robots; robot learning & control; neuromorphic perception & cognition"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : JustinZHAO-05.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : "https://JustinZHAO-05.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : ""
 repository               : "JustinZHAO-05/JustinZHAO-05.github.io"
