@@ -23,10 +23,18 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 ---
 
 ## News
-- **2025-12-12 → 14** — *Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning* **accepted** at **CSAI 2025 (poster), Beijing**. [[PDF]](files/CA-212-Final.pdf) · [[Poster]](#) · [[Code]](https://github.com/JustinZHAO-05/cisDRL-RobotNav)
+- **2025-12-12 → 14** — *Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning* **accepted** at **CSAI 2025 (poster), Beijing**. [[PDF]](/files/CA-212-Final.pdf) · [[Poster]](#) · [[Code]](https://github.com/JustinZHAO-05/cisDRL-RobotNav)
+- **2025-08** — Completed **in-person Summer Research** with **Prof. Sen Wang (Imperial College London)** at NeoScholar; produced the CSAI paper; **Evaluation Report: A**. [[Evaluation Report]](/files/certificate/学术评估-Yanzhe%20Zhao-KH10128469.pdf)
+- **2025-06-01** — Finished auditing **Robot Perception, Localization & Navigation** (Prof. Sen Wang, NeoScholar). *Audit track; transcript available.* [[Transcript]](/files/certificate/成绩单-人工智能与机械工程：机器人感知系统、自动导航与数字化设计-赵彦喆.pdf)
+- **2025-01-05** — Completed **Robotic Manipulation** (Dr. Adam Spiers, Imperial × NeoScholar); **high score** and certificate (CIEI certified). [[Transcript]](/files/certificate/成绩单-人工智能与机械工程：机器人感知系统、3D建模与数字化设计-赵彦喆.pdf)·[[Certificate]](/files/certificate/证书-人工智能与机械工程：机器人感知系统、3D建模与数字化设计-赵彦喆.pdf)
+- **Completed** — **Foundations of Signals & Systems: Analyse and Process Digital Signals** (University of Padova, FutureLearn). [[Certificate]](/files/certificate/foundations-of-signals-and-systems_certificate_of_achievement_35b1o0w.pdf)
 - **Ongoing** — *From SE(2) Hamilton Fast Marching to Mapless Control: Safe Expert-Guided TD3 for Narrow Dead-End Escape* (HFM reward shaping; expert-guided off/online RL). [[Preprint soon]](#)
-- **Learning now** — UW **Computational Neuroscience**; Stanford **Machine Learning** & **Deep Learning** (certificate tracks).
+- **Learning now** — UW **Computational Neuroscience**; Stanford **Machine Learning** & **Deep Learning** (certificate tracks); **MITx Introduction to Differential Equations** (near completion) · **DelftX Building Robots (4-course program)** on edX (in progress).
+
+- **2024-07** — Completed **University of Bristol — Computing Applications in Science & Engineering** Summer School (Java/Go, satellite control simulation, Arduino-based sensor networks; built a mock seismic bureau). [[Certificate]](/files/certificate/Yanzhe%20Zhao%20CASE%202024%20Certificate%20of%20Completion.pdf)
+
 - **Seeking** — **2026 Summer Research** in **Neuro-AI / Robotics & Control**.
+
 
 ---
 
@@ -38,7 +46,7 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 - **Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning** (co-first).  
   *CSAI 2025*  
   *Batched Gazebo maps, SAC policy, curriculum/evaluation pipeline.*  
-  [[PDF]](files/CA-212-Final.pdf) · [[Poster]](#) · [[Code]](https://github.com/JustinZHAO-05/cisDRL-RobotNav) · [[BibTeX]](/files/bib/nonholonomic_deadend_2025.bib)
+  [[PDF]](/files/CA-212-Final.pdf) · [[Poster]](#) · [[Code]](https://github.com/JustinZHAO-05/cisDRL-RobotNav) · [[BibTeX]](/files/bib/nonholonomic_deadend_2025.bib)
 
 
 
@@ -51,9 +59,7 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 ---
 
 ## Coursework & Skills
-**Certificates / in progress**: UW *Computational Neuroscience*; Stanford *Machine Learning* & *Deep Learning*; Stanford *Convex Optimization*.
-
-**Core at TJU (Control/Robotics)**:  
+**Core @ TJU (Control/Robotics)**:  
 **Automatic Control**; **Signals & Systems**; **Electrical Machines**; Analog & Digital Electronics; Mechanical Design; Electronics & Circuits; Mechanics; **Robot Kinematics & Dynamics**.
 
 **Math, Physics & CS Foundations @ TJU**  
@@ -61,9 +67,26 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 - **Physics** — **Mechanics**; Vibrations & Waves; Thermodynamics / Statistical Physics; **Electromagnetism**; Optics; **Quantum Mechanics**.  
 - **Computing** — **C++ (Programming Principles)**; **Discrete Mathematics** (Data Structures & Algorithms); **Computer Organization & Architecture**; **Numerical Analysis**.
 
+**Certificates / in progress**: 
+- **NeoScholar × Imperial — Summer Research (in-person, 2025)** — Supervisor: **Prof. Sen Wang (Imperial College London)**.  
+  Project: *Nonholonomic Narrow Dead-End Escape with Deep RL* → resulted in **CSAI 2025 publication**; **Evaluation Report: A**. [[Evaluation Report]](/files/certificate/学术评估-Yanzhe%20Zhao-KH10128469.pdf) 
+
+- **University of Padova (FutureLearn) — Foundations of Signals & Systems: Analyse and Process Digital Signals** *(completed)*. [[Certificate]](/files/certificate/foundations-of-signals-and-systems_certificate_of_achievement_35b1o0w.pdf)  
+- **NeoScholar × Imperial — Robotic Manipulation** *(2024-10-11 → 2025-01-05, high score; CIEI certified)*. [[Transcript]](/files/certificate/成绩单-人工智能与机械工程：机器人感知系统、3D建模与数字化设计-赵彦喆.pdf)·[[Certificate]](/files/certificate/证书-人工智能与机械工程：机器人感知系统、3D建模与数字化设计-赵彦喆.pdf) 
+- **NeoScholar × Imperial — Robot Perception, Localization & Navigation** *(2025-03-07 → 2025-06-01, audit)*. [[Transcript]](/files/certificate/成绩单-人工智能与机械工程：机器人感知系统、自动导航与数字化设计-赵彦喆.pdf) 
+- **University of Bristol — Computing Applications in Science & Engineering (Summer School, 2024)** — **Java & Go** for scientific computing, **satellite control simulation**, and a **sensor/Arduino + computer networks** project building a *mock seismic monitoring bureau*.[[Certificate]](/files/certificate/Yanzhe%20Zhao%20CASE%202024%20Certificate%20of%20Completion.pdf) 
+- **Stanford *Machine Learning* & *Deep Learning*** (in progress); 
+- **Stanford *Convex Optimization*** (certificate tracks)(in progress).
+- **MITx — Introduction to Differential Equations** *(near completion)*.  
+- **DelftX — Building Robots: From Mechatronic Components to Robotics (4-course program)** *(in progress)*. 
 
 
-**Tools**: C++, Python (PyTorch), MATLAB/Simulink, ROS2, ROS1, SolidWorks, Verilog, Docker, Linux.
+
+
+
+
+
+**Tools**: C++, Python (PyTorch), Java, MATLAB/Simulink, ROS2, ROS1, SolidWorks, Verilog, Docker, Linux.
 
 
 
