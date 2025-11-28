@@ -28,7 +28,7 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 - **2025-06-01** — Finished auditing **Robot Perception, Localization & Navigation** (Prof. Sen Wang, NeoScholar). *Audit track; transcript available.* [[Transcript]](/files/certificate/成绩单-人工智能与机械工程：机器人感知系统、自动导航与数字化设计-赵彦喆.pdf)
 - **2025-01-05** — Completed **Robotic Manipulation** (Dr. Adam Spiers, Imperial × NeoScholar); **high score** and certificate (CIEI certified). [[Transcript]](/files/certificate/成绩单-人工智能与机械工程：机器人感知系统、3D建模与数字化设计-赵彦喆.pdf)·[[Certificate]](/files/certificate/证书-人工智能与机械工程：机器人感知系统、3D建模与数字化设计-赵彦喆.pdf)
 - **Completed** — **Foundations of Signals & Systems: Analyse and Process Digital Signals** (University of Padova, FutureLearn). [[Certificate]](/files/certificate/foundations-of-signals-and-systems_certificate_of_achievement_35b1o0w.pdf)
-- **Ongoing** — *From SE(2) Hamilton Fast Marching to Mapless Control: Safe Expert-Guided TD3 for Narrow Dead-End Escape* (HFM reward shaping; expert-guided off/online RL). [[Preprint soon]](#)
+- **Ongoing** — *From SE(2) Hamilton Fast Marching to Mapless Control: Safe Expert-Guided TD3 for Narrow Dead-End Escape* . [[DOI]](https://doi.org/10.5281/zenodo.17746751 ) · [[Preprint soon]](#)
 - **Learning now** — UW **Computational Neuroscience**; Stanford **Machine Learning** & **Deep Learning** (certificate tracks); **MITx Introduction to Differential Equations** (near completion) · **DelftX Building Robots (4-course program)** on edX (in progress).
 
 - **2024-07** — Completed **University of Bristol — Computing Applications in Science & Engineering** Summer School (Java/Go, satellite control simulation, Arduino-based sensor networks; built a mock seismic bureau). [[Certificate]](/files/certificate/Yanzhe%20Zhao%20CASE%202024%20Certificate%20of%20Completion.pdf)
@@ -51,9 +51,8 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 
 
 **Preprint (in preparation)**
-- **From SE(2) Hamilton Fast Marching to Mapless Control: Safe Expert-Guided TD3 for Narrow Dead-End Escape**.  
-  *SE(2) HFM fields for reward shaping; safe action envelopes; TD3; mapless deployment; ablations.*  
-  [[Preprint soon]](#) · [[Code soon]](#)
+- **From SE(2) Hamilton Fast Marching to Mapless Control: Safe Expert-Guided TD3 for Narrow Dead-End Escape**. 
+  [[DOI]](https://doi.org/10.5281/zenodo.17746751 ) · [[Preprint soon]](#) · [[Code soon]](#)
 
 
 ---
