@@ -99,10 +99,10 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 **My role.** Stack integration; demos; docs.  
 **Artifacts.** [[Video]](#) · [[Docs]](#)
 
-**Line-Following Drop-Off Car (embedded & mechatronics)**
-**Problem.** Autonomous line following with scheduled payload drop at designated points.
-**Method.** Arduino/C++ firmware; line sensing & motion control; marker-based triggering for drop; custom chassis in **SolidWorks**; simple electromechanical drop mechanism.
-**My role.** Firmware development (C++/Arduino), mechanical CAD, system integration; built a working prototype and demos.
+**Line-Following Drop-Off Car (embedded & mechatronics)**    
+**Problem.** Autonomous line following with scheduled payload drop at designated points.     
+**Method.** Arduino/C++ firmware; line sensing & motion control; marker-based triggering for drop; custom chassis in **SolidWorks**; simple electromechanical drop mechanism.         
+**My role.** Firmware development (C++/Arduino), mechanical CAD, system integration; built a working prototype and demos.       
 **Artifacts.** [[Video]](#) · [[Photos]](#) · [[Docs-CN]](#) · [[Code soon]](#)
 
 
