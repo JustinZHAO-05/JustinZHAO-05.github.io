@@ -146,7 +146,7 @@ I build **brain-inspired AI** for **embodied robots**, informed by neural and co
 **My role.** Implementation; report; achieved high course scores.  
 **Artifacts.** [[Report]](#) · [[Code]](#)
 
-> More videos, posters, and short write-ups are in **Portfolio**.
+<!-- > More videos, posters, and short write-ups are in **Portfolio**. -->
 
 
 
