@@ -52,15 +52,18 @@ redirect_from:
     <h2>From embodied control to computational models of mind and brain.</h2>
   </div>
   <div class="research-path">
-    <article>
+    <article data-step="01">
+      <p class="research-path__label">Foundation</p>
       <h3>Robotics and Control Foundation</h3>
       <p>Built a systems-level base through automatic control, signal processing, robot kinematics, embedded systems, numerical methods, and full-stack robot projects.</p>
     </article>
-    <article>
+    <article data-step="02">
+      <p class="research-path__label">Transition</p>
       <h3>Learning and Decision Making</h3>
       <p>Used deep reinforcement learning for constrained navigation, connecting policy learning, spatial planning, and action under nonholonomic limits.</p>
     </article>
-    <article>
+    <article data-step="03">
+      <p class="research-path__label">Current focus</p>
       <h3>Computational and Cognitive Neuroscience</h3>
       <p>Now focusing on neural computation, predictive processing, world models, cognitive maps, language learning, and Neuro-AI models that can be tested scientifically.</p>
     </article>
