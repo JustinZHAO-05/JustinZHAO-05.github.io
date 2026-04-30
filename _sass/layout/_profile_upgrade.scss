@@ -160,49 +160,65 @@ body {
 
 .standing-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
+  gap: 0.52rem;
 }
 
-.standing-card {
+.standing-grid__head,
+.standing-metric {
+  display: grid;
+  grid-template-columns: minmax(5.2rem, 0.68fr) repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+  align-items: center;
+}
+
+.standing-grid__head {
+  padding: 0 0.75rem;
+  color: var(--profile-ink);
+  font-size: 0.74rem;
+  font-weight: 850;
+  line-height: 1.16;
+}
+
+.standing-metric {
   min-width: 0;
-  padding: 0.85rem;
+  padding: 0.72rem 0.75rem;
   background: #f5f9fc;
   border: 1px solid var(--profile-border);
   border-radius: 6px;
 }
 
-.standing-card h2,
-.standing-card h4 {
-  margin: 0 0 0.75rem;
-  color: var(--profile-ink);
-  font-size: 0.92rem;
+.standing-metric__label {
+  margin: 0;
+  color: var(--profile-muted);
+  font-size: 0.72rem;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: 0;
+  text-transform: uppercase;
 }
 
-.standing-card dl {
-  display: grid;
-  gap: 0.58rem;
+.standing-metric dl {
+  display: contents;
   margin: 0;
 }
 
-.standing-card dl div {
+.standing-metric dl div {
   min-width: 0;
 }
 
-.standing-card dt {
-  color: var(--profile-muted);
-  font-size: 0.72rem;
-  font-weight: 700;
-  line-height: 1.25;
+.standing-metric dt {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
-.standing-card dd {
-  margin: 0.12rem 0 0;
+.standing-metric dd {
+  margin: 0;
   color: var(--profile-ink);
-  font-size: 1.26rem;
+  font-size: 1.18rem;
   font-weight: 850;
   line-height: 1;
 }
@@ -333,7 +349,7 @@ body {
   margin-top: 1rem;
 }
 
-.training-feature .standing-card {
+.training-feature .standing-metric {
   background: #f4f9fd;
 }
 
@@ -718,20 +734,30 @@ body {
   }
 
   .standing-grid {
-    gap: 0.55rem;
+    gap: 0.45rem;
   }
 
-  .standing-card {
-    padding: 0.7rem;
+  .standing-grid__head,
+  .standing-metric {
+    grid-template-columns: minmax(3.9rem, 0.58fr) repeat(2, minmax(0, 1fr));
+    gap: 0.4rem;
   }
 
-  .standing-card h2,
-  .standing-card h4 {
-    font-size: 0.78rem;
+  .standing-grid__head {
+    padding: 0 0.6rem;
+    font-size: 0.62rem;
   }
 
-  .standing-card dd {
-    font-size: 1.05rem;
+  .standing-metric {
+    padding: 0.58rem 0.6rem;
+  }
+
+  .standing-metric__label {
+    font-size: 0.62rem;
+  }
+
+  .standing-metric dd {
+    font-size: 0.9rem;
   }
 
   .training-timeline article {

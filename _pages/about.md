@@ -38,20 +38,30 @@ redirect_from:
   <aside class="home-hero__profile" aria-label="Academic profile summary">
     <img src="/images/profile-web.jpg" alt="Yanzhe Zhao formal portrait">
     <div class="standing-grid" aria-label="Academic standing summary">
-      <section class="standing-card">
-        <h2>Overall</h2>
+      <div class="standing-grid__head" aria-hidden="true">
+        <span></span>
+        <span>Overall</span>
+        <span>Junior Specialization</span>
+      </div>
+      <section class="standing-metric" aria-label="Rank">
+        <p class="standing-metric__label">Rank</p>
         <dl>
-          <div><dt>Rank</dt><dd>8/100</dd></div>
-          <div><dt>Weighted score</dt><dd>91.54</dd></div>
-          <div><dt>GPA</dt><dd>3.85/4.0</dd></div>
+          <div><dt>Overall rank</dt><dd>8/100</dd></div>
+          <div><dt>Junior specialization rank</dt><dd>1/8</dd></div>
         </dl>
       </section>
-      <section class="standing-card">
-        <h2>Junior Specialization</h2>
+      <section class="standing-metric" aria-label="Weighted score">
+        <p class="standing-metric__label">Weighted score</p>
         <dl>
-          <div><dt>Rank</dt><dd>1/8</dd></div>
-          <div><dt>Weighted score</dt><dd>96.55</dd></div>
-          <div><dt>GPA</dt><dd>3.98/4.0</dd></div>
+          <div><dt>Overall weighted score</dt><dd>91.54</dd></div>
+          <div><dt>Junior specialization weighted score</dt><dd>96.55</dd></div>
+        </dl>
+      </section>
+      <section class="standing-metric" aria-label="GPA">
+        <p class="standing-metric__label">GPA</p>
+        <dl>
+          <div><dt>Overall GPA</dt><dd>3.85/4.0</dd></div>
+          <div><dt>Junior specialization GPA</dt><dd>3.98/4.0</dd></div>
         </dl>
       </section>
     </div>
@@ -128,20 +138,30 @@ redirect_from:
       <p>The School of Future Technology is Tianjin University's elite undergraduate college. The Intelligent Machine Platform honors track admits students through Gaokao-based selection and internal university selection.</p>
       <p>The first two years provide shared training in mathematics, physics, and engineering fundamentals. After sophomore-year major selection, I chose Automation.</p>
       <div class="standing-grid" aria-label="Academic standing by scope">
-        <section class="standing-card">
-          <h4>Overall</h4>
+        <div class="standing-grid__head" aria-hidden="true">
+          <span></span>
+          <span>Overall</span>
+          <span>Junior Specialization</span>
+        </div>
+        <section class="standing-metric" aria-label="Rank">
+          <p class="standing-metric__label">Rank</p>
           <dl>
-            <div><dt>Rank</dt><dd>8/100</dd></div>
-            <div><dt>Weighted score</dt><dd>91.54</dd></div>
-            <div><dt>GPA</dt><dd>3.85/4.0</dd></div>
+            <div><dt>Overall rank</dt><dd>8/100</dd></div>
+            <div><dt>Junior specialization rank</dt><dd>1/8</dd></div>
           </dl>
         </section>
-        <section class="standing-card">
-          <h4>Junior Specialization</h4>
+        <section class="standing-metric" aria-label="Weighted score">
+          <p class="standing-metric__label">Weighted score</p>
           <dl>
-            <div><dt>Rank</dt><dd>1/8</dd></div>
-            <div><dt>Weighted score</dt><dd>96.55</dd></div>
-            <div><dt>GPA</dt><dd>3.98/4.0</dd></div>
+            <div><dt>Overall weighted score</dt><dd>91.54</dd></div>
+            <div><dt>Junior specialization weighted score</dt><dd>96.55</dd></div>
+          </dl>
+        </section>
+        <section class="standing-metric" aria-label="GPA">
+          <p class="standing-metric__label">GPA</p>
+          <dl>
+            <div><dt>Overall GPA</dt><dd>3.85/4.0</dd></div>
+            <div><dt>Junior specialization GPA</dt><dd>3.98/4.0</dd></div>
           </dl>
         </section>
       </div>
