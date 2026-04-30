@@ -89,12 +89,12 @@ redirect_from:
   <div class="section-heading section-heading--row">
     <div>
       <span>Selected Projects</span>
-      <h2>Evidence of neuroscience readiness, AI implementation, and engineering depth.</h2>
+      <h2>Evidence of neuroscience readiness, applied ML, AI implementation, and engineering depth.</h2>
     </div>
     <a href="/portfolio/">All projects</a>
   </div>
   <div class="project-grid project-grid--featured">
-    {% for project in projects limit: 6 %}
+    {% for project in projects limit: 8 %}
       {% include project-card.html project=project %}
     {% endfor %}
   </div>

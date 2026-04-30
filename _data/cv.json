@@ -68,11 +68,11 @@
   "skills": [
     {
       "name": "Programming and Scientific Computing",
-      "keywords": ["Python", "C++", "MATLAB/Simulink", "Verilog", "Java", "NumPy", "SciPy", "Matplotlib", "Brian2"]
+      "keywords": ["Python", "C++", "MATLAB/Simulink", "Verilog", "Java", "NumPy", "SciPy", "scikit-learn", "Matplotlib", "Brian2"]
     },
     {
       "name": "Research Methods",
-      "keywords": ["Computational neuroscience", "EEG/ERP signal processing", "Deep reinforcement learning", "Reproducible workflows", "Technical writing"]
+      "keywords": ["Computational neuroscience", "EEG/ERP signal processing", "Deep reinforcement learning", "Applied machine learning", "Experiment diagnosis", "Reproducible workflows", "Technical writing"]
     },
     {
       "name": "Robotics and Systems",
@@ -107,5 +107,16 @@
   ],
   "presentations": [],
   "teaching": [],
-  "portfolio": []
+  "portfolio": [
+    {
+      "name": "SAGIN ML: Satellite Link Optimization",
+      "url": "https://github.com/JustinZHAO-05/sagin-ml-satellite-link-optimization",
+      "summary": "Applied ML project for PCA-based satellite image transmission and cost-aware UAV communication-link switching."
+    },
+    {
+      "name": "MNIST MLP Experiment Diagnosis",
+      "url": "https://github.com/JustinZHAO-05/mnist-mlp-experiment-diagnosis",
+      "summary": "NumPy MLP experiment covering MNIST training, abnormal-case diagnosis, repair experiments, and photographed handwriting generalization."
+    }
+  ]
 }

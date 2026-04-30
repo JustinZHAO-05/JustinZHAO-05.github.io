@@ -75,9 +75,46 @@
     - "Benchmarked learned policies against representative classical planners."
     - "Became the formal CSAI 2025 conference paper now indexed with ACM DOI."
 
+- id: sagin-ml-satellite-link-optimization
+  title: "SAGIN ML: Satellite Link Optimization"
+  priority: 5
+  category: "Applied ML / Systems"
+  category_slug: "applied-ml-systems"
+  status: "Reviewed ML course project"
+  summary: "A Space-Air-Ground-Sea network project combining PCA-based satellite image transmission and cost-aware UAV link switching."
+  role: "Built the public English release, reproduced experiments, generated result tables/figures, and documented limitations."
+  methods: "Traditional/adaptive/category-adaptive PCA, shared-basis compression, ROI-aware ship analysis, logistic regression, stress tests, cost-aware switching"
+  stack: "Python, scikit-learn, NumPy, pandas, Matplotlib, reproducible slide/report generation"
+  thumbnail: "/images/projects/sagin-ml-satellite-link.png"
+  links:
+    github: "https://github.com/JustinZHAO-05/sagin-ml-satellite-link-optimization"
+  highlights:
+    - "Connects machine learning with communication efficiency in satellite-UAV-ground-maritime scenarios."
+    - "Shows rigorous model comparison with compression quality, calibration, stress tests, and switching cost."
+    - "Documents a negative finding: adaptive PCA can blur small ship targets despite improving compression."
+
+- id: mnist-mlp-experiment-diagnosis
+  title: "MNIST MLP Experiment Diagnosis"
+  priority: 6
+  category: "Applied ML / Systems"
+  category_slug: "applied-ml-systems"
+  status: "Deep learning experiment and diagnosis"
+  summary: "A complete NumPy MLP project for MNIST training, abnormal-case diagnosis, repair experiments, and photographed handwriting generalization."
+  role: "Implemented experiment pipelines, generated diagnostics, processed handwritten sheets, and built the final report assets."
+  methods: "MLP training, confusion matrix analysis, learning-rate failure, overfitting diagnosis, gradient explosion repair, preprocessing ablations"
+  stack: "Python, NumPy, Matplotlib, LaTeX, reproducible experiment logging"
+  thumbnail: "/images/projects/mnist-mlp-diagnosis.png"
+  links:
+    github: "https://github.com/JustinZHAO-05/mnist-mlp-experiment-diagnosis"
+    report: "https://github.com/JustinZHAO-05/mnist-mlp-experiment-diagnosis/blob/main/final_report.pdf"
+  highlights:
+    - "Demonstrates quantitative debugging of training failures instead of only reporting final accuracy."
+    - "Shows that high MNIST accuracy does not guarantee robustness on photographed handwriting."
+    - "Connects preprocessing, representation limits, and model architecture to real error modes."
+
 - id: Eight-Cable-Driven-Parallel-Robot
   title: "Eight-Cable-Driven Parallel Robot"
-  priority: 5
+  priority: 7
   category: "Robotics / Control"
   category_slug: "robotics-control"
   status: "Full-stack robot project"
@@ -95,7 +132,7 @@
 
 - id: VeriRotate
   title: "VeriRotate: BMP Rotation in Verilog"
-  priority: 6
+  priority: 8
   category: "Systems / Hardware"
   category_slug: "systems-hardware"
   status: "Digital systems project"
