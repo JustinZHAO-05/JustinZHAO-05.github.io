@@ -106,33 +106,85 @@ redirect_from:
 <section class="home-section coursework-band" id="training">
   <div class="section-heading">
     <span>Coursework and Training</span>
-    <h2>A math-heavy engineering base extended into neuroscience and modern machine learning.</h2>
+    <h2>Structured training across elite engineering, research practice, neuroscience, and machine learning.</h2>
   </div>
-  <div class="coursework-grid">
-    <article>
-      <h3>Elite Engineering Program</h3>
-      <p>School of Future Technology, Intelligent Machine Platform honors track: selective admission, intensive foundational training in the first two years, then free major selection after the sophomore year.</p>
+
+  <div class="training-layout">
+    <article class="training-feature">
+      <p class="training-kicker">Elite undergraduate college</p>
+      <h3>School of Future Technology, Intelligent Machine Platform</h3>
+      <p>The School of Future Technology is Tianjin University's elite undergraduate college. The Intelligent Machine Platform honors track admits students through Gaokao-based selection and internal university selection.</p>
+      <p>The first two years provide shared training in mathematics, physics, and engineering fundamentals. After sophomore-year major selection, I chose Automation.</p>
+      <div class="training-feature__metrics">
+        <div><strong>8/100</strong><span>Overall rank</span></div>
+        <div><strong>1/8</strong><span>Junior specialization rank</span></div>
+        <div><strong>91.54</strong><span>Weighted score</span></div>
+        <div><strong>3.85/4.0</strong><span>GPA</span></div>
+      </div>
     </article>
-    <article>
-      <h3>Junior Fall</h3>
-      <p>Equation of Mathematics and Physics; Theory of Motor; Numerical Computational Method.</p>
-    </article>
-    <article>
-      <h3>Junior Spring</h3>
-      <p>Brain and Cognition; Intelligent Medical Signal Processing; Optimization-based Machine Learning; Deep Learning; Pattern Recognition and Brain-like Intelligence.</p>
-    </article>
-    <article>
-      <h3>July 2026</h3>
-      <p>Neuromatch Academy Computational Neuroscience online summer school.</p>
-    </article>
-    <article>
-      <h3>Online Certificates</h3>
-      <p>MITx Introduction to Differential Equations; DelftX MECH1x Building Robots: Electrical Drives; DelftX MECH2x Building Robots: Sensors and Data Acquisition.</p>
-    </article>
-    <article>
-      <h3>Core Strengths</h3>
-      <p>Mathematical modeling, programming, reproducible workflows, technical writing, and cross-disciplinary translation between systems engineering and neuroscience.</p>
-    </article>
+
+    <div class="training-timeline" aria-label="Research and training timeline">
+      <article>
+        <time>2026.07</time>
+        <div>
+          <h3>Computational Neuroscience Online Summer School</h3>
+          <p>Neuromatch Academy. Upcoming training in computational neuroscience, neural data analysis, dynamical systems, learning, decision making, and cognition.</p>
+        </div>
+      </article>
+      <article>
+        <time>2025.07-08</time>
+        <div>
+          <h3>In-person Summer Research</h3>
+          <p>NeoScholar and Imperial College London, supervised by Prof. Sen Wang. Developed and evaluated deep reinforcement learning methods for nonholonomic narrow dead-end escape, leading to the CSAI 2025 publication. Evaluation: A.</p>
+        </div>
+      </article>
+      <article>
+        <time>2025.03-06</time>
+        <div>
+          <h3>Robot Perception, Localization and Navigation</h3>
+          <p>NeoScholar and Imperial College London audit covering SLAM, localization, navigation, and implementation-oriented robotics methods.</p>
+        </div>
+      </article>
+      <article>
+        <time>2024.10-2025.01</time>
+        <div>
+          <h3>Robotic Manipulation</h3>
+          <p>NeoScholar and Imperial College London course with high score and CIEI certification; completed kinematics, dynamics, grasping, custom gripper design, and simulation assignments.</p>
+        </div>
+      </article>
+      <article>
+        <time>2024.07</time>
+        <div>
+          <h3>Computing Applications in Science and Engineering</h3>
+          <p>University of Bristol Summer School. Used Java and Go for scientific computing; built satellite-control simulation and Arduino/networked sensing projects.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="coursework-panel">
+    <div class="section-heading section-heading--compact">
+      <span>Selected Coursework</span>
+      <h2>Course clusters supporting the current neuroscience and Neuro-AI direction.</h2>
+    </div>
+    <div class="coursework-grid">
+      <article>
+        <h3>Neuroscience and Machine Learning</h3>
+        <p>Brain and Cognition; Intelligent Medical Signal Processing; Optimization-based Machine Learning; Deep Learning; Pattern Recognition and Brain-like Intelligence.</p>
+      </article>
+      <article>
+        <h3>Mathematics and Computation</h3>
+        <p>Mathematical Analysis; Advanced Linear Algebra; Probability and Mathematical Statistics; Equation of Mathematics and Physics; Numerical Computational Method; Discrete Mathematics.</p>
+      </article>
+      <article>
+        <h3>Signals, Control, and Robotics</h3>
+        <p>Signals and Systems; Automatic Control; Theory of Motor; Robot Kinematics and Dynamics; Computer Organization and Architecture; C++ Programming.</p>
+      </article>
+      <article>
+        <h3>Online Certificates and Study</h3>
+        <p>MITx Introduction to Differential Equations; DelftX MECH1x Building Robots: Electrical Drives; DelftX MECH2x Building Robots: Sensors and Data Acquisition; University of Padova Foundations of Signals and Systems; Stanford Machine Learning, Deep Learning, and Convex Optimization tracks; UW Computational Neuroscience materials.</p>
+      </article>
+    </div>
   </div>
 </section>
 
