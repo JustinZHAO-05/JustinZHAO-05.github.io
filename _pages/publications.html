@@ -2,35 +2,30 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<div class="publications-page">
+  <p class="page-lead">
+    Formal publications and open versions are listed with the most authoritative citation links available.
+  </p>
 
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+  {% assign publications = site.publications | sort: "date" | reverse %}
+  {% for post in publications %}
+    <article class="publication-card">
+      <p class="publication-card__venue">{{ post.venue }}{% if post.pages %} | {{ post.pages }}{% endif %}</p>
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.authors }}</p>
+      <p>{{ post.excerpt }}</p>
+      <div class="publication-card__links">
+        {% if post.doiurl %}<a href="{{ post.doiurl }}">ACM DOI</a>{% endif %}
+        {% if post.dblpurl %}<a href="{{ post.dblpurl }}">DBLP</a>{% endif %}
+        {% if post.arxivurl %}<a href="{{ post.arxivurl }}">arXiv</a>{% endif %}
+        {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}">BibTeX</a>{% endif %}
+      </div>
+      {% if post.citation %}
+        <p class="publication-card__citation">{{ post.citation }}</p>
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+    </article>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+</div>

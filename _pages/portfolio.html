@@ -1,14 +1,39 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Projects"
 permalink: /portfolio/
-author_profile: true
+author_profile: false
 ---
 
-{% include base_path %}
+{% assign projects = site.data.projects | sort: "priority" %}
+{% assign categories = "neuroscience-signals|Neuroscience / Signals,neuro-ai-rl|Neuro-AI / RL,robotics-control|Robotics / Control,systems-hardware|Systems / Hardware" | split: "," %}
 
+<div class="portfolio-page">
+  <p class="page-lead">
+    Projects are ordered to support my current research direction first: computational neuroscience, cognitive neuroscience, Neuro-AI, and then the robotics/control and systems work that built the technical base.
+  </p>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+  <div class="portfolio-filters" aria-label="Project categories">
+    {% for entry in categories %}
+      {% assign parts = entry | split: "|" %}
+      <a href="#{{ parts[0] }}">{{ parts[1] }}</a>
+    {% endfor %}
+  </div>
 
+  {% for entry in categories %}
+    {% assign parts = entry | split: "|" %}
+    <section class="project-category" id="{{ parts[0] }}">
+      <div class="section-heading section-heading--compact">
+        <span>{{ parts[1] }}</span>
+        <h2>{{ parts[1] }}</h2>
+      </div>
+      <div class="project-grid">
+        {% for project in projects %}
+          {% if project.category_slug == parts[0] %}
+            {% include project-card.html project=project %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>

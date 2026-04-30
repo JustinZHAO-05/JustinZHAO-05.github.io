@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Yanzhe Zhao · Neuro-AI & Robotics"
+title                    : "Yanzhe Zhao"
 title_separator          : "-"
 name                     : &name "Yanzhe Zhao"
-description              : &description "Neuro-AI for embodied robots; robot learning & control; neuromorphic perception & cognition"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Computational neuroscience, cognitive neuroscience, and Neuro-AI, grounded in robotics, control, and reproducible scientific computing."
 url                      : "https://JustinZHAO-05.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : ""
@@ -23,10 +23,10 @@ repository               : "JustinZHAO-05/JustinZHAO-05.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile-avatar.jpg"
   name             : "Yanzhe (彦喆) Zhao"
   pronouns         : "he/him"  
-  bio              : "B.Eng., School of Future Technology      (Elite Honors Cohort), Tianjin University. Research: Neuro-AI × Robotics & Control."
+  bio              : "B.Eng. in Automation, School of Future Technology, Tianjin University. Computational neuroscience, cognitive neuroscience, and Neuro-AI."
 
   location         : "Tianjin, China"
   employer         : "Tianjin University"
@@ -65,7 +65,7 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : "justin_zzhao" # Username
+  instagram        : # Username
   lastfm           : # Username
   linkedin         : # Username
   mastodon         : # URL
@@ -80,7 +80,7 @@ author:
   weibo            : # Username
   wikipedia        : # Username
   xing             : # Username
-  youtube          : "JustinZZZ-x1t" # Username
+  youtube          : # Username
   zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
@@ -177,6 +177,7 @@ exclude:
   - assets/js/_main.js
   - assets/js/plugins
   - assets/js/vendor
+  - files/certificate
   - CHANGELOG
   - Capfile
   - config

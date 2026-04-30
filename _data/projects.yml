@@ -1,0 +1,112 @@
+- id: medical-signal-spectral-estimation-eeg
+  title: "EEG Spectral Estimation"
+  priority: 1
+  category: "Neuroscience / Signals"
+  category_slug: "neuroscience-signals"
+  status: "Reproducible lab project"
+  summary: "A reproducible study of classical and AR spectral estimators on synthetic signals and LEMON closed-eye resting-state EEG."
+  role: "Designed the experiments, implemented the analysis pipeline, produced report figures, and wrote the technical report."
+  methods: "FFT, Hamming periodogram, autocorrelation PSD, Welch PSD, Yule-Walker AR spectra, FPE order selection"
+  stack: "Python, NumPy, SciPy, Matplotlib, EEG signal analysis"
+  thumbnail: "/images/projects/spectral-estimation.png"
+  links:
+    github: "https://github.com/JustinZHAO-05/medical-signal-spectral-estimation-eeg"
+    report: "https://github.com/JustinZHAO-05/medical-signal-spectral-estimation-eeg/blob/main/outputs/pdf/Spectral_Estimation_Lab_Report_EN.pdf"
+  highlights:
+    - "Compared estimator bias, variance, leakage, resolution, and pseudo-peak behavior."
+    - "Connected signal-processing choices to interpretable EEG alpha-band analysis."
+    - "Maintained absolute one-sided PSD reporting in dB/Hz for reproducible comparison."
+
+- id: medical-signal-filtering-erp-analysis
+  title: "ERP Filtering and EEG Preprocessing"
+  priority: 2
+  category: "Neuroscience / Signals"
+  category_slug: "neuroscience-signals"
+  status: "Reproducible lab project"
+  summary: "A complete ERP filtering study covering IIR/FIR filter design, EEG preprocessing, waveform interpretation, and bilingual reporting."
+  role: "Implemented filter comparisons, ERP analysis, quantitative summaries, and publication-style reports."
+  methods: "IIR/FIR filter design, zero-phase filtering, delay analysis, baseline drift suppression, ERP waveform comparison"
+  stack: "Python, SciPy, EEG/ERP analysis, technical reporting"
+  thumbnail: "/images/projects/erp-filtering.png"
+  links:
+    github: "https://github.com/JustinZHAO-05/medical-signal-filtering-erp-analysis"
+    report: "https://github.com/JustinZHAO-05/medical-signal-filtering-erp-analysis/blob/main/output_en/report/medical_signal_filter_report_en.pdf"
+  highlights:
+    - "Compared Butterworth, Chebyshev-I/II, and elliptic IIR filters under matched specifications."
+    - "Measured latency distortion from causal filtering and corrected interpretation with zero-phase filtering."
+    - "Used real ERP data to connect filter design to cognitive-neuroscience waveform analysis."
+
+- id: brunel-balance-network
+  title: "Brunel Balance Network"
+  priority: 3
+  category: "Computational Neuroscience"
+  category_slug: "neuroscience-signals"
+  status: "Computational neuroscience microproject"
+  summary: "A Brian2 reproduction and analysis of canonical sparse excitatory/inhibitory spiking network regimes from Brunel 2000."
+  role: "Built the simulation workflow, generated canonical panels and sweeps, documented limitations, and packaged deliverables."
+  methods: "Leaky integrate-and-fire networks, E/I balance, parameter sweeps, population-rate analysis, acceptance checks"
+  stack: "Python, Brian2, NumPy, SciPy, Matplotlib, pytest"
+  thumbnail: "/images/projects/brunel-panels.png"
+  links:
+    github: "https://github.com/JustinZHAO-05/brunel-balance-network"
+    report: "https://github.com/JustinZHAO-05/brunel-balance-network/blob/main/deliverables/project_report.md"
+  highlights:
+    - "Reproduced multiple canonical population activity regimes with explicit configuration control."
+    - "Generated raster, population-rate, phase-diagram, and metric figures for presentation."
+    - "Recorded model-scaling and validation tradeoffs instead of hiding imperfect cases."
+
+- id: cisDRL-RobotNav
+  title: "Nonholonomic Dead-End Escape with Deep RL"
+  priority: 4
+  category: "Neuro-AI / Reinforcement Learning"
+  category_slug: "neuro-ai-rl"
+  status: "CSAI 2025 publication engineering"
+  summary: "A SAC-based navigation and evaluation stack for Ackermann-style robots escaping narrow dead-end environments."
+  role: "Contributed to problem formulation, training/evaluation workflow, environment generation, and experimental engineering."
+  methods: "Soft Actor-Critic, ROS2/Gazebo simulation, nonholonomic constraints, procedural dead-end generation"
+  stack: "Python, ROS2, Gazebo, PyTorch-style DRL workflow"
+  thumbnail: "/images/projects/nonholonomic-deadend-mechanism.png"
+  links:
+    github: "https://github.com/JustinZHAO-05/cisDRL-RobotNav"
+    doi: "https://doi.org/10.1145/3788149.3788204"
+    arxiv: "https://arxiv.org/abs/2511.22338"
+  highlights:
+    - "Connected reinforcement learning with spatial planning under tight nonholonomic constraints."
+    - "Benchmarked learned policies against representative classical planners."
+    - "Became the formal CSAI 2025 conference paper now indexed with ACM DOI."
+
+- id: Eight-Cable-Driven-Parallel-Robot
+  title: "Eight-Cable-Driven Parallel Robot"
+  priority: 5
+  category: "Robotics / Control"
+  category_slug: "robotics-control"
+  status: "Full-stack robot project"
+  summary: "A desktop-scale 6-DOF cable-driven parallel robot built from mechanism design through modeling and control."
+  role: "Led CAD, kinematics/dynamics modeling, motor-driver configuration, PC control, serial communication, and demos."
+  methods: "Inverse kinematics, Jacobian analysis, tension optimization, trajectory planning, embedded motion control"
+  stack: "Python, MATLAB/Simulink, SolidWorks, stepper motors, serial control"
+  thumbnail: "/images/projects/eight-cable-robot.jpg"
+  links:
+    github: "https://github.com/JustinZHAO-05/Eight-Cable-Driven-Parallel-Robot"
+  highlights:
+    - "Shows the engineering foundation behind later embodied-intelligence interests."
+    - "Combined mathematical modeling, mechanical design, electronics, and control software."
+    - "Built reproducible documentation with visuals, equations, and demos."
+
+- id: VeriRotate
+  title: "VeriRotate: BMP Rotation in Verilog"
+  priority: 6
+  category: "Systems / Hardware"
+  category_slug: "systems-hardware"
+  status: "Digital systems project"
+  summary: "A pure-hardware pipeline for rotating 24-bit BMP images 90 degrees counter-clockwise."
+  role: "Designed RTL modules, address mapping, SRAM model, testbench, and Python pre/post-processing scripts."
+  methods: "Streaming RTL pipeline, synchronous SRAM, finite-state machines, image address transformation"
+  stack: "Verilog, ModelSim/Icarus Verilog, Python"
+  thumbnail: "/images/projects/verirotate-mechanism.png"
+  links:
+    github: "https://github.com/JustinZHAO-05/VeriRotate"
+  highlights:
+    - "Demonstrates low-level implementation ability beyond high-level ML scripting."
+    - "Covers full verification flow from input driver to reconstructed BMP output."
+    - "Strengthens the hardware/systems side of an interdisciplinary Neuro-AI profile."

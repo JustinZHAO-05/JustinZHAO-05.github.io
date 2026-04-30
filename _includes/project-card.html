@@ -1,0 +1,35 @@
+{% assign project = include.project %}
+<article class="project-card" data-category="{{ project.category_slug }}">
+  {% if project.thumbnail and project.thumbnail != "" %}
+    <a class="project-card__media" href="{{ project.links.github }}" aria-label="{{ project.title }}">
+      <img src="{{ project.thumbnail | relative_url }}" alt="{{ project.title }} project visual">
+    </a>
+  {% else %}
+    <a class="project-card__media project-card__media--placeholder" href="{{ project.links.github }}" aria-label="{{ project.title }}">
+      <span>{{ project.category }}</span>
+    </a>
+  {% endif %}
+  <div class="project-card__body">
+    <div class="project-card__meta">
+      <span>{{ project.category }}</span>
+      <span>{{ project.status }}</span>
+    </div>
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.summary }}</p>
+    <p class="project-card__role"><strong>Role:</strong> {{ project.role }}</p>
+    <p class="project-card__methods"><strong>Methods:</strong> {{ project.methods }}</p>
+    {% if project.highlights %}
+      <ul>
+        {% for item in project.highlights limit: 3 %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <div class="project-card__links">
+      {% if project.links.github %}<a href="{{ project.links.github }}">GitHub</a>{% endif %}
+      {% if project.links.report %}<a href="{{ project.links.report }}">Report</a>{% endif %}
+      {% if project.links.doi %}<a href="{{ project.links.doi }}">DOI</a>{% endif %}
+      {% if project.links.arxiv %}<a href="{{ project.links.arxiv }}">arXiv</a>{% endif %}
+    </div>
+  </div>
+</article>

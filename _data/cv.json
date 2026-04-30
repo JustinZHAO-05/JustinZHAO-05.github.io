@@ -1,152 +1,111 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Yanzhe (Justin) Zhao",
+    "label": "Computational Neuroscience | Cognitive Neuroscience | Neuro-AI",
+    "email": "justinzhaoyz@outlook.com",
+    "phone": "+86 17765119079",
+    "website": "https://justinzhao-05.github.io/",
+    "summary": "B.Eng. in Automation student at Tianjin University, School of Future Technology, an elite undergraduate college. Trained through the Intelligent Machine Platform honors track, with two years of shared mathematics, physics, and engineering foundations before selecting Automation. Research interests center on computational neuroscience, cognitive neuroscience, and Neuro-AI, grounded in robotics, control, and reproducible scientific computing.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "Tianjin",
+      "countryCode": "China",
       "region": ""
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
         "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "username": "0009-0003-5342-6611",
+        "url": "https://orcid.org/0009-0003-5342-6611"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "JustinZHAO-05",
+        "url": "https://github.com/JustinZHAO-05"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "institution": "Tianjin University, School of Future Technology",
+      "area": "B.Eng. in Automation, Intelligent Machine Platform Honors Track",
+      "studyType": "Undergraduate",
+      "startDate": "2023",
+      "endDate": "Present",
+      "gpa": "3.85/4.0",
+      "courses": [
+        "Elite first-two-year training in mathematics, physics, and engineering fundamentals",
+        "Brain and Cognition",
+        "Intelligent Medical Signal Processing",
+        "Optimization-based Machine Learning",
+        "Deep Learning",
+        "Pattern Recognition and Brain-like Intelligence",
+        "Equation of Mathematics and Physics",
+        "Theory of Motor",
+        "Numerical Computational Method"
+      ]
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
+  "certificates": [
+    {
+      "name": "Introduction to Differential Equations",
+      "date": "2025-12-24",
+      "issuer": "MITx Online"
+    },
+    {
+      "name": "MECH1x: Building Robots: Electrical Drives",
+      "date": "2025-12-16",
+      "issuer": "DelftX / Delft University of Technology"
+    },
+    {
+      "name": "MECH2x: Building Robots: Sensors and Data Acquisition",
+      "date": "2025-12-16",
+      "issuer": "DelftX / Delft University of Technology"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming and Scientific Computing",
+      "keywords": ["Python", "C++", "MATLAB/Simulink", "Verilog", "Java", "NumPy", "SciPy", "Matplotlib", "Brian2"]
+    },
+    {
+      "name": "Research Methods",
+      "keywords": ["Computational neuroscience", "EEG/ERP signal processing", "Deep reinforcement learning", "Reproducible workflows", "Technical writing"]
+    },
+    {
+      "name": "Robotics and Systems",
+      "keywords": ["ROS2", "Gazebo", "Control", "Embedded systems", "SolidWorks", "Linux", "Docker", "Git", "LaTeX"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Chinese",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Proficient"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Research",
+      "keywords": ["Computational neuroscience", "Cognitive neuroscience", "Neuro-AI", "Predictive processing", "World models", "Embodied cognition"]
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning",
+      "publisher": "Proceedings of the 2025 9th International Conference on Computer Science and Artificial Intelligence, ACM",
+      "releaseDate": "2025-12-12",
+      "website": "https://doi.org/10.1145/3788149.3788204",
+      "summary": "Conference paper on deep reinforcement learning for nonholonomic robots escaping narrow dead-end environments."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }

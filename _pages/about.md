@@ -1,163 +1,146 @@
 ---
+layout: home
 permalink: /
 title: "Yanzhe (Justin) Zhao"
-subtitle: "Neuro-AI × Robotics & Control — brain-inspired intelligence for embodied agents"
-description: "B.Eng. (Elite Honors Cohort), School of Future Technology, Tianjin University"
-author_profile: true
+description: "Computational Neuroscience | Cognitive Neuroscience | Neuro-AI"
+author_profile: false
 redirect_from:
   - /about/
   - /about.html
 ---
 
+{% assign projects = site.data.projects | sort: "priority" %}
 
-### Hi — I’m **Yanzhe (Justin) Zhao** (赵彦喆)
+<section class="home-hero" id="top">
+  <div class="home-hero__copy">
+    <nav class="home-hero__quicklinks" aria-label="Profile quick links">
+      <a href="#research">Research</a>
+      <a href="/portfolio/">Projects</a>
+      <a href="/publications/">Publications</a>
+      <a href="/cv/">CV</a>
+    </nav>
+    <h1>Yanzhe (Justin) Zhao</h1>
+    <p class="home-hero__subtitle">Computational Neuroscience | Cognitive Neuroscience | Neuro-AI</p>
+    <p class="home-hero__summary">
+      B.Eng. in Automation student at the School of Future Technology, Tianjin University. The School of Future Technology is Tianjin University's elite undergraduate college, and its Intelligent Machine Platform honors track admits students through Gaokao-based selection and internal university selection.
+    </p>
+    <p class="home-hero__summary">
+      After two years of shared training in mathematics, physics, and engineering fundamentals, I selected Automation as my major. I now study how neural and cognitive mechanisms can inform computational models of learning, prediction, and representation.
+    </p>
+    <p class="home-hero__summary">
+      My academic path started from robotics, control, and reinforcement learning. It is now centered on computational and cognitive neuroscience, with particular interest in world models, predictive processing, neural mechanisms of natural language acquisition, and embodied cognition.
+    </p>
+    <div class="home-hero__actions">
+      <a class="btn btn--primary" href="/cv/">View CV</a>
+      <a class="btn btn--inverse" href="/portfolio/">Explore Projects</a>
+    </div>
+  </div>
+  <aside class="home-hero__profile" aria-label="Academic profile summary">
+    <img src="/images/profile-web.jpg" alt="Yanzhe Zhao formal portrait">
+    <div class="fact-grid">
+      <div><strong>8/100</strong><span>Overall rank</span></div>
+      <div><strong>1/8</strong><span>Junior specialization rank</span></div>
+      <div><strong>91.54</strong><span>Weighted score</span></div>
+      <div><strong>3.85/4.0</strong><span>GPA</span></div>
+    </div>
+  </aside>
+</section>
 
-**B.Eng. (Elite Honors Cohort), School of Future Technology, Tianjin University.**  
-I build **brain-inspired AI** for **embodied robots**, informed by neural and cognitive mechanisms.
+<section class="home-section research-band" id="research">
+  <div class="section-heading">
+    <span>Research Direction</span>
+    <h2>From embodied control to computational models of mind and brain.</h2>
+  </div>
+  <div class="research-path">
+    <article>
+      <h3>Robotics and Control Foundation</h3>
+      <p>Built a systems-level base through automatic control, signal processing, robot kinematics, embedded systems, numerical methods, and full-stack robot projects.</p>
+    </article>
+    <article>
+      <h3>Learning and Decision Making</h3>
+      <p>Used deep reinforcement learning for constrained navigation, connecting policy learning, spatial planning, and action under nonholonomic limits.</p>
+    </article>
+    <article>
+      <h3>Computational and Cognitive Neuroscience</h3>
+      <p>Now focusing on neural computation, predictive processing, world models, cognitive maps, language learning, and Neuro-AI models that can be tested scientifically.</p>
+    </article>
+  </div>
+</section>
 
-**Research interests**
-- **Neural learning rules** — biologically plausible credit assignment beyond backprop (*modulatory signals, local plasticity*).
-- **Data/compute-efficient decision making** — brain-inspired world models & control for **zero/low-shot** transfer.
-- **Embodied intelligence** — morphology + **optimal/safe control**; **DRL** for nonholonomic navigation in **narrow dead-ends**.
+<section class="home-section publication-band" id="publications">
+  <div class="section-heading">
+    <span>Publication</span>
+    <h2>Peer-reviewed work on deep reinforcement learning for constrained spatial navigation.</h2>
+  </div>
+  <article class="publication-feature">
+    <p class="publication-feature__venue">CSAI 2025 | ACM Proceedings | pp. 126-131</p>
+    <h3>Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning</h3>
+    <p>Denghan Xiong, <strong>Yanzhe Zhao</strong>, Yutong Chen, and Zichun Wang. Proceedings of the 2025 9th International Conference on Computer Science and Artificial Intelligence.</p>
+    <div class="publication-feature__links">
+      <a href="https://doi.org/10.1145/3788149.3788204">ACM DOI</a>
+      <a href="https://dblp.org/rec/conf/csai/XiongZCW25">DBLP</a>
+      <a href="https://arxiv.org/abs/2511.22338">arXiv</a>
+      <a href="/files/bib/nonholonomic_deadend_2025.bib">BibTeX</a>
+    </div>
+  </article>
+</section>
 
----
+<section class="home-section" id="projects">
+  <div class="section-heading section-heading--row">
+    <div>
+      <span>Selected Projects</span>
+      <h2>Evidence of neuroscience readiness, AI implementation, and engineering depth.</h2>
+    </div>
+    <a href="/portfolio/">All projects</a>
+  </div>
+  <div class="project-grid project-grid--featured">
+    {% for project in projects limit: 6 %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
 
-## News
-- **2025-12-12 → 14** — *Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning* **accepted** at **CSAI 2025 (poster), Beijing**. [[PDF]](/files/CA-212-Final.pdf) · [[Poster]](#) · [[Code]](https://github.com/JustinZHAO-05/cisDRL-RobotNav)
-- **2025-08** — Completed **in-person Summer Research** with **Prof. Sen Wang (Imperial College London)** at NeoScholar; produced the CSAI paper; **Evaluation Report: A**. [[Evaluation Report]](/files/certificate/学术评估-Yanzhe%20Zhao-KH10128469.pdf)
-- **2025-06-01** — Finished auditing **Robot Perception, Localization & Navigation** (Prof. Sen Wang, NeoScholar). *Audit track; transcript available.* [[Transcript]](/files/certificate/成绩单-人工智能与机械工程：机器人感知系统、自动导航与数字化设计-赵彦喆.pdf)
-- **2025-01-05** — Completed **Robotic Manipulation** (Dr. Adam Spiers, Imperial × NeoScholar); **high score** and certificate (CIEI certified). [[Transcript]](/files/certificate/成绩单-人工智能与机械工程：机器人感知系统、3D建模与数字化设计-赵彦喆.pdf)·[[Certificate]](/files/certificate/证书-人工智能与机械工程：机器人感知系统、3D建模与数字化设计-赵彦喆.pdf)
-- **Completed** — **Foundations of Signals & Systems: Analyse and Process Digital Signals** (University of Padova, FutureLearn). [[Certificate]](/files/certificate/foundations-of-signals-and-systems_certificate_of_achievement_35b1o0w.pdf)
-- **Ongoing** — *From SE(2) Hamilton Fast Marching to Mapless Control: Safe Expert-Guided TD3 for Narrow Dead-End Escape* . [[DOI]](https://doi.org/10.5281/zenodo.17746751 ) · [[Preprint soon]](#)
-- **Learning now** — UW **Computational Neuroscience**; Stanford **Machine Learning** & **Deep Learning** (certificate tracks); **MITx Introduction to Differential Equations** (near completion) · **DelftX Building Robots (4-course program)** on edX (in progress).
+<section class="home-section coursework-band" id="training">
+  <div class="section-heading">
+    <span>Coursework and Training</span>
+    <h2>A math-heavy engineering base extended into neuroscience and modern machine learning.</h2>
+  </div>
+  <div class="coursework-grid">
+    <article>
+      <h3>Elite Engineering Program</h3>
+      <p>School of Future Technology, Intelligent Machine Platform honors track: selective admission, intensive foundational training in the first two years, then free major selection after the sophomore year.</p>
+    </article>
+    <article>
+      <h3>Junior Fall</h3>
+      <p>Equation of Mathematics and Physics; Theory of Motor; Numerical Computational Method.</p>
+    </article>
+    <article>
+      <h3>Junior Spring</h3>
+      <p>Brain and Cognition; Intelligent Medical Signal Processing; Optimization-based Machine Learning; Deep Learning; Pattern Recognition and Brain-like Intelligence.</p>
+    </article>
+    <article>
+      <h3>July 2026</h3>
+      <p>Neuromatch Academy Computational Neuroscience online summer school.</p>
+    </article>
+    <article>
+      <h3>Online Certificates</h3>
+      <p>MITx Introduction to Differential Equations; DelftX MECH1x Building Robots: Electrical Drives; DelftX MECH2x Building Robots: Sensors and Data Acquisition.</p>
+    </article>
+    <article>
+      <h3>Core Strengths</h3>
+      <p>Mathematical modeling, programming, reproducible workflows, technical writing, and cross-disciplinary translation between systems engineering and neuroscience.</p>
+    </article>
+  </div>
+</section>
 
-- **2024-07** — Completed **University of Bristol — Computing Applications in Science & Engineering** Summer School (Java/Go, satellite control simulation, Arduino-based sensor networks; built a mock seismic bureau). [[Certificate]](/files/certificate/Yanzhe%20Zhao%20CASE%202024%20Certificate%20of%20Completion.pdf)
-
-- **Seeking** — **2026 Summer Research** in **Neuro-AI / Robotics & Control**.
-
-
----
-
-## Publications & Preprints
-
-
-
-**Conference**  
-- **Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning** (co-first).  
-  *CSAI 2025*  
-  *Batched Gazebo maps, SAC policy, curriculum/evaluation pipeline.*  
-  [[PDF]](/files/CA-212-Final.pdf) · [[Poster]](#) · [[Code]](https://github.com/JustinZHAO-05/cisDRL-RobotNav) · [[BibTeX]](/files/bib/nonholonomic_deadend_2025.bib)
-
-
-
-**Preprint (in preparation)**
-- **From SE(2) Hamilton Fast Marching to Mapless Control: Safe Expert-Guided TD3 for Narrow Dead-End Escape**. 
-  [[DOI]](https://doi.org/10.5281/zenodo.17746751 ) · [[Preprint soon]](#) · [[Code soon]](#)
-
-
----
-
-## Coursework & Skills
-**Core @ TJU (Control/Robotics)**:  
-**Automatic Control**; **Signals & Systems**; **Electrical Machines**; Analog & Digital Electronics; Mechanical Design; Electronics & Circuits; Mechanics; **Robot Kinematics & Dynamics**.
-
-**Math, Physics & CS Foundations @ TJU**  
-- **Mathematics** — Mathematical Analysis (Calculus + **ODEs** + intro Real Analysis + **Integral Transforms**); Advanced Linear Algebra (**Abstract Algebra** foundations); **Probability & Mathematical Statistics**; Mathematical Physics Equations (**PDEs**).  
-- **Physics** — **Mechanics**; Vibrations & Waves; Thermodynamics / Statistical Physics; **Electromagnetism**; Optics; **Quantum Mechanics**.  
-- **Computing** — **C++ (Programming Principles)**; **Discrete Mathematics** (Data Structures & Algorithms); **Computer Organization & Architecture**; **Numerical Analysis**.
-
-**Certificates / in progress**: 
-- **NeoScholar × Imperial — Summer Research (in-person, 2025)** — Supervisor: **Prof. Sen Wang (Imperial College London)**.  
-  Project: *Nonholonomic Narrow Dead-End Escape with Deep RL* → resulted in **CSAI 2025 publication**; **Evaluation Report: A**. [[Evaluation Report]](/files/certificate/学术评估-Yanzhe%20Zhao-KH10128469.pdf) 
-
-- **University of Padova (FutureLearn) — Foundations of Signals & Systems: Analyse and Process Digital Signals** *(completed)*. [[Certificate]](/files/certificate/foundations-of-signals-and-systems_certificate_of_achievement_35b1o0w.pdf)  
-- **NeoScholar × Imperial — Robotic Manipulation** *(2024-10-11 → 2025-01-05, high score; CIEI certified)*. [[Transcript]](/files/certificate/成绩单-人工智能与机械工程：机器人感知系统、3D建模与数字化设计-赵彦喆.pdf)·[[Certificate]](/files/certificate/证书-人工智能与机械工程：机器人感知系统、3D建模与数字化设计-赵彦喆.pdf) 
-- **NeoScholar × Imperial — Robot Perception, Localization & Navigation** *(2025-03-07 → 2025-06-01, audit)*. [[Transcript]](/files/certificate/成绩单-人工智能与机械工程：机器人感知系统、自动导航与数字化设计-赵彦喆.pdf) 
-- **University of Bristol — Computing Applications in Science & Engineering (Summer School, 2024)** — **Java & Go** for scientific computing, **satellite control simulation**, and a **sensor/Arduino + computer networks** project building a *mock seismic monitoring bureau*.[[Certificate]](/files/certificate/Yanzhe%20Zhao%20CASE%202024%20Certificate%20of%20Completion.pdf) 
-- **Stanford *Machine Learning* & *Deep Learning*** (in progress); 
-- **Stanford *Convex Optimization*** (certificate tracks)(in progress).
-- **MITx — Introduction to Differential Equations** *(near completion)*.  
-- **DelftX — Building Robots: From Mechatronic Components to Robotics (4-course program)** *(in progress)*. 
-
-
-
-
-
-
-
-**Tools**: C++, Python (PyTorch), Java, MATLAB/Simulink, ROS2, ROS1, SolidWorks, Verilog, Docker, Linux.
-
-
-
-
-
-
----
-
-## Selected Projects
-*(Each item lists: Problem → Method → My role → Artifacts)*
-
-**Eight-Cable-Driven Parallel Robot** — full-stack mechanism & control  
-**Problem.** High-DOF cable robot with elasticity/coupling.  
-**Method.** Kinematics/dynamics modeling; motor drivers; embedded control; CAD.  
-**My role.** Built end-to-end system (SolidWorks, MATLAB, MCU), repeated demos.  
-**Artifacts.** [[Code]](https://github.com/JustinZHAO-05/Eight-Cable-Driven-Parallel-Robot) · [[Docs-CN]](#) · [[Video]](#)
-
-**Dead-End DRL Navigation** *(CSAI engineering)*  
-**Problem.** Escape from narrow dead-end layouts with nonholonomic robot.  
-**Method.** SAC; **batched** Gazebo map generator; curriculum + eval.  
-**My role.** Problem formulation; training/eval pipeline; poster.  
-**Artifacts.** [[Code]](https://github.com/JustinZHAO-05/cisDRL-RobotNav) · [[Video]](#)
-
-**Safe Expert-Guided TD3 with HFM Reward Shaping** *(ongoing)*  
-**Problem.** Safe, mapless narrow dead-end escape with SE(2) anisotropy.  
-**Method.** HFM reward shaping; safe action envelopes; TD3; risk-aware PI.  
-**My role.** Algorithm design; experiments; ablations; writing.  
-**Artifacts.** [[Diagram]](#) · [[Preprint soon]](#) · [[Code soon]](#)
-
-**ROSLander Mobile Manipulation Demo**  
-**Problem.** Perception-to-manipulation pipeline on mobile base.  
-**Method.** ROS/Ubuntu; SLAM (Cartographer/ORB-SLAM2), Nav2; YOLO-based perception; 6-DOF arm pick-place.  
-**My role.** Stack integration; demos; docs.  
-**Artifacts.** [[Video]](#) · [[Docs]](#)
-
-**Line-Following Drop-Off Car (embedded & mechatronics)**    
-**Problem.** Autonomous line following with scheduled payload drop at designated points.     
-**Method.** Arduino/C++ firmware; line sensing & motion control; marker-based triggering for drop; custom chassis in **SolidWorks**; simple electromechanical drop mechanism.         
-**My role.** Firmware development (C++/Arduino), mechanical CAD, system integration; built a working prototype and demos.       
-**Artifacts.** [[Video]](#) · [[Photos]](#) · [[Docs-CN]](#) · [[Code soon]](#)
-
-
-**Auto-tracking Phone Gimbal (embedded)**  
-**Problem.** Low-cost visual tracking with MCU + servos.  
-**Method.** Sensor fusion; control on MCU; rapid prototyping.  
-**My role.** Firmware & hardware prototype.  
-**Artifacts.** [[Video]](#) · [[Docs-CN]](#) · [[Code soon]](#)
-
-**Verilog Image Rotation (pure hardware)**  
-**Problem.** 24-bit BMP **90° CCW** rotation on FPGA.  
-**Method.** Streaming pipeline; timing/memory organization.  
-**My role.** RTL design & testbench; documentation.  
-**Artifacts.** [[Code]](https://github.com/JustinZHAO-05/VeriRotate) · [[Docs-CN]](#)
-
-**Robotic Manipulation Assignments (NeoScholar × Imperial)**  
-**Problem.** Manipulator simulation & custom gripper design.  
-**Method.** MATLAB kinematics/dynamics; design analysis.  
-**My role.** Implementation; report; achieved high course scores.  
-**Artifacts.** [[Report]](#) · [[Code]](#)
-
-<!-- > More videos, posters, and short write-ups are in **Portfolio**. -->
-
-
-
----
-
-## Open to Summer Research (2026)
-Seeking positions in **Neuro-AI / brain-inspired representation & control / Machine Learning / embodied intelligence**.  
-Happy to share a **1-page research pitch** and prior artifacts (papers, code, videos). **Email me** to connect.
-
----
-
-### （中文）关于我（简要）
-关注**类脑智能与机器人控制**：一方面研究**大脑学习机制**（是否存在类反向传播的更新、如何进行高效的信号调制与归因），另一方面用这些洞见构建**更省数据与算力、强泛化**的世界模型与决策系统，并将其**具身到机器人**。  
-已在 **CSAI 2025** 入选一篇“**非完整约束窄死胡同逃逸的深度强化学习**”（海报展示）；在做“**基于 SE(2) Hamilton 快速行进法的安全专家引导 TD3**”；完成多项工程项目（绳驱并联、ROSLander 移动操作等），欢迎交流合作。
+<section class="home-section contact-band" id="contact">
+  <div class="section-heading">
+    <span>Contact</span>
+    <h2>Open to research conversations in computational neuroscience, cognitive neuroscience, and Neuro-AI.</h2>
+  </div>
+  <div class="contact-actions">
+    <a href="mailto:justinzhaoyz@outlook.com">justinzhaoyz@outlook.com</a>
+    <a href="https://github.com/JustinZHAO-05">GitHub</a>
+    <a href="https://orcid.org/0009-0003-5342-6611">ORCID</a>
+  </div>
+</section>
