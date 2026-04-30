@@ -34,8 +34,10 @@
       "studyType": "Undergraduate",
       "startDate": "2023",
       "endDate": "Present",
-      "gpa": "3.85/4.0",
+      "gpa": "Overall 3.85/4.0; Junior specialization 3.98/4.0",
       "courses": [
+        "Overall standing: rank 8/100, weighted score 91.54, GPA 3.85/4.0",
+        "Junior specialization standing: rank 1/8, weighted score 96.55, GPA 3.98/4.0",
         "Elite first-two-year training in mathematics, physics, and engineering fundamentals",
         "Brain and Cognition",
         "Intelligent Medical Signal Processing",

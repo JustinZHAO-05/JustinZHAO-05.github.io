@@ -25,8 +25,8 @@ redirect_from:
     <h2>Education</h2>
     <p><strong>Tianjin University</strong>, School of Future Technology. B.Eng. in Automation, 2023-present.</p>
     <ul>
-      <li>Overall rank: <strong>8/100</strong>; junior specialization rank: <strong>1/8</strong>.</li>
-      <li>Weighted score: <strong>91.54</strong>; GPA: <strong>3.85/4.0</strong>.</li>
+      <li><strong>Overall:</strong> rank <strong>8/100</strong>; weighted score <strong>91.54</strong>; GPA <strong>3.85/4.0</strong>.</li>
+      <li><strong>Junior specialization:</strong> rank <strong>1/8</strong>; weighted score <strong>96.55</strong>; GPA <strong>3.98/4.0</strong>.</li>
       <li>The School of Future Technology is Tianjin University's elite undergraduate college; the Intelligent Machine Platform honors track admits students through Gaokao-based selection and internal university selection.</li>
       <li>The first two years provide shared training in mathematics, physics, and engineering fundamentals. After sophomore-year major selection, I chose Automation.</li>
     </ul>

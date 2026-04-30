@@ -158,32 +158,53 @@ body {
   border-radius: 6px;
 }
 
-.fact-grid {
+.standing-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.65rem;
+  gap: 0.75rem;
 }
 
-.fact-grid div {
-  padding: 0.8rem;
+.standing-card {
+  min-width: 0;
+  padding: 0.85rem;
   background: #f5f9fc;
   border: 1px solid var(--profile-border);
   border-radius: 6px;
 }
 
-.fact-grid strong {
-  display: block;
+.standing-card h2,
+.standing-card h4 {
+  margin: 0 0 0.75rem;
   color: var(--profile-ink);
-  font-size: 1.45rem;
-  line-height: 1;
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0;
 }
 
-.fact-grid span {
-  display: block;
-  margin-top: 0.25rem;
+.standing-card dl {
+  display: grid;
+  gap: 0.58rem;
+  margin: 0;
+}
+
+.standing-card dl div {
+  min-width: 0;
+}
+
+.standing-card dt {
   color: var(--profile-muted);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 700;
   line-height: 1.25;
+}
+
+.standing-card dd {
+  margin: 0.12rem 0 0;
+  color: var(--profile-ink);
+  font-size: 1.26rem;
+  font-weight: 850;
+  line-height: 1;
 }
 
 .home-section {
@@ -308,33 +329,12 @@ body {
   letter-spacing: 0;
 }
 
-.training-feature__metrics {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.6rem;
+.training-feature .standing-grid {
   margin-top: 1rem;
 }
 
-.training-feature__metrics div {
-  padding: 0.75rem;
-  border: 1px solid var(--profile-border);
-  border-radius: 6px;
+.training-feature .standing-card {
   background: #f4f9fd;
-}
-
-.training-feature__metrics strong {
-  display: block;
-  color: var(--profile-ink);
-  font-size: 1.15rem;
-  line-height: 1;
-}
-
-.training-feature__metrics span {
-  display: block;
-  margin-top: 0.25rem;
-  color: var(--profile-muted);
-  font-size: 0.73rem;
-  line-height: 1.25;
 }
 
 .training-timeline article {
@@ -713,10 +713,25 @@ body {
     font-size: 3rem;
   }
 
-  .fact-grid,
-  .training-feature__metrics,
   .cv-hero {
     grid-template-columns: 1fr;
+  }
+
+  .standing-grid {
+    gap: 0.55rem;
+  }
+
+  .standing-card {
+    padding: 0.7rem;
+  }
+
+  .standing-card h2,
+  .standing-card h4 {
+    font-size: 0.78rem;
+  }
+
+  .standing-card dd {
+    font-size: 1.05rem;
   }
 
   .training-timeline article {
