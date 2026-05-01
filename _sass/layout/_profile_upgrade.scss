@@ -392,6 +392,43 @@ body {
   margin-top: 0;
 }
 
+.course-grade-board {
+  margin-top: 1rem;
+}
+
+.course-grade-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.course-grade-grid article {
+  display: flex;
+  min-height: 6.2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.95rem;
+  background: var(--profile-surface);
+  border: 1px solid var(--profile-border);
+  border-radius: 8px;
+  box-shadow: 0 10px 28px rgba(16, 32, 51, 0.05);
+}
+
+.course-grade-grid span {
+  color: var(--profile-muted);
+  font-size: 0.82rem;
+  font-weight: 750;
+  line-height: 1.32;
+}
+
+.course-grade-grid strong {
+  margin-top: 0.75rem;
+  color: var(--profile-ink);
+  font-size: 1.85rem;
+  font-weight: 850;
+  line-height: 1;
+}
+
 .research-path article {
   position: relative;
   display: flex;
@@ -657,6 +694,7 @@ body {
   .project-grid,
   .project-grid--featured,
   .training-layout,
+  .course-grade-grid,
   .coursework-grid {
     grid-template-columns: 1fr;
   }

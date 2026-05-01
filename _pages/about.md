@@ -217,8 +217,8 @@ redirect_from:
         <p>Brain and Cognition; Intelligent Medical Signal Processing; Optimization-based Machine Learning; Deep Learning; Pattern Recognition and Brain-like Intelligence.</p>
       </article>
       <article>
-        <h3>Mathematics and Computation</h3>
-        <p>Mathematical Analysis; Advanced Linear Algebra; Probability and Mathematical Statistics; Equation of Mathematics and Physics; Numerical Computational Method; Discrete Mathematics.</p>
+        <h3>Mathematics, Physics, and Computation</h3>
+        <p>Mathematical Analysis; Advanced Linear Algebra; Probability and Mathematical Statistics; Fundamental Physics; Equations of Mathematical Physics; Numerical Computational Method; Discrete Mathematics.</p>
       </article>
       <article>
         <h3>Signals, Control, and Robotics</h3>
@@ -228,6 +228,22 @@ redirect_from:
         <h3>Online Certificates and Study</h3>
         <p>MITx Introduction to Differential Equations; DelftX MECH1x Building Robots: Electrical Drives; DelftX MECH2x Building Robots: Sensors and Data Acquisition; University of Padova Foundations of Signals and Systems; Stanford Machine Learning, Deep Learning, and Convex Optimization tracks; UW Computational Neuroscience materials.</p>
       </article>
+    </div>
+    <div class="course-grade-board" aria-label="Selected course grades">
+      <div class="section-heading section-heading--compact">
+        <span>Selected Course Grades</span>
+        <h2>High marks in mathematical, computational, physics, and control foundations.</h2>
+      </div>
+      <div class="course-grade-grid">
+        <article><span>Numerical Computational Method</span><strong>99</strong></article>
+        <article><span>Fundamental Physics</span><strong>99</strong></article>
+        <article><span>Equations of Mathematical Physics</span><strong>98</strong></article>
+        <article><span>Mathematical Analysis</span><strong>95</strong></article>
+        <article><span>Probability and Mathematical Statistics</span><strong>94</strong></article>
+        <article><span>Advanced Linear Algebra</span><strong>93</strong></article>
+        <article><span>Automatic Control</span><strong>92</strong></article>
+        <article><span>Discrete Mathematics</span><strong>92</strong></article>
+      </div>
     </div>
   </div>
 </section>
