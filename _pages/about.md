@@ -221,8 +221,8 @@ redirect_from:
         <p>Mathematical Analysis; Advanced Linear Algebra; Probability and Mathematical Statistics; Fundamental Physics; Equations of Mathematical Physics; Numerical Computational Method; Discrete Mathematics.</p>
       </article>
       <article>
-        <h3>Signals, Control, and Robotics</h3>
-        <p>Signals and Systems; Automatic Control; Theory of Motor; Robot Kinematics and Dynamics; Computer Organization and Architecture; C++ Programming.</p>
+        <h3>Circuits, Signals, Control, and Robotics</h3>
+        <p>Circuit Principles; Analog Circuits; Digital Circuits; Signals and Systems; Automatic Control; Theory of Motor; Robot Kinematics and Dynamics; Computer Organization and Architecture; C++ Programming.</p>
       </article>
       <article>
         <h3>Online Certificates and Study</h3>
@@ -232,15 +232,18 @@ redirect_from:
     <div class="course-grade-board" aria-label="Selected course grades">
       <div class="section-heading section-heading--compact">
         <span>Selected Course Grades</span>
-        <h2>High marks in mathematical, computational, physics, and control foundations.</h2>
+        <h2>High marks in mathematical, computational, physics, circuits, and control foundations.</h2>
       </div>
       <div class="course-grade-grid">
         <article><span>Numerical Computational Method</span><strong>99</strong></article>
         <article><span>Fundamental Physics</span><strong>99</strong></article>
         <article><span>Equations of Mathematical Physics</span><strong>98</strong></article>
         <article><span>Mathematical Analysis</span><strong>95</strong></article>
+        <article><span>Principles of Programming</span><strong>95</strong></article>
         <article><span>Probability and Mathematical Statistics</span><strong>94</strong></article>
+        <article><span>Circuit Principles</span><strong>94</strong></article>
         <article><span>Advanced Linear Algebra</span><strong>93</strong></article>
+        <article><span>Analog Circuits</span><strong>93</strong></article>
         <article><span>Automatic Control</span><strong>92</strong></article>
         <article><span>Discrete Mathematics</span><strong>92</strong></article>
       </div>

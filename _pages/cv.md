@@ -48,6 +48,7 @@ redirect_from:
       <li><strong>Neuromatch Academy Computational Neuroscience</strong>, online summer school, July 2026.</li>
       <li><strong>Junior spring:</strong> Brain and Cognition; Intelligent Medical Signal Processing; Optimization-based Machine Learning; Deep Learning; Pattern Recognition and Brain-like Intelligence.</li>
       <li><strong>Junior fall:</strong> Equations of Mathematical Physics; Theory of Motor; Numerical Computational Method.</li>
+      <li><strong>Foundational coursework:</strong> Mathematical Analysis; Advanced Linear Algebra; Probability and Mathematical Statistics; Fundamental Physics; Circuit Principles; Analog Circuits; Digital Circuits; Automatic Control; Principles of Programming.</li>
       <li><strong>Online certificates:</strong> MITx Introduction to Differential Equations, issued Dec. 24, 2025; DelftX MECH1x Building Robots: Electrical Drives, issued Dec. 16, 2025; DelftX MECH2x Building Robots: Sensors and Data Acquisition, issued Dec. 16, 2025.</li>
       <li><strong>Research training:</strong> Imperial College London / NeoScholar research with Prof. Sen Wang; University of Bristol CASE summer school; Padova Signals and Systems certificate.</li>
     </ul>
@@ -57,8 +58,8 @@ redirect_from:
     <h2>Selected Course Grades</h2>
     <ul>
       <li>Numerical Computational Method: <strong>99</strong>; Fundamental Physics: <strong>99</strong>; Equations of Mathematical Physics: <strong>98</strong>.</li>
-      <li>Mathematical Analysis: <strong>95</strong>; Probability and Mathematical Statistics: <strong>94</strong>; Advanced Linear Algebra: <strong>93</strong>.</li>
-      <li>Automatic Control: <strong>92</strong>; Discrete Mathematics: <strong>92</strong>.</li>
+      <li>Mathematical Analysis: <strong>95</strong>; Principles of Programming: <strong>95</strong>; Probability and Mathematical Statistics: <strong>94</strong>; Circuit Principles: <strong>94</strong>.</li>
+      <li>Advanced Linear Algebra: <strong>93</strong>; Analog Circuits: <strong>93</strong>; Automatic Control: <strong>92</strong>; Discrete Mathematics: <strong>92</strong>.</li>
     </ul>
   </section>
 
