@@ -45,6 +45,7 @@ redirect_from:
   <section>
     <h2>Selected Training</h2>
     <ul>
+      <li><strong>Summer research visit:</strong> Undergraduate Research Assistant, Shanshan Qin Lab, Shanghai Jiao Tong University, July-September 2026.</li>
       <li><strong>Neuromatch Academy Computational Neuroscience</strong>, online summer school, July 2026.</li>
       <li><strong>Junior spring:</strong> Brain and Cognition; Intelligent Medical Signal Processing; Optimization-based Machine Learning; Deep Learning; Pattern Recognition and Brain-like Intelligence.</li>
       <li><strong>Junior fall:</strong> Equations of Mathematical Physics; Theory of Motor; Numerical Computational Method.</li>

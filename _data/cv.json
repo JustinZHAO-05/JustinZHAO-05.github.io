@@ -26,7 +26,19 @@
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Shanshan Qin Lab, Shanghai Jiao Tong University",
+      "position": "Visiting Undergraduate Research Assistant",
+      "website": "",
+      "startDate": "2026-07",
+      "endDate": "2026-09",
+      "summary": "Upcoming summer research visit as an undergraduate research assistant.",
+      "highlights": [
+        "Summer research visit at Shanghai Jiao Tong University."
+      ]
+    }
+  ],
   "education": [
     {
       "institution": "Tianjin University, School of Future Technology",
@@ -115,6 +127,21 @@
   "presentations": [],
   "teaching": [],
   "portfolio": [
+    {
+      "name": "EEG Time-Frequency Analysis with OpenBMI",
+      "url": "https://github.com/JustinZHAO-05/time-frequency-analysis-eeg-openbmi",
+      "summary": "Reproducible Python workflow for STFT, CWT, wavelet multiresolution, and OpenBMI motor imagery EEG ERD/lateralization analysis."
+    },
+    {
+      "name": "Deep Learning Exp2: MNIST Noise Robustness",
+      "url": "https://github.com/JustinZHAO-05/dl-exp2-english-report",
+      "summary": "PyTorch study of LeNet-style MNIST recognition, feature visualization, self-collected handwriting samples, and Gaussian-noise robustness."
+    },
+    {
+      "name": "Q-RIS-UAV Secure Energy Optimization",
+      "url": "https://github.com/JustinZHAO-05/qris-uav-public-report",
+      "summary": "Public report and simulation for QKD-protected RIS-UAV offshore monitoring with secure energy-efficiency optimization."
+    },
     {
       "name": "SAGIN ML: Satellite Link Optimization",
       "url": "https://github.com/JustinZHAO-05/sagin-ml-satellite-link-optimization",

@@ -1,6 +1,25 @@
+- id: time-frequency-analysis-eeg-openbmi
+  title: "EEG Time-Frequency Analysis with OpenBMI"
+  priority: 1
+  category: "Neuroscience / Signals"
+  category_slug: "neuroscience-signals"
+  status: "Medical signal processing course project"
+  summary: "A reproducible Python workflow for STFT, CWT, wavelet multiresolution, and OpenBMI motor imagery EEG ERD/lateralization analysis."
+  role: "Built and released the public workflow, regenerated English figures and report, and documented data/privacy constraints."
+  methods: "Fourier analysis, STFT parameter sweep, CWT, DWT multiresolution, baseline-corrected mu/beta ERD, C3/C4 lateralization"
+  stack: "Python, NumPy, SciPy, PyWavelets, Matplotlib, LaTeX"
+  thumbnail: "/images/projects/time-frequency-openbmi.png"
+  links:
+    github: "https://github.com/JustinZHAO-05/time-frequency-analysis-eeg-openbmi"
+    report: "https://github.com/JustinZHAO-05/time-frequency-analysis-eeg-openbmi/blob/main/Experiment_3_Time_Frequency_Analysis_Report_EN.pdf"
+  highlights:
+    - "Compared Fourier spectra, STFT, CWT, and wavelet multiresolution on nonstationary synthetic signals."
+    - "Quantified STFT window-length and window-function tradeoffs in time/frequency resolution."
+    - "Computed baseline-corrected mu/beta ERD and C3/C4 lateralization for OpenBMI motor imagery EEG."
+
 - id: medical-signal-spectral-estimation-eeg
   title: "EEG Spectral Estimation"
-  priority: 1
+  priority: 2
   category: "Neuroscience / Signals"
   category_slug: "neuroscience-signals"
   status: "Reproducible lab project"
@@ -19,7 +38,7 @@
 
 - id: medical-signal-filtering-erp-analysis
   title: "ERP Filtering and EEG Preprocessing"
-  priority: 2
+  priority: 3
   category: "Neuroscience / Signals"
   category_slug: "neuroscience-signals"
   status: "Reproducible lab project"
@@ -38,7 +57,7 @@
 
 - id: brunel-balance-network
   title: "Brunel Balance Network"
-  priority: 3
+  priority: 4
   category: "Computational Neuroscience"
   category_slug: "neuroscience-signals"
   status: "Computational neuroscience microproject"
@@ -57,7 +76,7 @@
 
 - id: cisDRL-RobotNav
   title: "Nonholonomic Dead-End Escape with Deep RL"
-  priority: 4
+  priority: 5
   category: "Neuro-AI / Reinforcement Learning"
   category_slug: "neuro-ai-rl"
   status: "CSAI 2025 publication engineering"
@@ -75,9 +94,28 @@
     - "Benchmarked learned policies against representative classical planners."
     - "Became the formal CSAI 2025 conference paper now indexed with ACM DOI."
 
+- id: dl-exp2-english-report
+  title: "Deep Learning Exp2: MNIST Noise Robustness"
+  priority: 6
+  category: "Applied ML / Systems"
+  category_slug: "applied-ml-systems"
+  status: "Deep learning coursework project"
+  summary: "A reproducible PyTorch study of LeNet-style MNIST recognition, feature visualization, self-collected handwriting samples, and Gaussian-noise robustness."
+  role: "Built the experiment package, trained and evaluated baseline/robust CNN variants, generated figures/tables, and wrote the English report."
+  methods: "LeNet-style CNN, RobustNoiseCNN, feature-map and kernel visualization, noise augmentation, ablation, confusion matrices"
+  stack: "Python, PyTorch, NumPy, Matplotlib, LaTeX"
+  thumbnail: "/images/projects/dl-exp2-noise-robustness.png"
+  links:
+    github: "https://github.com/JustinZHAO-05/dl-exp2-english-report"
+    report: "https://github.com/JustinZHAO-05/dl-exp2-english-report/blob/main/output/report_en/Zhao_Yanzhe_DL_Exp2_English.pdf"
+  highlights:
+    - "Compared clean/noisy MNIST accuracy, robustness curves, confusion matrices, and seed-stability checks."
+    - "Evaluated 192 self-collected handwritten digit samples to expose a real domain gap."
+    - "Used ablation and failure-case analysis to diagnose where noise-robust training helps."
+
 - id: sagin-ml-satellite-link-optimization
   title: "SAGIN ML: Satellite Link Optimization"
-  priority: 5
+  priority: 7
   category: "Applied ML / Systems"
   category_slug: "applied-ml-systems"
   status: "Reviewed ML course project"
@@ -93,9 +131,28 @@
     - "Shows rigorous model comparison with compression quality, calibration, stress tests, and switching cost."
     - "Documents a negative finding: adaptive PCA can blur small ship targets despite improving compression."
 
+- id: qris-uav-public-report
+  title: "Q-RIS-UAV Secure Energy Optimization"
+  priority: 8
+  category: "Applied ML / Systems"
+  category_slug: "applied-ml-systems"
+  status: "Secure communication optimization project"
+  summary: "A public academic report and reproducible simulation for QKD-protected RIS-UAV offshore monitoring with secure energy-efficiency optimization."
+  role: "Built the sanitized public release, scenario simulation, optimization pipeline, generated slide deck, and verification checks."
+  methods: "Dinkelbach transformation, alternating optimization, CVXPY resource allocation, RIS phase quantization, SCA trajectory update, QKD key constraints"
+  stack: "Python, CVXPY, Matplotlib, python-pptx, MATLAB RIS simulation, open geospatial data"
+  thumbnail: "/images/projects/qris-uav-system.png"
+  links:
+    github: "https://github.com/JustinZHAO-05/qris-uav-public-report"
+    report: "https://github.com/JustinZHAO-05/qris-uav-public-report/blob/main/report/Q-RIS-UAV-public-academic-report.pptx"
+  highlights:
+    - "Formulated weighted secure data energy efficiency under UAV, RIS, QKD, power, bandwidth, and coverage constraints."
+    - "Integrated typhoon context, offshore wind infrastructure, coastline data, and magnetic anomaly priority modeling."
+    - "Produced reproducible simulations, RIS evidence, robustness/ablation/Pareto analysis, and a verified 77-slide public deck."
+
 - id: mnist-mlp-experiment-diagnosis
   title: "MNIST MLP Experiment Diagnosis"
-  priority: 6
+  priority: 9
   category: "Applied ML / Systems"
   category_slug: "applied-ml-systems"
   status: "Deep learning experiment and diagnosis"
@@ -114,7 +171,7 @@
 
 - id: Eight-Cable-Driven-Parallel-Robot
   title: "Eight-Cable-Driven Parallel Robot"
-  priority: 7
+  priority: 10
   category: "Robotics / Control"
   category_slug: "robotics-control"
   status: "Full-stack robot project"
@@ -132,7 +189,7 @@
 
 - id: VeriRotate
   title: "VeriRotate: BMP Rotation in Verilog"
-  priority: 8
+  priority: 11
   category: "Systems / Hardware"
   category_slug: "systems-hardware"
   status: "Digital systems project"

@@ -119,7 +119,7 @@ redirect_from:
     <a href="/portfolio/">All projects</a>
   </div>
   <div class="project-grid project-grid--featured">
-    {% for project in projects limit: 8 %}
+    {% for project in projects limit: 9 %}
       {% include project-card.html project=project %}
     {% endfor %}
   </div>
@@ -168,6 +168,13 @@ redirect_from:
     </article>
 
     <div class="training-timeline" aria-label="Research and training timeline">
+      <article>
+        <time>2026.07-09</time>
+        <div>
+          <h3>Summer Research Visit</h3>
+          <p>Shanshan Qin Lab, Shanghai Jiao Tong University. Upcoming visit as an undergraduate research assistant for summer research.</p>
+        </div>
+      </article>
       <article>
         <time>2026.07</time>
         <div>
