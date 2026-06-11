@@ -67,23 +67,7 @@
       ]
     }
   ],
-  "certificates": [
-    {
-      "name": "Introduction to Differential Equations",
-      "date": "2025-12-24",
-      "issuer": "MITx Online"
-    },
-    {
-      "name": "MECH1x: Building Robots: Electrical Drives",
-      "date": "2025-12-16",
-      "issuer": "DelftX / Delft University of Technology"
-    },
-    {
-      "name": "MECH2x: Building Robots: Sensors and Data Acquisition",
-      "date": "2025-12-16",
-      "issuer": "DelftX / Delft University of Technology"
-    }
-  ],
+  "certificates": [],
   "skills": [
     {
       "name": "Programming and Scientific Computing",
@@ -127,6 +111,11 @@
   "presentations": [],
   "teaching": [],
   "portfolio": [
+    {
+      "name": "EEG Feature Enhancement and Single-Trial Classification",
+      "url": "https://github.com/JustinZHAO-05/medical-signal-experiment4",
+      "summary": "Reproducible Python implementation of ERP ICA/PCA/LDA target detection and SSVEP TRCA single-trial EEG recognition."
+    },
     {
       "name": "EEG Time-Frequency Analysis with OpenBMI",
       "url": "https://github.com/JustinZHAO-05/time-frequency-analysis-eeg-openbmi",

@@ -50,8 +50,7 @@ redirect_from:
       <li><strong>Junior spring:</strong> Brain and Cognition; Intelligent Medical Signal Processing; Optimization-based Machine Learning; Deep Learning; Pattern Recognition and Brain-like Intelligence.</li>
       <li><strong>Junior fall:</strong> Equations of Mathematical Physics; Theory of Motor; Numerical Computational Method.</li>
       <li><strong>Foundational coursework:</strong> Mathematical Analysis; Advanced Linear Algebra; Probability and Mathematical Statistics; Fundamental Physics; Circuit Principles; Analog Circuits; Digital Circuits; Automatic Control; Principles of Programming.</li>
-      <li><strong>Online certificates:</strong> MITx Introduction to Differential Equations, issued Dec. 24, 2025; DelftX MECH1x Building Robots: Electrical Drives, issued Dec. 16, 2025; DelftX MECH2x Building Robots: Sensors and Data Acquisition, issued Dec. 16, 2025.</li>
-      <li><strong>Research training:</strong> Imperial College London / NeoScholar research with Prof. Sen Wang; University of Bristol CASE summer school; Padova Signals and Systems certificate.</li>
+      <li><strong>Research training:</strong> Imperial College London / NeoScholar research with Prof. Sen Wang; University of Bristol CASE summer school.</li>
     </ul>
   </section>
 

@@ -119,7 +119,7 @@ redirect_from:
     <a href="/portfolio/">All projects</a>
   </div>
   <div class="project-grid project-grid--featured">
-    {% for project in projects limit: 9 %}
+    {% for project in projects limit: 10 %}
       {% include project-card.html project=project %}
     {% endfor %}
   </div>

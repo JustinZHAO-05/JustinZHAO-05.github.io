@@ -17,9 +17,28 @@
     - "Quantified STFT window-length and window-function tradeoffs in time/frequency resolution."
     - "Computed baseline-corrected mu/beta ERD and C3/C4 lateralization for OpenBMI motor imagery EEG."
 
+- id: medical-signal-experiment4
+  title: "EEG Feature Enhancement and Single-Trial Classification"
+  priority: 2
+  category: "Neuroscience / Signals"
+  category_slug: "neuroscience-signals"
+  status: "Medical signal processing course project"
+  summary: "A reproducible Python implementation of ERP ICA/PCA/LDA target detection and SSVEP TRCA single-trial EEG recognition."
+  role: "Implemented the public analysis workflow, generated English figures/tables/report, and added regression tests for split logic, PCA/LDA isolation, and TRCA behavior."
+  methods: "ERP preprocessing, ICA artifact inspection, PCA dimension reduction, LDA classification, SSVEP TRCA, leave-one-block-out validation"
+  stack: "Python, NumPy, SciPy, scikit-learn, MNE-style EEG processing, pytest, LaTeX"
+  thumbnail: "/images/projects/medical-signal-experiment4.png"
+  links:
+    github: "https://github.com/JustinZHAO-05/medical-signal-experiment4"
+    report: "https://github.com/JustinZHAO-05/medical-signal-experiment4/blob/main/outputs/report/experiment4_report_en.pdf"
+  highlights:
+    - "Compared ERP single-trial target detection under ICA/PCA/LDA conditions with strict train/test isolation."
+    - "Evaluated SSVEP TRCA using leave-one-block-out validation and reported the scope of within-subject generalization."
+    - "Included tests for data shape, split logic, PCA/LDA isolation, and TRCA behavior to keep the workflow reproducible."
+
 - id: medical-signal-spectral-estimation-eeg
   title: "EEG Spectral Estimation"
-  priority: 2
+  priority: 3
   category: "Neuroscience / Signals"
   category_slug: "neuroscience-signals"
   status: "Reproducible lab project"
@@ -38,7 +57,7 @@
 
 - id: medical-signal-filtering-erp-analysis
   title: "ERP Filtering and EEG Preprocessing"
-  priority: 3
+  priority: 4
   category: "Neuroscience / Signals"
   category_slug: "neuroscience-signals"
   status: "Reproducible lab project"
@@ -57,7 +76,7 @@
 
 - id: brunel-balance-network
   title: "Brunel Balance Network"
-  priority: 4
+  priority: 5
   category: "Computational Neuroscience"
   category_slug: "neuroscience-signals"
   status: "Computational neuroscience microproject"
@@ -76,7 +95,7 @@
 
 - id: cisDRL-RobotNav
   title: "Nonholonomic Dead-End Escape with Deep RL"
-  priority: 5
+  priority: 6
   category: "Neuro-AI / Reinforcement Learning"
   category_slug: "neuro-ai-rl"
   status: "CSAI 2025 publication engineering"
@@ -96,7 +115,7 @@
 
 - id: dl-exp2-english-report
   title: "Deep Learning Exp2: MNIST Noise Robustness"
-  priority: 6
+  priority: 7
   category: "Applied ML / Systems"
   category_slug: "applied-ml-systems"
   status: "Deep learning coursework project"
@@ -115,7 +134,7 @@
 
 - id: sagin-ml-satellite-link-optimization
   title: "SAGIN ML: Satellite Link Optimization"
-  priority: 7
+  priority: 8
   category: "Applied ML / Systems"
   category_slug: "applied-ml-systems"
   status: "Reviewed ML course project"
@@ -133,7 +152,7 @@
 
 - id: qris-uav-public-report
   title: "Q-RIS-UAV Secure Energy Optimization"
-  priority: 8
+  priority: 9
   category: "Applied ML / Systems"
   category_slug: "applied-ml-systems"
   status: "Secure communication optimization project"
@@ -152,7 +171,7 @@
 
 - id: mnist-mlp-experiment-diagnosis
   title: "MNIST MLP Experiment Diagnosis"
-  priority: 9
+  priority: 10
   category: "Applied ML / Systems"
   category_slug: "applied-ml-systems"
   status: "Deep learning experiment and diagnosis"
@@ -171,7 +190,7 @@
 
 - id: Eight-Cable-Driven-Parallel-Robot
   title: "Eight-Cable-Driven Parallel Robot"
-  priority: 10
+  priority: 11
   category: "Robotics / Control"
   category_slug: "robotics-control"
   status: "Full-stack robot project"
@@ -189,7 +208,7 @@
 
 - id: VeriRotate
   title: "VeriRotate: BMP Rotation in Verilog"
-  priority: 11
+  priority: 12
   category: "Systems / Hardware"
   category_slug: "systems-hardware"
   status: "Digital systems project"
