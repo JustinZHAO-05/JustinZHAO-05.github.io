@@ -173,6 +173,8 @@
   .cv-index { position: static; flex-direction: row; flex-wrap: wrap; gap: 10px 22px; padding-bottom: 20px; border-bottom: 1px solid var(--rule); }
 }
 @media (max-width: 640px) {
+  .no-js .academic-site { padding-top: 0; }
+  .no-js .academic-header { position: static; }
   .academic-site { padding-top: 60px; font-size: 16px; }
   .site-wrap { width: calc(100% - 36px); }
   .header-inner { min-height: 60px; flex-wrap: wrap; gap: 0; }
