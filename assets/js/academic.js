@@ -1,5 +1,22 @@
 (() => {
   'use strict';
+  const essay = document.querySelector('.essay-content');
+  if (essay && window.renderMathInElement) {
+    window.renderMathInElement(essay, {
+      delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}],
+      throwOnError: false,
+      trust: false,
+    });
+  }
+  const essayToc = document.querySelector('.essay-toc');
+  if (essayToc) {
+    const mobileEssay = window.matchMedia('(max-width: 900px)');
+    essayToc.open = !mobileEssay.matches;
+    mobileEssay.addEventListener('change', event => { essayToc.open = !event.matches; });
+    essayToc.addEventListener('click', event => {
+      if (mobileEssay.matches && event.target.closest('a')) essayToc.open = false;
+    });
+  }
   const toggle = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('#main-navigation');
   const closeMenu = (restoreFocus = false) => {

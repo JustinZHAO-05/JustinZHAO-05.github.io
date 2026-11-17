@@ -1,0 +1,15 @@
+---
+layout: academic
+title: Intellectual Journey
+description: From engineering and robotics to computational and cognitive neuroscience. A bilingual essay on language, evolution, neural dynamics, and conscious experience.
+permalink: /intellectual-journey/
+author_profile: false
+math: true
+---
+<div class="site-wrap essay-page">
+  <header class="essay-heading"><p class="essay-kicker">Yanzhe Zhao &middot; Personal Research Reflections</p><h1>Intellectual Journey</h1><nav class="text-links" aria-label="Essay languages"><a href="#english" lang="en">English</a><a href="#chinese" lang="zh-CN">中文</a><a href="{{ '/#journey' | relative_url }}">Academic timeline <i class="fas fa-arrow-right" aria-hidden="true"></i></a></nav></header>
+  <div class="essay-layout">
+    <nav class="essay-index" aria-label="Essay chapters"><details class="essay-toc" open><summary>Contents</summary><div class="essay-toc__links"><a href="#english" class="toc-language">English</a>{% for chapter in site.data.essay.en.chapters %}<a href="#{{ chapter.id }}">{{ chapter.title }}</a>{% endfor %}<a href="#chinese" class="toc-language" lang="zh-CN">中文</a>{% for chapter in site.data.essay.zh.chapters %}<a href="#{{ chapter.id }}" lang="zh-CN">{{ chapter.title }}</a>{% endfor %}</div></details></nav>
+    <div class="essay-content"><article class="essay-body" lang="en">{% capture english %}{% include journey-essay-en.md %}{% endcapture %}{{ english | markdownify }}</article><div class="essay-language-divider"><a href="#english">English <i class="fas fa-arrow-up" aria-hidden="true"></i></a><span lang="zh-CN">中文</span></div><article class="essay-body essay-body--chinese" lang="zh-CN">{% capture chinese %}{% include journey-essay-zh.md %}{% endcapture %}{{ chinese | markdownify }}</article><nav class="essay-end text-links" aria-label="Related academic pages"><a href="{{ '/#research' | relative_url }}">Research</a><a href="{{ '/publications/' | relative_url }}">Publications</a><a href="{{ '/cv/' | relative_url }}">Academic CV</a><a href="mailto:{{ site.data.profile.email }}">Email</a></nav></div>
+  </div>
+</div>

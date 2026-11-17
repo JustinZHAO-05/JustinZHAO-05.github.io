@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+from urllib.parse import urlsplit
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -45,14 +46,20 @@ def publication_records():
     return records
 
 
-def render_cv(p, experience, projects, courses, pubs, full):
+def render_cv(p, experience, projects, courses, pubs, studies, reading, full):
     e = p["education"]
     lab = next(x for x in experience if x["id"] == "qin-lab")
     nma = next(x for x in experience if x["id"] == "neuromatch")
     imperial = next(x for x in experience if x["id"] == "imperial-research")
-    out = (r"\cvheader{" + tex(p["name"]) + "}{" + tex(p["fields"]) + "}{" + tex(p["secondary_field"]) + "}{" + tex(p["email"]) + "}\n")
-    out += r"\contactline{" + " / ".join(link(p[k], label) for k, label in [("website", "Website"), ("github", "GitHub"), ("orcid", "ORCID")]) + "}\n"
-    out += section("Research Interests") + tex(p["interests"]) + "\\par\n"
+    contacts = []
+    for key, label in [("website", "Website"), ("github", "GitHub"), ("orcid", "ORCID")]:
+        url = urlsplit(p[key])
+        display = url.path.strip("/") if key == "orcid" else url.netloc + url.path.rstrip("/")
+        contacts.append(tex(label) + ": " + link(p[key], display))
+    out = (r"\cvheader{" + tex(p["name"]) + "}{" + tex(p["fields"]) + "}{" + tex(p["secondary_field"]) + "}{" + tex(p["email"]) + "}{" + r"\\ ".join(contacts) + "}\n")
+    out += section("Research Interests") + tex(p["interests"] + " " + p["trajectory"]) + "\\par\n"
+    journey_url = p["website"].rstrip("/") + p["journey"]
+    out += r"\contactline{" + link(journey_url, "Intellectual journey and research philosophy: " + urlsplit(p["website"]).netloc + p["journey"]) + "}\n"
     out += section("Education") + entry(e["institution"], e["dates"], e["degree"] + ", " + e["school"])
     out += tex(e["track"] + ". " + e["short_description"]) + "\\par\n"
     out += "\\begin{tabularx}{\\linewidth}{@{}lXX@{}}\n"
@@ -94,19 +101,41 @@ def render_cv(p, experience, projects, courses, pubs, full):
         for project in projects:
             if project.get("main_cv"):
                 out += entry(project["title"], text=project["role"] + " " + project["summary"]) + link(project["links"]["github"], "Code and documentation") + "\\par\n"
-    out += section("Research Training") + entry("Computational Neuroscience", "Jul 2026", "Neuromatch Academy", nma["summary"])
-    out += link(nma["certificate"], "Certificate") + "\\par\n"
     if full:
-        out += section("Earlier Academic Training")
+        out += section("Research Training and Summer Schools")
+        out += entry("Computational Neuroscience", "Jul 2026", "Neuromatch Academy", nma["summary"])
+        out += link(nma["certificate"], "Certificate") + "\\par\n"
         for exp in experience:
             if exp["kind"] == "earlier":
                 out += entry(exp["title"], exp["dates"], exp["institution"], exp["summary"])
+        out += section("Additional Certified Coursework")
+        for course in studies:
+            description = course["summary"] + (" Overall score: " + course["grade"] + "." if course.get("grade") else "")
+            out += entry(course["title"], course["date"], course["institution"], description)
+            out += link(course["certificate"], course["status"]) + "\\par\n"
+    else:
+        out += section("Research Training and Additional Coursework")
+        out += r"\skillrow{Neuromatch Academy, Jul 2026}{Computational Neuroscience interactive track and project (128 hours). " + link(nma["certificate"], "Certificate") + ".}\n"
+        bristol = next(x for x in experience if x["id"] == "bristol")
+        manipulation = next(x for x in experience if x["id"] == "manipulation-training")
+        out += r"\skillrow{University of Bristol, " + tex(bristol["dates"]) + "}{CASE Summer School: scientific computing, satellite-control simulation, and Arduino/networked sensing projects.}\n"
+        out += r"\skillrow{NeoScholar, 2024-2025}{Robotic Manipulation (" + tex(manipulation["grade"]) + "); Robot Perception, Localization and Navigation (audit). Taught by Adam Spiers and Sen Wang, Imperial College London.}\n"
+        certificates = [tex(x["short_institution"]) + ": " + link(x["certificate"], "Foundations of Signals and Systems" if x["id"] == "padova-signals" else x["title"]) + (" (" + tex(x["grade"]) + ")" if x.get("grade") else "") for x in studies if x["main_cv"]]
+        out += r"\skillrow{Certified coursework, 2025}{" + "; ".join(certificates) + ".}\n"
     out += section("Selected Coursework")
     for group in dict.fromkeys(c["cluster"] for c in courses):
         if group == "Additional Engineering Coursework" and not full:
             continue
-        values = [tex(c["title"]) + (r" \textbf{" + str(c["grade"]) + "}" if c.get("grade") is not None else "") for c in courses if c["cluster"] == group]
+        values = [tex(c["title"]) + (r" \textbf{" + str(c["grade"]) + "}" if c.get("grade") is not None and (full or c.get("main_cv_grade", True)) else "") for c in courses if c["cluster"] == group]
         out += r"\coursegroup{" + tex(group) + "}{" + "; ".join(values) + ".}\n"
+    out += section("Independent Reading")
+    if full:
+        for book in reading:
+            out += link(book["url"], book["title"]) + ". " + tex(book["authors"] + ". " + book["status"] + ". " + book["theme"]) + "\\par\n"
+    else:
+        for status, label in [("Studied", "Studied"), ("Currently reading", "Currently reading")]:
+            books = [tex(b["cv_authors"]) + ", " + r"\textit{" + tex(b["short_title"]) + "}" for b in reading if b["status"] == status]
+            out += r"\skillrow{" + label + "}{" + "; ".join(books) + ".}\n"
     out += section("Skills and Languages")
     for skill in p["skills"]:
         out += r"\skillrow{" + tex(skill["title"]) + "}{" + tex(skill["text"]) + "}\n"
@@ -117,12 +146,14 @@ def build(cv_dir):
     p = read(ROOT / "_data/profile.yml")
     experience = read(ROOT / "_data/experience.yml")
     courses = read(ROOT / "_data/courses.yml")
+    studies = read(ROOT / "_data/independent_study.yml")
+    reading = read(ROOT / "_data/reading.yml")
     projects = sorted(read(ROOT / "_data/projects.yml"), key=lambda x: x["priority"])
     pubs = publication_records()
     generated = cv_dir / "generated"
     generated.mkdir(parents=True, exist_ok=True)
     for variant in ("main", "full"):
-        (generated / f"{variant}.tex").write_text(render_cv(p, experience, projects, courses, pubs, variant == "full"), encoding="utf-8")
+        (generated / f"{variant}.tex").write_text(render_cv(p, experience, projects, courses, pubs, studies, reading, variant == "full"), encoding="utf-8")
     detail_dir = ROOT / "_pages/research"
     detail_dir.mkdir(parents=True, exist_ok=True)
     for project in projects:
@@ -140,6 +171,11 @@ def build(cv_dir):
         "skills": [{"name": x["title"], "keywords": [x["text"]]} for x in p["skills"]],
         "languages": [{"language": "Chinese", "fluency": "Native"}, {"language": "English", "fluency": p["ielts"]}],
         "interests": [{"name": "Research", "keywords": [p["interests"]]}], "references": [], "presentations": [], "teaching": []}
+    cv["basics"]["summary"] += " " + p["trajectory"]
+    cv["basics"]["profiles"].append({"network": "Intellectual Journey", "url": p["website"].rstrip("/") + p["journey"]})
+    cv["certificates"].extend({"name": x["title"], "date": x["date"], "issuer": x["institution"], "url": x["certificate"]} for x in studies)
+    cv["training"] = [x for x in experience if x["kind"] != "research"]
+    cv["reading"] = reading
     (ROOT / "_data/cv.json").write_text(json.dumps(cv, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Generated two TeX bodies, JSON CV, and {len(projects)} project routes.")
 

@@ -12,7 +12,8 @@
   grade: 92
 - title: Intelligent Medical Signal Processing
   cluster: Neuroscience and Machine Learning
-  grade:
+  grade: 89
+  main_cv_grade: false
 - title: Numerical Computational Method
   cluster: Mathematics and Physics
   grade: 99
@@ -34,6 +35,12 @@
 - title: Discrete Mathematics
   cluster: Mathematics and Physics
   grade: 92
+- title: Theory of Motor
+  cluster: Computing, Circuits and Control
+  grade: 98
+- title: Digital Circuits
+  cluster: Computing, Circuits and Control
+  grade: 96
 - title: Principles of Programming
   cluster: Computing, Circuits and Control
   grade: 95
@@ -46,13 +53,7 @@
 - title: Automatic Control
   cluster: Computing, Circuits and Control
   grade: 92
-- title: Digital Circuits
-  cluster: Computing, Circuits and Control
-  grade:
 - title: Signals and Systems
-  cluster: Additional Engineering Coursework
-  grade:
-- title: Theory of Motor
   cluster: Additional Engineering Coursework
   grade:
 - title: Robot Kinematics and Dynamics

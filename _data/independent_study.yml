@@ -1,0 +1,42 @@
+- id: mit-differential-equations
+  title: Introduction to Differential Equations
+  institution: MITx Online, Massachusetts Institute of Technology
+  short_institution: MITx
+  date: "2025-12-24"
+  year: 2025
+  status: Completed with certificate
+  certificate: https://mitxonline.mit.edu/certificate/11f312e3-f974-4ed1-a5d3-01dfc8e545c7/
+  main_cv: true
+  summary: "Independent mathematical training in differential equations."
+- id: padova-signals
+  title: "Foundations of Signals and Systems: Analyse and Process Digital Signals"
+  institution: University of Padova, FutureLearn
+  short_institution: University of Padova
+  date: "2025-10-24"
+  year: 2025
+  status: Completed with certificate
+  grade: "93%"
+  hours: 30
+  certificate: https://www.futurelearn.com/certificates/35b1o0w
+  main_cv: true
+  summary: "Five weeks of signal analysis, Fourier and Laplace transforms, convolution, sampling and MATLAB-based digital signal processing."
+- id: delft-drives
+  title: "MECH1x: Building Robots: Electrical Drives"
+  institution: Delft University of Technology, DelftX / edX
+  short_institution: DelftX
+  date: "2025-12-16"
+  year: 2025
+  status: Verified certificate
+  certificate: https://courses.edx.org/certificates/28ea46bd429c46be9e6273faa37dfbb8
+  main_cv: false
+  summary: "Electrical drives for robotic systems."
+- id: delft-sensors
+  title: "MECH2x: Building Robots: Sensors and Data Acquisition"
+  institution: Delft University of Technology, DelftX / edX
+  short_institution: DelftX
+  date: "2025-12-16"
+  year: 2025
+  status: Verified certificate
+  certificate: https://courses.edx.org/certificates/cfdcdfdf4f4545ebb0f2cd59b2ce180f
+  main_cv: false
+  summary: "Sensors and data acquisition for robotics."

@@ -1,0 +1,9 @@
+<ol class="journey-timeline">
+  {% for node in site.data.journey %}
+  <li id="journey-{{ node.id }}" class="journey-node journey-node--{{ node.phase }}{% if node.image %} journey-node--illustrated{% endif %}">
+    <div class="journey-date"><span>{{ node.dates }}</span><small>{{ node.stage }}</small></div>
+    <div class="journey-copy"><span class="journey-marker" aria-hidden="true"><i class="fas {{ node.icon }}"></i></span><h3>{{ node.title }}</h3><p>{{ node.summary }}</p><p class="journey-question">{{ node.reflection }}</p><div class="text-links">{% for link in node.links %}<a href="{% if link.url contains 'https://' %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}">{{ link.label }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>{% endfor %}</div></div>
+    {% if node.image %}<figure class="journey-image"><a href="{% if node.image_url contains 'https://' %}{{ node.image_url }}{% else %}{{ node.image_url | relative_url }}{% endif %}"><img src="{{ node.image | relative_url }}" alt="{{ node.image_alt }}" loading="lazy" width="200" height="160"></a><figcaption>{{ node.image_caption }}</figcaption></figure>{% endif %}
+  </li>
+  {% endfor %}
+</ol>

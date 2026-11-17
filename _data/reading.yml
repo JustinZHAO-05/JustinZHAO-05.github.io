@@ -1,0 +1,34 @@
+- id: bermudez
+  title: "Cognitive Science: An Introduction to the Science of the Mind"
+  short_title: Cognitive Science
+  authors: José Luis Bermúdez
+  cv_authors: Bermúdez
+  status: Studied
+  theme: "An interdisciplinary foundation in the scientific study of mind."
+  url: https://www.cambridge.org/highereducation/books/cognitive-science/618DFB00F0A2A11AB4A2C2F59E2C79AD
+  cover: /images/reading/cognitive-science.jpg
+- id: dayan-abbott
+  title: "Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems"
+  short_title: Theoretical Neuroscience
+  authors: Peter Dayan and L. F. Abbott
+  cv_authors: Dayan and Abbott
+  status: Studied
+  theme: "Neural coding, neural dynamics, and the mathematics of learning."
+  url: https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/
+  cover: /images/reading/theoretical-neuroscience.jpg
+- id: sutton-barto
+  title: "Reinforcement Learning: An Introduction"
+  short_title: "Reinforcement Learning: An Introduction"
+  authors: Richard S. Sutton and Andrew G. Barto
+  cv_authors: Sutton and Barto
+  status: Studied
+  theme: "Learning, prediction, and decision making through interaction."
+  url: https://mitpress.mit.edu/9780262039246/reinforcement-learning/
+- id: wang
+  title: "Theoretical Neuroscience: Understanding Cognition"
+  short_title: "Theoretical Neuroscience: Understanding Cognition"
+  authors: Xiao-Jing Wang
+  cv_authors: Xiao-Jing Wang
+  status: Currently reading
+  theme: "Neural population dynamics and the mechanisms of cognitive function."
+  url: https://www.cns.nyu.edu/wanglab/

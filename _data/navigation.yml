@@ -13,5 +13,8 @@ main:
   - title: "CV"
     url: /cv/
 
+  - title: "Journey"
+    url: /intellectual-journey/
+
   - title: "GitHub"
     url: https://github.com/JustinZHAO-05

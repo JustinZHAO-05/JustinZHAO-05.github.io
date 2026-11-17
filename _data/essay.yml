@@ -1,0 +1,29 @@
+en:
+  title: 'From Jet Engines and Yogurt-Hunting Dogs to Conscious Electrons: My Intellectual
+    Journey'
+  chapters:
+  - id: en-1
+    title: 1. From Robots in Dead Ends to a Dog That Fakes a Limp
+  - id: en-2
+    title: '2. The Puzzle of a Sore Throat: Evolutionary Tinkering and Philosophical
+      Zombies'
+  - id: en-3
+    title: 3. What If an Electron Has a Tiny Spark of Experience?
+  - id: en-4
+    title: '4. Building Bridges in the Lab: Representational Drift and the Arrow of
+      Time'
+  - id: en-5
+    title: 5. Toward Computational Cognitive Neuroscience
+zh:
+  title: 从喷气发动机、偷酸奶的小狗到有意识的电子：我的学术思想历程
+  chapters:
+  - id: zh-1
+    title: 一、 从死胡同里的机器人，到会“装病”的小狗
+  - id: zh-2
+    title: 二、 咽喉痛的诘问：自然选择是个“修补匠”，还是造出了哲学僵尸？
+  - id: zh-3
+    title: 三、 如果一个电子也有一点点“感觉”？
+  - id: zh-4
+    title: 四、 在实验室里寻找桥梁：表征漂移与时间的流向
+  - id: zh-5
+    title: 五、 走向“计算认知神经科学”的未来

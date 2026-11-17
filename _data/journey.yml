@@ -1,0 +1,101 @@
+- id: foundations
+  dates: 2023-2025
+  stage: Years 1-2
+  title: Foundations in Mathematics, Physics & Engineering
+  phase: engineering
+  icon: fa-square-root-alt
+  summary: "I entered Tianjin University's School of Future Technology through the Intelligent Machine Platform honors track. Two years of shared training in mathematics, physics, and engineering gave me a quantitative and systems-level foundation before I chose Automation as my major."
+  reflection: "A starting point in mathematical structure, physical systems, and feedback."
+  links:
+    - label: Education
+      url: /#education
+    - label: Coursework
+      url: /cv/#coursework
+- id: bristol
+  dates: 15-26 Jul 2024
+  stage: Summer before Year 2
+  title: Scientific Computing at Bristol
+  phase: engineering
+  icon: fa-laptop-code
+  summary: "At the University of Bristol's CASE summer school, I used Java and Go for scientific computing and worked on satellite-control simulation and Arduino/networked sensing projects. The experience brought programming, physical systems, and hands-on experimentation together."
+  reflection: "Learning to turn mathematical ideas into working systems."
+  links:
+    - label: CASE summer school
+      url: /cv/#training-bristol
+- id: robotics
+  dates: 2024-2025
+  stage: Year 2
+  title: Control, Robotics & Reinforcement Learning
+  phase: engineering
+  icon: fa-robot
+  summary: "I developed my control and robotics background through NeoScholar courses in robotic manipulation and robot perception, localization, and navigation. Building an eight-cable-driven parallel robot connected mechanism design, kinematics, dynamics, electronics, and software in one complete engineering project."
+  reflection: "How can an embodied system learn, adapt, and act?"
+  image: /images/projects/eight-cable-robot.jpg
+  image_alt: Eight-cable-driven parallel robot project
+  image_caption: Mechanism design and control
+  image_url: /projects/eight-cable-driven-parallel-robot/
+  links:
+    - label: Robot project
+      url: /projects/eight-cable-driven-parallel-robot/
+    - label: NeoScholar courses
+      url: /cv/#training-manipulation-training
+- id: robot-research
+  dates: Jul-Aug 2025
+  stage: Summer before Year 3
+  title: Learning-Based Robot Navigation
+  phase: computation
+  icon: fa-route
+  summary: "During in-person summer research supervised by Sen Wang, I worked on deep reinforcement learning for robots escaping narrow dead ends under nonholonomic constraints. The project led to the CSAI 2025 paper and sharpened my interest in the flexibility of biological learning beyond a task's training environment."
+  reflection: "From successful policies to questions about generalization and biological intelligence."
+  links:
+    - label: CSAI paper
+      url: /publication/nonholonomic-narrow-dead-end-escape/
+    - label: Code and project
+      url: /projects/cisdrl-robotnav/
+- id: cognitive-turn
+  dates: 2025-2026
+  stage: Year 3
+  title: Turning Toward Language and Cognition
+  phase: cognition
+  icon: fa-book-open
+  summary: "My experience of language learning drew me toward the neural mechanisms of language acquisition and prediction. I took courses in brain and cognitive science, medical signal processing, machine learning, and deep learning, while studying Bermúdez, Dayan and Abbott, and related papers in computational and cognitive neuroscience."
+  reflection: "How do neural systems acquire language and build meaningful representations?"
+  image: /images/reading/theoretical-neuroscience.jpg
+  image_alt: Theoretical Neuroscience by Peter Dayan and L. F. Abbott
+  image_caption: Independent reading in theoretical neuroscience
+  image_url: https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/
+  links:
+    - label: Reading and foundations
+      url: /#reading
+    - label: The longer story
+      url: /intellectual-journey/#english
+- id: neuromatch-qin
+  dates: Jul 2026
+  stage: Summer before Year 4
+  title: Neuromatch & Joining Qin Lab
+  phase: cognition
+  icon: fa-brain
+  summary: "I completed Neuromatch Academy's interactive Computational Neuroscience track and team project. I conceived the central project idea, contributed substantially to code and analysis, and co-presented our work on perceptual inference. In the same month, I joined Shanshan Qin Lab at Shanghai Jiao Tong University as a visiting undergraduate student."
+  reflection: "Bringing computational models into contact with neural and behavioral data."
+  image: /images/research/neuromatch-persistence.png
+  image_alt: Posterior state occupancy from the Neuromatch perceptual inference project
+  image_caption: Team Doraemon, Neuromatch 2026
+  image_url: /research/temporal-persistence/
+  links:
+    - label: Neuromatch project
+      url: /research/temporal-persistence/
+    - label: Visiting research
+      url: /cv/#experience
+- id: present
+  dates: Jul 2026-Present
+  stage: Year 4
+  title: Neural Dynamics, Language & Subjective Experience
+  phase: research
+  icon: fa-wave-square
+  summary: "My current work investigates representational drift and sparsity in longitudinal neural recordings, computational mechanisms of drift, and circadian clock networks for my undergraduate thesis. Alongside these projects, I am pursuing exploratory work on language and experience, with a growing interest in how neural cognition emerged through evolution."
+  reflection: "Connecting neural dynamics with cognition, evolutionary history, and conscious experience."
+  links:
+    - label: Current research
+      url: /#current-research
+    - label: Intellectual journey
+      url: /intellectual-journey/

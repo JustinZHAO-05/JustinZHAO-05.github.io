@@ -5,7 +5,7 @@
     "image": "https://justinzhao-05.github.io/images/profile-web.jpg",
     "email": "justinzhaoyz@outlook.com",
     "url": "https://justinzhao-05.github.io/",
-    "summary": "Final-year Automation undergraduate at Tianjin University. Visiting student in Shanshan Qin Lab, Shanghai Jiao Tong University. My research interests lie in computational and cognitive neuroscience and neurolinguistics. I am interested in how neural population dynamics implement cognition across levels of biological organization, how neurally based cognitive capacities emerge through evolution, the neural mechanisms of language processing and acquisition, and the neural basis of conscious subjective experience.",
+    "summary": "Final-year Automation undergraduate at Tianjin University. Visiting student in Shanshan Qin Lab, Shanghai Jiao Tong University. My research interests lie in computational and cognitive neuroscience and neurolinguistics. I am interested in how neural population dynamics implement cognition across levels of biological organization, how neurally based cognitive capacities emerge through evolution, the neural mechanisms of language processing and acquisition, and the neural basis of conscious subjective experience. My training in mathematics, physics, control, and robotics led me to computational and cognitive neuroscience through a growing interest in language acquisition and biological cognition.",
     "profiles": [
       {
         "network": "GitHub",
@@ -14,6 +14,10 @@
       {
         "network": "ORCID",
         "url": "https://orcid.org/0009-0003-5342-6611"
+      },
+      {
+        "network": "Intellectual Journey",
+        "url": "https://justinzhao-05.github.io/intellectual-journey/"
       }
     ]
   },
@@ -30,7 +34,7 @@
         "Brain and Cognitive Science: 96",
         "Pattern Recognition and Brain-Inspired Intelligence: 95",
         "Machine Learning based on Optimization Theory: 92",
-        "Intelligent Medical Signal Processing",
+        "Intelligent Medical Signal Processing: 89",
         "Numerical Computational Method: 99",
         "Fundamental Physics: 99",
         "Equations of Mathematical Physics: 98",
@@ -38,13 +42,13 @@
         "Probability and Mathematical Statistics: 94",
         "Advanced Linear Algebra: 93",
         "Discrete Mathematics: 92",
+        "Theory of Motor: 98",
+        "Digital Circuits: 96",
         "Principles of Programming: 95",
         "Circuit Principles: 94",
         "Analog Circuits: 93",
         "Automatic Control: 92",
-        "Digital Circuits",
         "Signals and Systems",
-        "Theory of Motor",
         "Robot Kinematics and Dynamics",
         "Computer Organization and Architecture",
         "C++ Programming"
@@ -62,7 +66,7 @@
       "highlights": [
         "Analyze longitudinal neural recordings to investigate the relationship between representational drift and representational sparsity.",
         "Develop computational models to investigate candidate mechanisms underlying representational drift.",
-        "Initiating an undergraduate thesis project on computational modeling of circadian clock networks."
+        "Conduct an undergraduate thesis project on computational modeling of circadian clock networks."
       ]
     },
     {
@@ -82,6 +86,30 @@
       "date": "2026-07-25",
       "issuer": "Neuromatch Academy",
       "url": "https://portal.neuromatchacademy.org/certificate/0d72799e-57c7-45aa-b7ef-6f89a2958f52"
+    },
+    {
+      "name": "Introduction to Differential Equations",
+      "date": "2025-12-24",
+      "issuer": "MITx Online, Massachusetts Institute of Technology",
+      "url": "https://mitxonline.mit.edu/certificate/11f312e3-f974-4ed1-a5d3-01dfc8e545c7/"
+    },
+    {
+      "name": "Foundations of Signals and Systems: Analyse and Process Digital Signals",
+      "date": "2025-10-24",
+      "issuer": "University of Padova, FutureLearn",
+      "url": "https://www.futurelearn.com/certificates/35b1o0w"
+    },
+    {
+      "name": "MECH1x: Building Robots: Electrical Drives",
+      "date": "2025-12-16",
+      "issuer": "Delft University of Technology, DelftX / edX",
+      "url": "https://courses.edx.org/certificates/28ea46bd429c46be9e6273faa37dfbb8"
+    },
+    {
+      "name": "MECH2x: Building Robots: Sensors and Data Acquisition",
+      "date": "2025-12-16",
+      "issuer": "Delft University of Technology, DelftX / edX",
+      "url": "https://courses.edx.org/certificates/cfdcdfdf4f4545ebb0f2cd59b2ce180f"
     }
   ],
   "publications": [
@@ -230,5 +258,104 @@
   ],
   "references": [],
   "presentations": [],
-  "teaching": []
+  "teaching": [],
+  "training": [
+    {
+      "id": "neuromatch",
+      "dates": "6-24 Jul 2026",
+      "start": "2026-07-06",
+      "end": "2026-07-24",
+      "title": "Computational Neuroscience",
+      "institution": "Neuromatch Academy",
+      "kind": "training",
+      "summary": "Completed the interactive track and course project (128 hours); certificate issued 25 July 2026.",
+      "url": "https://neuromatch.io/",
+      "certificate": "https://portal.neuromatchacademy.org/certificate/0d72799e-57c7-45aa-b7ef-6f89a2958f52",
+      "project": "/research/temporal-persistence/",
+      "video": "https://youtu.be/NiODNrcgzmI",
+      "bullets": [
+        "Conceived the central project idea on temporal persistence in perceptual inference.",
+        "Contributed substantially to code, computational modeling, analysis and interpretation, and co-presented the final team project."
+      ]
+    },
+    {
+      "id": "perception-training",
+      "dates": "7 Mar-1 Jun 2025",
+      "start": "2025-03-07",
+      "end": "2025-06-01",
+      "title": "Robot Perception, Localization and Navigation (audit)",
+      "institution": "NeoScholar",
+      "instructor": "Sen Wang (Imperial College London during the programme)",
+      "hours": 54,
+      "kind": "earlier",
+      "summary": "Audited 54 hours with Sen Wang (Imperial College London): ROS, state estimation, sensor fusion, SLAM, robot vision, localization and navigation."
+    },
+    {
+      "id": "manipulation-training",
+      "dates": "11 Oct 2024-5 Jan 2025",
+      "start": "2024-10-11",
+      "end": "2025-01-05",
+      "title": "Robotic Manipulation",
+      "institution": "NeoScholar",
+      "instructor": "Adam Spiers (Imperial College London during the programme)",
+      "hours": 54,
+      "grade": "95.70/100",
+      "kind": "earlier",
+      "summary": "Completed 54 hours with Adam Spiers (Imperial College London), covering kinematics, dynamics, grasping, trajectory planning, gripper design and simulation. Grade: 95.70/100; CIEI certificate of completion."
+    },
+    {
+      "id": "bristol",
+      "dates": "15-26 Jul 2024",
+      "start": "2024-07-15",
+      "end": "2024-07-26",
+      "title": "Computing Applications in Science & Engineering (CASE)",
+      "institution": "University of Bristol Summer School",
+      "kind": "earlier",
+      "summary": "Completed the CASE summer school with scientific computing in Java and Go, satellite-control simulation, and Arduino/networked sensing projects."
+    }
+  ],
+  "reading": [
+    {
+      "id": "bermudez",
+      "title": "Cognitive Science: An Introduction to the Science of the Mind",
+      "short_title": "Cognitive Science",
+      "authors": "José Luis Bermúdez",
+      "cv_authors": "Bermúdez",
+      "status": "Studied",
+      "theme": "An interdisciplinary foundation in the scientific study of mind.",
+      "url": "https://www.cambridge.org/highereducation/books/cognitive-science/618DFB00F0A2A11AB4A2C2F59E2C79AD",
+      "cover": "/images/reading/cognitive-science.jpg"
+    },
+    {
+      "id": "dayan-abbott",
+      "title": "Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems",
+      "short_title": "Theoretical Neuroscience",
+      "authors": "Peter Dayan and L. F. Abbott",
+      "cv_authors": "Dayan and Abbott",
+      "status": "Studied",
+      "theme": "Neural coding, neural dynamics, and the mathematics of learning.",
+      "url": "https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/",
+      "cover": "/images/reading/theoretical-neuroscience.jpg"
+    },
+    {
+      "id": "sutton-barto",
+      "title": "Reinforcement Learning: An Introduction",
+      "short_title": "Reinforcement Learning: An Introduction",
+      "authors": "Richard S. Sutton and Andrew G. Barto",
+      "cv_authors": "Sutton and Barto",
+      "status": "Studied",
+      "theme": "Learning, prediction, and decision making through interaction.",
+      "url": "https://mitpress.mit.edu/9780262039246/reinforcement-learning/"
+    },
+    {
+      "id": "wang",
+      "title": "Theoretical Neuroscience: Understanding Cognition",
+      "short_title": "Theoretical Neuroscience: Understanding Cognition",
+      "authors": "Xiao-Jing Wang",
+      "cv_authors": "Xiao-Jing Wang",
+      "status": "Currently reading",
+      "theme": "Neural population dynamics and the mechanisms of cognitive function.",
+      "url": "https://www.cns.nyu.edu/wanglab/"
+    }
+  ]
 }

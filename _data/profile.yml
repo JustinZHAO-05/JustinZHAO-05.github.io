@@ -11,6 +11,8 @@ portrait: /images/profile-web.jpg
 portrait_small: /images/profile-avatar.jpg
 cv: /files/Yanzhe_Zhao_CV.pdf
 full_cv: /files/Yanzhe_Zhao_Full_CV.pdf
+journey: /intellectual-journey/
+trajectory: "My training in mathematics, physics, control, and robotics led me to computational and cognitive neuroscience through a growing interest in language acquisition and biological cognition."
 intro: "Final-year Automation undergraduate at Tianjin University. Visiting student in Shanshan Qin Lab, Shanghai Jiao Tong University."
 interests_short: "I am interested in how neural population dynamics give rise to cognition across biological levels and evolution, including the neural mechanisms of language processing, language acquisition, and conscious experience."
 interests: "My research interests lie in computational and cognitive neuroscience and neurolinguistics. I am interested in how neural population dynamics implement cognition across levels of biological organization, how neurally based cognitive capacities emerge through evolution, the neural mechanisms of language processing and acquisition, and the neural basis of conscious subjective experience."

@@ -1,0 +1,3 @@
+<dl class="reading-list">
+  {% for book in site.data.reading %}<div><dt><a href="{{ book.url }}">{{ book.title }}</a></dt><dd><span class="reading-author">{{ book.authors }}</span><span class="reading-state{% if book.status == 'Currently reading' %} reading-state--current{% endif %}">{{ book.status }}</span>{% unless include.compact %}<p>{{ book.theme }}</p>{% endunless %}</dd></div>{% endfor %}
+</dl>

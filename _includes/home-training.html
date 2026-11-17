@@ -1,0 +1,10 @@
+{% assign nma = site.data.experience | where: 'id', 'neuromatch' | first %}
+{% assign bristol = site.data.experience | where: 'id', 'bristol' | first %}
+{% assign manipulation = site.data.experience | where: 'id', 'manipulation-training' | first %}
+{% assign perception = site.data.experience | where: 'id', 'perception-training' | first %}
+<div class="training-entries">
+  <article class="training-entry"><p class="entry-date">{{ nma.dates }}</p><div><h3>Neuromatch Academy &middot; {{ nma.title }}</h3><p>{{ nma.summary }}</p><div class="text-links"><a href="{{ nma.certificate }}">Certificate</a><a href="{{ nma.project | relative_url }}">Project</a><a href="{{ nma.video }}">Presentation</a></div></div></article>
+  <article class="training-entry"><p class="entry-date">{{ bristol.dates }}</p><div><h3>University of Bristol &middot; CASE Summer School</h3><p>{{ bristol.summary }}</p><a href="{{ '/cv/#training-bristol' | relative_url }}">Training record <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
+  <article class="training-entry"><p class="entry-date">2024-2025</p><div><h3>NeoScholar &middot; Robotics Courses</h3><p>Robotic Manipulation with Adam Spiers ({{ manipulation.grade }}); Robot Perception, Localization and Navigation with Sen Wang (audit). Both instructors were at Imperial College London during the programmes.</p><a href="{{ '/cv/#training-manipulation-training' | relative_url }}">Course details <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
+</div>
+<div class="independent-preview"><h3>Additional Certified Coursework</h3><p>{% for course in site.data.independent_study %}{{ course.short_institution }} &middot; <a href="{{ course.certificate }}">{{ course.title }}</a>{% if course.grade %} ({{ course.grade }}){% endif %}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</p><a href="{{ '/cv/#independent-study' | relative_url }}">Complete training record <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div>

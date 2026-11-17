@@ -1,0 +1,91 @@
+<h2 id="english">From Jet Engines and Yogurt-Hunting Dogs to Conscious Electrons: My Intellectual Journey</h2>
+
+Ludwig Wittgenstein once wrote, *"Not how the world is, is the mystical, but that it is."* If I had to sum up my intellectual wanderings over the past few years—across engineering, mathematics, neuroscience, and philosophy—this line would be the closest capture. Time and again, I have found that my deepest research motivations do not start from grand textbook doctrines, but from seemingly naive, almost childlike questions about everyday life.
+
+<h3 id="en-1">1. From Robots in Dead Ends to a Dog That Fakes a Limp</h3>
+
+My undergraduate education began in engineering: automation, control theory, robotics, and reinforcement learning. It was a world built on precision and deliberate design. Even today, I remain captivated by engineering marvels like jet engines—by how a complex physical system can sustain and bootstrap itself through feedback loops.
+
+Early in college, I spent a great deal of time training mobile robots via reinforcement learning to navigate out of narrow dead ends. What feels trivial to a human—realizing one is trapped and turning around—turned out to be surprisingly treacherous for a robot with constrained kinematics and partial observability. Yet when my models finally achieved high success rates in simulation, I felt less triumph than skepticism: the moment the environment shifted slightly, the policy remained frustratingly brittle.
+
+Around that time, I began to feel a growing detachment from the prevailing obsession with "benchmark intelligence" in modern AI. Large language models can outperform most humans in math Olympiads and coding competitions, creating the illusion that benchmark scores equate to general intelligence. But anyone who has watched a three-year-old child—or lived with a dog—knows that the core magic of biological intelligence lies elsewhere.
+
+I often watch my dog through the lens of cognitive science. Upon hearing the crinkle of a wrapper, he performs near-optimal Bayesian inference using acoustic cues to track down a cup of yogurt. If you hide an object to play a spatial trick on him, he displays genuine surprise—much like cats in developmental psychology experiments staring in disbelief when a ball glued inside an overturned cup fails to fall out. He even knows how to fake a limp for sympathy, and when leading the way on a walk, he pauses every few steps to look back and check if we are following.
+
+Watching him, a flood of questions always hits me: How much of this social instinct is hardcoded directly into his DNA? Does the genome encode the behavioral competence itself, or rather a set of developmental and plasticity rules that allow him to acquire these social games effortlessly? More broadly, **what computational principles does nature use so that an animal with finite energy, finite experience, and finite neurons can continuously learn, adapt, act, and survive in an open-ended world?**
+
+Meanwhile, my own struggles and breakthroughs in learning English became a personal laboratory. I noticed that when I hesitated in conversation, it was rarely due to a lack of vocabulary; rather, lacking real communicative feedback, my "prior confidence" in my chosen phrasing was too low. Conversely, simply passively understanding a sentence never made it mine. Only when I first tried to express a thought, acutely felt the "gap" between my intention and my linguistic repertoire, and then encountered the native expression across a few varied contexts did the phrase genuinely wire itself into my automatic speech. Later, when I read Micha Heilbron’s work on the hierarchy of linguistic predictions—My very first encounter with cognitive neuroscience—and learned about how infants use prosody and syntax for "bootstrapping" in language acquisition, I felt an immediate, visceral resonance.
+
+I also think often of a close relative. Since developing Ménière’s disease, their neural sensitivity has permanently shifted; even when the disease is not actively flaring, merely being in a dim or moving environment easily triggers tension and vertigo. Witnessing this made it unmistakably clear to me that the mind is never a disembodied symbolic algorithm floating in a vacuum—it is deeply anchored in a vulnerable biological body and its internal physiological rhythms.
+
+Together, these observations nudged me out of traditional control engineering and drew me into the world of computational and cognitive neuroscience.
+
+<h3 id="en-2">2. The Puzzle of a Sore Throat: Evolutionary Tinkering and Philosophical Zombies</h3>
+
+As I delved deeper into biology, viewing the mind through the lens of evolution and natural selection became second nature to me.
+
+Many theoretical neuroscientists are drawn to grand, unified frameworks—seeking to explain the entire brain through a single elegant principle like the Bayesian Brain or Predictive Processing. While mathematically appealing, such views often overlook a crucial biological reality: natural selection is not an engineer designing an optimal system from scratch to minimize a global loss function. As François Jacob famously put it, evolution is a *tinkerer*. It works with whatever ancestral structures happen to be available—modifying, repurposing, and patching them together. Reading Paul Cisek’s work on *phylogenetic refinement* was a revelation in this regard: the psychological categories we take for granted today—perception, memory, decision-making—may not be neat, modular boxes at all, but rather evolutionary elaborations of ancient sensory-motor feedback loops that gradually stretched and specialized as organisms competed for survival. Even abilities like continual learning without catastrophic forgetting might not stem from artificially intricate regularization formulas designed for that purpose; as neuroevolution studies suggest, they may have emerged partly as by-products of metabolic wiring costs that naturally favored modular neural architectures.
+
+Yet, following this evolutionary logic eventually led me straight into a brick wall: **consciousness and subjective experience (qualia)**.
+
+It started with an ordinary sore throat. Lying in bed with pharyngeal inflammation, I found myself wondering: *Why does a sore throat have to hurt?*
+I understood why the immune system triggers inflammation to fight infection. I could also appreciate the evolutionary functionalism of pain: in a brain juggling dozens of tasks, pain acts as a global, high-priority "interrupt signal" and a negative "common currency" ($V(s) \ll 0$), forcing the organism to halt ongoing activities, protect the injured tissue, and update its avoidance policies. Clinical conditions like *pain asymbolia*—where patients recognize tissue damage as pain but feel no unpleasantness and do not care—vividly show that damage detection and aversive drive are distinct computations.
+
+And yet, the sharpest part of the puzzle remained untouched: **why must this aversive computation *feel* bad?**
+With my background in control systems, I could easily imagine building a "Zombie-Justin." When his hand touches a hot stove, temperature sensors trigger a damage detector, setting `priority += 100` and `reward -= 100`, interrupting his current goal, withdrawing his arm, storing an episodic memory to avoid the stove tomorrow, and even executing `print("Ouch! That hurts!")` to summon social help. Every single adaptive behavior can, in principle, be written as an information-processing and control algorithm without a shred of first-person agony.
+
+If a phenomenal zombie and a conscious animal behave identically and achieve the exact same reproductive fitness, natural selection—which only selects for causal consequences on fitness—would be completely blind to subjective experience itself ($\frac{\partial \text{Fitness}}{\partial \text{Qualia}} = 0$). Why, then, are we not living in a dark universe of biological automata? Why is there "something it is like" to see the redness of an apple or suffer the burning ache of a sore throat?
+
+<h3 id="en-3">3. What If an Electron Has a Tiny Spark of Experience?</h3>
+
+For a long time, I held the standard emergentist view: elementary particles and single cells obviously have no experience; consciousness must suddenly "emerge" once a nervous system reaches a critical threshold of complexity.
+
+However, my training in mathematics and physics left me perpetually dissatisfied with that answer. Appealing to "emergence" across such a radical ontological gap felt less like an explanation and more like a placeholder for a miracle—it left me with a nagging sense of incompleteness that neither pure reductionism nor vague emergentism could soothe.
+
+One day, I decided to flip my foundational assumption upside down.
+**What if subjective experience is not a late evolutionary trophy of complex brains, but an intrinsic, fundamental property of matter itself?**
+
+Suppose even an electron or an atom possesses an unimaginably primitive proto-experience—constrained entirely by its simple physical degrees of freedom, devoid of pain, color, or emotion, yet non-zero. What happens when billions of such atoms bind into molecules, liquids, and solids, entering a constrained physical system with dense causal interactions? Could their elementary experiences merge or restructure into a higher-dimensional, unified systemic experience? If so, could my water cup, my iPad, a single living cell, or even an interacting human crowd possess a collective first-person perspective of its own—one that remain completely inaccessible to us as individual components? And when billions of neurons integrate to form *my* conscious mind, do the individual neurons retain their own tiny local perspectives, or are they absorbed and superseded by the macroscopic subject?
+
+I found these thought experiments bizarre, yet impossible to stop turning over in my head. Only later did I discover that philosophers of mind had long explored this exact territory under the banners of *Panpsychism*, *Russellian Monism*, and the notorious *Combination Problem*—alongside formal attempts like Integrated Information Theory (IIT) to mathematically define the boundaries of a conscious entity.
+
+Discovering this did not turn me into a dogmatic panpsychist, but it gave me two complementary pairs of glasses to wear. Through the **evolutionary and functional lens**, I ask how survival pressures, action selection, and internal bodily states shaped the cognitive architectures of animals. Through the **structural and foundational lens**, I ask how physical organization, recurrent dynamics, and causal integration can constitute a unified subject of experience—and whether the geometric structure of our phenomenal spaces ($\mathcal{P}$) can be systematically mapped from the geometry of neural state spaces ($\mathcal{N}$).
+
+<h3 id="en-4">4. Building Bridges in the Lab: Representational Drift and the Arrow of Time</h3>
+
+Far from pulling me away from empirical science, these philosophical questions have infused my day-to-day quantitative research with a deep sense of purpose.
+
+In pure mathematics, my favorite subject has always been abstract algebra. Inspired by the Bourbaki tradition and structuralism, I am drawn to morphisms, transformations, and *invariants*—understanding what structural relationships remain preserved when the underlying substrates shift. At the same time, my scientific heroes are figures like Richard Feynman and the mathematical psychologist R. Duncan Luce. Feynman taught me the joy of refusing to fool myself and questioning nature from first principles; Luce, who transitioned from aeronautical engineering to pioneering the rigorous axiomatization of human choice and psychology, showed me how an engineering and mathematical mind can bring structural clarity to the study of cognition.
+
+When I stepped into neuroscience laboratories, searching for cross-level invariants became the common thread of my work.
+
+At Shanghai Jiao Tong University, working in Prof. Shanshan Qin’s lab on **neural representational drift**, I confronted a fascinating biological paradox: in areas like the primary visual cortex (V1) and hippocampus, the population neural activity encoding a familiar stimulus continuously drifts over days and weeks, even while the animal’s perceptual and behavioral performance remains rock-solid. How can stable cognition reside on top of shifting biological sand?
+
+To study this, computational neuroscientists often use unsupervised autoencoder frameworks: visual inputs pass through an encoder to produce V1-like responses, and a decoder attempts to reconstruct the original image. Yet in my own experiments, I noticed something striking: when we injected noise into both the encoder and decoder and trained the network continuously to maintain image-reconstruction fidelity, the intermediate V1-like representations drifted drastically *away* from real biological V1 recordings! That discrepancy was a lightbulb moment for me. Biologically and anatomically, V1 does not exist to reconstruct pixel-level photographs for an internal homunculus; it projects into the dorsal and ventral streams to support higher-level cognitive functions like object recognition, spatial navigation, and action control. What the brain preserves across drift is not pixel reconstruction, but downstream cognitive and behavioral invariants ($\psi(\theta(t)) \approx z_0$). Right there, cellular population dynamics and high-level cognitive function locked together.
+
+A similar trajectory unfolded in my theoretical work on **time irreversibility and brain state segmentation**. Initially, I was investigating how the human brain segments continuous naturalistic experience—such as watching an educational video—into discrete events in memory, applying Greedy State Boundary Search (GSBS) to EEG recordings across different cortical networks. It is known that the cortex exhibits a hierarchy of temporal receptive windows: sensory areas segment events rapidly, while higher association areas integrate information over longer timescales.
+
+However, as I compared event boundaries across brain networks, a foundational doubt stopped me in my tracks: *If Network A’s detected boundary consistently precedes Network B’s by 200 milliseconds in EEG, can I actually claim that A transitions before B—or drives B—inside the brain?*
+Scalp EEG signals are heavily entangled by volume conduction, axonal conduction delays, filtering, and measurement noise. Rather than brushing this aside to publish a quick empirical correlation, I followed the question down to its mathematical roots. I abstracted the problem into a rigorous inquiry in statistical physics and stochastic processes (now drafted for *Physical Review E*): when latent neural dynamics pass through observation operators involving time delays and linear/nonlinear mixing, how is the statistical *time irreversibility* and temporal ordering distorted? Under what exact mathematical conditions can we reliably identify the true arrow of time and causal hierarchy of underlying brain states from macroscopic recordings?
+
+Whether investigating representational drift in mice or temporal irreversibility in human EEG, I realized I was always chasing the same core synthesis: connecting the bottom level of biological and physical implementation, the middle level of latent neural dynamics and computation, and the top level of cognitive function and conscious experience.
+
+<h3 id="en-5">5. Toward Computational Cognitive Neuroscience</h3>
+
+Looking back at my path, I often feel a stark divide in how the mind is studied today. On one side, cognitive scientists and psychologists study fascinating high-level phenomena—language, episodic memory, metacognition, consciousness—using behavioral paradigms, EEG, or fMRI, sometimes detached from circuit-level mechanisms. On the other side, pure theoretical neuroscientists might spend an entire career analyzing the mathematical attractors of a recurrent network ($\tau \dot{r} = -r + \phi(Wr + I)$) without asking how those dynamics actually give rise to syntax, concepts, or subjective feelings.
+
+My ambition is to inhabit the bridge between them. If I had to give my research identity a single name, it would be **Computational Cognitive Neuroscience, informed by comparative and evolutionary perspectives**.
+
+Looking ahead toward my graduate studies and a long-term academic career as an independent PI, I hope to weave three dimensions of inquiry into a unified research program:
+
+* **Mechanism (How it works):** Using dynamical systems, Bayesian probability, representational geometry, and machine learning to uncover how recurrent biological networks learn structured, composable, and stable internal representations amidst neural noise and turnover.
+
+
+* **Evolution & Comparison (How and why it came to exist):** Treating evolutionary history and ecological constraints not as post-hoc storytelling, but as rigorous theoretical constraints—comparing computational principles across species (from rodent navigation and songbird vocal learning to primate sequence learning and human language) to understand how complex cognitive algorithms emerge naturally from simpler ancestral control loops.
+
+
+* **Cognition & Subjectivity (What it gives rise to):** Keeping real cognitive capacities—hierarchical language bootstrapping, event segmentation in continuous memory, the role of visceral bodily rhythms (interoception) in coordinating the self, and the relational structure of qualia—as the ultimate phenomena our mathematical models must account for.
+
+
+
+I do not expect to have a finished "theory of everything" for the mind at the beginning of my graduate journey, nor do I wish to prematurely lock myself into a single narrow technique. After all, what makes cognitive science endlessly exhilarating is how often a deceptively simple question—*Why does my throat hurt? How did my dog find the yogurt? Why did I hesitate on that English word?*—opens the door to an entire universe of scientific discovery. I hope to never lose that naive spark of curiosity, even as I sharpen the mathematical and experimental tools needed to pursue the answers.

@@ -1,4 +1,4 @@
-{% if include.preview %}{% assign clusters = 'Neuroscience and Machine Learning|Mathematics and Physics' | split: '|' %}{% else %}{% assign clusters = 'Neuroscience and Machine Learning|Mathematics and Physics|Computing, Circuits and Control|Additional Engineering Coursework' | split: '|' %}{% endif %}
-<div class="course-groups">
+{% if include.preview %}{% assign clusters = 'Neuroscience and Machine Learning|Mathematics and Physics|Computing, Circuits and Control' | split: '|' %}{% else %}{% assign clusters = 'Neuroscience and Machine Learning|Mathematics and Physics|Computing, Circuits and Control|Additional Engineering Coursework' | split: '|' %}{% endif %}
+<div class="course-groups{% if include.preview %} course-groups--preview{% endif %}">
   {% for cluster in clusters %}<section class="course-group"><h3>{{ cluster }}</h3><dl>{% assign courses = site.data.courses | where: 'cluster', cluster %}{% for course in courses %}<div class="course-row"><dt>{{ course.title }}</dt><dd>{% if course.grade %}{{ course.grade }}{% else %}<span>Completed</span>{% endif %}</dd></div>{% endfor %}</dl></section>{% endfor %}
 </div>

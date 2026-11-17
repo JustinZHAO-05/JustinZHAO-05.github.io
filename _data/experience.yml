@@ -9,7 +9,7 @@
   bullets:
     - "Analyze longitudinal neural recordings to investigate the relationship between representational drift and representational sparsity."
     - "Develop computational models to investigate candidate mechanisms underlying representational drift."
-    - "Initiating an undergraduate thesis project on computational modeling of circadian clock networks."
+    - "Conduct an undergraduate thesis project on computational modeling of circadian clock networks."
 - id: neuromatch
   dates: 6-24 Jul 2026
   start: "2026-07-06"
@@ -36,20 +36,31 @@
   bullets:
     - "Developed and evaluated deep reinforcement learning for constrained robot navigation, with simulation engineering and experimental analysis."
 - id: perception-training
-  dates: Mar-Jun 2025
+  dates: 7 Mar-1 Jun 2025
+  start: "2025-03-07"
+  end: "2025-06-01"
   title: Robot Perception, Localization and Navigation (audit)
-  institution: NeoScholar and Imperial College London
+  institution: NeoScholar
+  instructor: Sen Wang (Imperial College London during the programme)
+  hours: 54
   kind: earlier
-  summary: "Studied SLAM, localization, navigation and implementation-oriented robotics methods."
+  summary: "Audited 54 hours with Sen Wang (Imperial College London): ROS, state estimation, sensor fusion, SLAM, robot vision, localization and navigation."
 - id: manipulation-training
-  dates: Oct 2024-Jan 2025
+  dates: 11 Oct 2024-5 Jan 2025
+  start: "2024-10-11"
+  end: "2025-01-05"
   title: Robotic Manipulation
-  institution: NeoScholar and Imperial College London
+  institution: NeoScholar
+  instructor: Adam Spiers (Imperial College London during the programme)
+  hours: 54
+  grade: "95.70/100"
   kind: earlier
-  summary: "Completed kinematics, dynamics, grasping, custom gripper design and simulation assignments; high score and CIEI certification."
+  summary: "Completed 54 hours with Adam Spiers (Imperial College London), covering kinematics, dynamics, grasping, trajectory planning, gripper design and simulation. Grade: 95.70/100; CIEI certificate of completion."
 - id: bristol
-  dates: Jul 2024
-  title: Computing Applications in Science and Engineering
+  dates: 15-26 Jul 2024
+  start: "2024-07-15"
+  end: "2024-07-26"
+  title: Computing Applications in Science & Engineering (CASE)
   institution: University of Bristol Summer School
   kind: earlier
-  summary: "Used Java and Go for scientific computing; built satellite-control simulation and Arduino/networked sensing projects."
+  summary: "Completed the CASE summer school with scientific computing in Java and Go, satellite-control simulation, and Arduino/networked sensing projects."

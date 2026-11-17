@@ -5,6 +5,7 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="preload" href="{{ '/assets/fonts/InterVariable.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  {% if page.math %}<link rel="stylesheet" href="{{ '/assets/vendor/katex/katex.min.css' | relative_url }}"><script defer src="{{ '/assets/vendor/katex/katex.min.js' | relative_url }}"></script><script defer src="{{ '/assets/vendor/katex/auto-render.min.js' | relative_url }}"></script>{% endif %}
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":{{ site.data.profile.name | jsonify }},"alternateName":{{ site.data.profile.alternate_name | jsonify }},"url":{{ site.data.profile.website | jsonify }},"image":{{ site.data.profile.portrait | absolute_url | jsonify }},"sameAs":[{{ site.data.profile.github | jsonify }},{{ site.data.profile.orcid | jsonify }}],"knowsAbout":["Computational neuroscience","Cognitive neuroscience","Neurolinguistics"]}</script>
 </head>
 <body class="academic-site">
