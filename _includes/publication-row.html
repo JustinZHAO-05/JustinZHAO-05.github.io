@@ -1,0 +1,9 @@
+{% assign pub = include.pub %}
+<article class="publication-row">
+  <div>
+    <p class="publication-citation">{{ pub.authors_short | default: pub.authors | replace: 'Zhao, Y.', '<strong>Zhao, Y.</strong>' }} ({{ pub.year }}). <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>.</p>
+    <p class="publication-status">{% if pub.kind == 'preprint' %}{{ pub.status }}{% else %}CSAI 2025 &middot; ACM &middot; pp. {{ pub.pages }}{% endif %}</p>
+    {% unless include.compact %}<details class="publication-details"><summary>Abstract and contribution</summary><p>{{ pub.excerpt }}</p>{% if pub.contribution %}<p><strong>Contribution:</strong> {{ pub.contribution }}</p>{% endif %}</details>{% endunless %}
+  </div>
+  <div class="text-links publication-links"><a href="{{ pub.paperurl | default: pub.doiurl }}">{% if pub.kind == 'preprint' %}Preprint{% else %}DOI{% endif %}</a>{% if pub.codeurl %}<a href="{{ pub.codeurl }}">Code</a>{% endif %}<a href="{{ pub.bibtexurl | relative_url }}" download>BibTeX</a><button class="copy-citation icon-button" data-citation="{{ pub.bibtexurl | relative_url }}" aria-label="Copy BibTeX for {{ pub.title | escape }}" title="Copy BibTeX" hidden><i class="far fa-copy" aria-hidden="true"></i></button></div>
+</article>

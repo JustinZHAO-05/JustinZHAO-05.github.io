@@ -1,11 +1,87 @@
+- id: hp-gsbs
+  title: HP-GSBS
+  subtitle: Efficient neural-state segmentation
+  priority: 1
+  featured: true
+  category: Neural Data and Methods
+  category_slug: neuroscience-signals
+  status: Under review at Neuroinformatics
+  summary: "Reusable interval statistics and CPU/GPU implementations for fast, reproducible segmentation of neural recordings."
+  role: "Core algorithm and code contributions, experimental analysis, and manuscript writing."
+  methods: "Neural-state segmentation, interval statistics, CPU/CUDA/Triton implementation, numerical validation, EEG and fMRI analysis"
+  stack: "Python, NumPy, Numba, PyTorch, CUDA, Triton"
+  thumbnail: /images/research/hp-gsbs-eeg.png
+  caption: "EEG segmentation and cross-backend agreement. Original figure from the HP-GSBS reproducibility materials."
+  detail: /research/hp-gsbs/
+  question: "How can neural-state segmentation be made computationally practical while retaining the reference method's outputs?"
+  approach: "Reformulated repeated template scoring into additive interval contributions and t-distance into reusable correlation statistics. Implemented a common sequential search controller with CPU, PyTorch CUDA and Triton computation paths."
+  results: "Controlled same-input benchmarks in the paper report 154-1,730-fold median speedups. All 168 tested optimized executions reproduce complete reference boundary histories and selected state counts. EEG and naturalistic fMRI analyses extend evaluation to neural recordings."
+  links:
+    github: https://github.com/JustinZHAO-05/HP-GSBS
+    paper: https://arxiv.org/abs/2610.25898
+  highlights:
+    - "Mathematical reformulation of repeated computation into reusable statistics."
+    - "Reference-output validation and controlled performance measurements."
+    - "Application to EEG and naturalistic fMRI datasets."
+- id: temporal-irreversibility
+  title: Observation Architecture and Temporal Irreversibility
+  subtitle: Identifiability of temporal structure in neural recordings
+  priority: 2
+  featured: true
+  category: Theoretical Neuroscience
+  category_slug: neuroscience-signals
+  status: Submitted to Physical Review E
+  summary: "A theoretical investigation of how measurement structure shapes inference about the arrow of time in multichannel signals."
+  role: "Sole-author theoretical research, mathematical analysis, numerical experiments, and EEG validation."
+  methods: "Stationary Gaussian processes, spectral matrices, identifiability, spectral-cycle invariants, finite-sample calibration"
+  stack: "Python, NumPy, SciPy, spectral analysis, mathematical modeling"
+  thumbnail: /images/research/temporal-irreversibility.png
+  caption: "Original manuscript figure: observation architecture and temporal irreversibility."
+  detail: /research/temporal-irreversibility/
+  question: "What observation assumptions allow temporal asymmetry in a recording to inform us about latent dynamics?"
+  approach: "Derived identifiability results for stationary Gaussian processes, reversible-latent observation constructions, resource bounds and filter-invariant spectral-cycle quantities. Connected these results to finite-record calibration and human EEG analysis."
+  results: "The study characterizes observational equivalence, identifies structural assumptions that preserve informative invariants, and develops finite-sample lower bounds. EEG coordinate transformations and rereferencing illustrate the importance of the observation basis."
+  links:
+    github: https://github.com/JustinZHAO-05/observation-architecture-temporal-irreversibility
+    paper: https://doi.org/10.5281/zenodo.24306357
+  highlights:
+    - "Theoretical results linking latent dynamics and measurement structure."
+    - "Spectral invariants, resource bounds and finite-record calibration."
+    - "Human EEG analyses of observation-basis dependence."
+- id: temporal-persistence
+  title: Temporal Persistence of Perceptual Inference
+  subtitle: Neuromatch 2026, Team Doraemon
+  priority: 3
+  featured: true
+  category: Neuroscience and Cognition
+  category_slug: cognition
+  status: Completed research project
+  summary: "Latent-state models of how sensory-reliant and prior-reliant inference modes persist across perceptual decisions."
+  role: "Conceived the central project idea, contributed substantially to code and analyses, and co-presented the final team project."
+  methods: "Hidden Markov models, von Mises emissions, run-level cross-validation, model comparison, posterior predictive checks"
+  stack: "Python, NumPy, SciPy, statistical modeling"
+  thumbnail: /images/research/neuromatch-persistence.png
+  caption: "Posterior state occupancy and temporal organization. Original figure from the Team Doraemon project."
+  detail: /research/temporal-persistence/
+  question: "Do perceptual inference strategies persist over time as observers combine sensory evidence with prior expectations?"
+  approach: "The team reanalyzed 83,210 usable motion-direction estimates from 12 participants across 388 run-level sequences. Compared memoryless switching, serial-dependence baselines and static/covariate HMMs using run-level cross-validation."
+  results: "Persistent-state models improved held-out prediction within the tested model comparison. Posterior predictive checks and block-level analyses further characterize model fit and the temporal structure captured by the models."
+  links:
+    github: https://github.com/JustinZHAO-05/Temporal-Persistence-of-Perceptual-Inference-by-Group-Doraemon-Neuromatch-CN-2026
+    report: /files/reports/neuromatch-perceptual-inference.html
+    video: https://youtu.be/NiODNrcgzmI
+  highlights:
+    - "Project conception and substantial contributions to computational analysis."
+    - "Behavioral modeling with sequence-level cross-validation."
+    - "Team presentation, open code, figures and technical report."
 - id: time-frequency-analysis-eeg-openbmi
   title: "EEG Time-Frequency Analysis with OpenBMI"
-  priority: 1
+  priority: 4
   category: "Neuroscience / Signals"
   category_slug: "neuroscience-signals"
   status: "Medical signal processing course project"
   summary: "A reproducible Python workflow for STFT, CWT, wavelet multiresolution, and OpenBMI motor imagery EEG ERD/lateralization analysis."
-  role: "Built and released the public workflow, regenerated English figures and report, and documented data/privacy constraints."
+  role: "Implemented time-frequency analysis and baseline-corrected motor imagery EEG ERD and lateralization workflows."
   methods: "Fourier analysis, STFT parameter sweep, CWT, DWT multiresolution, baseline-corrected mu/beta ERD, C3/C4 lateralization"
   stack: "Python, NumPy, SciPy, PyWavelets, Matplotlib, LaTeX"
   thumbnail: "/images/projects/time-frequency-openbmi.png"
@@ -19,14 +95,14 @@
 
 - id: medical-signal-experiment4
   title: "EEG Feature Enhancement and Single-Trial Classification"
-  priority: 2
+  priority: 5
   category: "Neuroscience / Signals"
   category_slug: "neuroscience-signals"
   status: "Medical signal processing course project"
   summary: "A reproducible Python implementation of ERP ICA/PCA/LDA target detection and SSVEP TRCA single-trial EEG recognition."
   role: "Implemented the public analysis workflow, generated English figures/tables/report, and added regression tests for split logic, PCA/LDA isolation, and TRCA behavior."
   methods: "ERP preprocessing, ICA artifact inspection, PCA dimension reduction, LDA classification, SSVEP TRCA, leave-one-block-out validation"
-  stack: "Python, NumPy, SciPy, scikit-learn, MNE-style EEG processing, pytest, LaTeX"
+  stack: "Python, NumPy, SciPy, scikit-learn, pytest, LaTeX"
   thumbnail: "/images/projects/medical-signal-experiment4.png"
   links:
     github: "https://github.com/JustinZHAO-05/medical-signal-experiment4"
@@ -38,7 +114,7 @@
 
 - id: medical-signal-spectral-estimation-eeg
   title: "EEG Spectral Estimation"
-  priority: 3
+  priority: 6
   category: "Neuroscience / Signals"
   category_slug: "neuroscience-signals"
   status: "Reproducible lab project"
@@ -57,7 +133,7 @@
 
 - id: medical-signal-filtering-erp-analysis
   title: "ERP Filtering and EEG Preprocessing"
-  priority: 4
+  priority: 7
   category: "Neuroscience / Signals"
   category_slug: "neuroscience-signals"
   status: "Reproducible lab project"
@@ -76,12 +152,12 @@
 
 - id: brunel-balance-network
   title: "Brunel Balance Network"
-  priority: 5
+  priority: 8
   category: "Computational Neuroscience"
   category_slug: "neuroscience-signals"
   status: "Computational neuroscience microproject"
   summary: "A Brian2 reproduction and analysis of canonical sparse excitatory/inhibitory spiking network regimes from Brunel 2000."
-  role: "Built the simulation workflow, generated canonical panels and sweeps, documented limitations, and packaged deliverables."
+  role: "Implemented spiking-network simulations and parameter sweeps to analyze excitatory/inhibitory population activity regimes."
   methods: "Leaky integrate-and-fire networks, E/I balance, parameter sweeps, population-rate analysis, acceptance checks"
   stack: "Python, Brian2, NumPy, SciPy, Matplotlib, pytest"
   thumbnail: "/images/projects/brunel-panels.png"
@@ -95,14 +171,15 @@
 
 - id: cisDRL-RobotNav
   title: "Nonholonomic Dead-End Escape with Deep RL"
-  priority: 6
-  category: "Neuro-AI / Reinforcement Learning"
-  category_slug: "neuro-ai-rl"
+  priority: 9
+  main_cv: true
+  category: "Robotics and Control"
+  category_slug: "robotics-control"
   status: "CSAI 2025 publication engineering"
   summary: "A SAC-based navigation and evaluation stack for Ackermann-style robots escaping narrow dead-end environments."
   role: "Contributed to problem formulation, training/evaluation workflow, environment generation, and experimental engineering."
   methods: "Soft Actor-Critic, ROS2/Gazebo simulation, nonholonomic constraints, procedural dead-end generation"
-  stack: "Python, ROS2, Gazebo, PyTorch-style DRL workflow"
+  stack: "Python, ROS2, Gazebo, deep reinforcement learning"
   thumbnail: "/images/projects/nonholonomic-deadend-mechanism.png"
   links:
     github: "https://github.com/JustinZHAO-05/cisDRL-RobotNav"
@@ -115,7 +192,7 @@
 
 - id: dl-exp2-english-report
   title: "Deep Learning Exp2: MNIST Noise Robustness"
-  priority: 7
+  priority: 12
   category: "Applied ML / Systems"
   category_slug: "applied-ml-systems"
   status: "Deep learning coursework project"
@@ -134,12 +211,12 @@
 
 - id: sagin-ml-satellite-link-optimization
   title: "SAGIN ML: Satellite Link Optimization"
-  priority: 8
+  priority: 13
   category: "Applied ML / Systems"
   category_slug: "applied-ml-systems"
   status: "Reviewed ML course project"
   summary: "A Space-Air-Ground-Sea network project combining PCA-based satellite image transmission and cost-aware UAV link switching."
-  role: "Built the public English release, reproduced experiments, generated result tables/figures, and documented limitations."
+  role: "Implemented PCA-based transmission analysis, link-reliability prediction, and cost-aware switching experiments."
   methods: "Traditional/adaptive/category-adaptive PCA, shared-basis compression, ROI-aware ship analysis, logistic regression, stress tests, cost-aware switching"
   stack: "Python, scikit-learn, NumPy, pandas, Matplotlib, reproducible slide/report generation"
   thumbnail: "/images/projects/sagin-ml-satellite-link.png"
@@ -152,12 +229,12 @@
 
 - id: qris-uav-public-report
   title: "Q-RIS-UAV Secure Energy Optimization"
-  priority: 9
+  priority: 14
   category: "Applied ML / Systems"
   category_slug: "applied-ml-systems"
   status: "Secure communication optimization project"
   summary: "A public academic report and reproducible simulation for QKD-protected RIS-UAV offshore monitoring with secure energy-efficiency optimization."
-  role: "Built the sanitized public release, scenario simulation, optimization pipeline, generated slide deck, and verification checks."
+  role: "Implemented reproducible scenario simulations and constrained optimization experiments for secure offshore monitoring."
   methods: "Dinkelbach transformation, alternating optimization, CVXPY resource allocation, RIS phase quantization, SCA trajectory update, QKD key constraints"
   stack: "Python, CVXPY, Matplotlib, python-pptx, MATLAB RIS simulation, open geospatial data"
   thumbnail: "/images/projects/qris-uav-system.png"
@@ -171,7 +248,7 @@
 
 - id: mnist-mlp-experiment-diagnosis
   title: "MNIST MLP Experiment Diagnosis"
-  priority: 10
+  priority: 15
   category: "Applied ML / Systems"
   category_slug: "applied-ml-systems"
   status: "Deep learning experiment and diagnosis"
@@ -185,12 +262,13 @@
     report: "https://github.com/JustinZHAO-05/mnist-mlp-experiment-diagnosis/blob/main/final_report.pdf"
   highlights:
     - "Demonstrates quantitative debugging of training failures instead of only reporting final accuracy."
-    - "Shows that high MNIST accuracy does not guarantee robustness on photographed handwriting."
+    - "Measured the domain shift between MNIST and photographed handwriting."
     - "Connects preprocessing, representation limits, and model architecture to real error modes."
 
 - id: Eight-Cable-Driven-Parallel-Robot
   title: "Eight-Cable-Driven Parallel Robot"
-  priority: 11
+  priority: 10
+  main_cv: true
   category: "Robotics / Control"
   category_slug: "robotics-control"
   status: "Full-stack robot project"
@@ -208,7 +286,7 @@
 
 - id: VeriRotate
   title: "VeriRotate: BMP Rotation in Verilog"
-  priority: 12
+  priority: 16
   category: "Systems / Hardware"
   category_slug: "systems-hardware"
   status: "Digital systems project"
@@ -220,6 +298,6 @@
   links:
     github: "https://github.com/JustinZHAO-05/VeriRotate"
   highlights:
-    - "Demonstrates low-level implementation ability beyond high-level ML scripting."
+    - "Implemented an RTL image-processing pipeline with synchronous SRAM and address transformation."
     - "Covers full verification flow from input driver to reconstructed BMP output."
-    - "Strengthens the hardware/systems side of an interdisciplinary Neuro-AI profile."
+    - "Integrated Verilog simulation with Python image pre/post-processing."

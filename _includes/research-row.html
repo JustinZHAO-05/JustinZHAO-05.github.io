@@ -1,0 +1,5 @@
+{% assign project = include.project %}
+<article class="research-row">
+  <a class="research-visual" href="{{ project.detail | relative_url }}"><img src="{{ project.thumbnail | relative_url }}" alt="{{ project.caption | escape }}" loading="lazy" width="720" height="480"></a>
+  <div class="research-row__copy"><h3><a href="{{ project.detail | relative_url }}">{{ project.title }}</a></h3><p class="research-subtitle">{{ project.subtitle }}</p><p>{{ project.role }}</p><p class="research-status">{{ project.status }}</p><div class="text-links">{% if project.links.paper %}<a href="{{ project.links.paper }}">Paper</a>{% endif %}<a href="{{ project.links.github }}">Code</a>{% if project.links.video %}<a href="{{ project.links.video }}">Presentation</a>{% endif %}<a href="{{ project.detail | relative_url }}">Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></div>
+</article>

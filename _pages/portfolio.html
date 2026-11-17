@@ -1,39 +1,7 @@
 ---
-layout: archive
-title: "Projects"
+layout: academic
+title: Projects
 permalink: /portfolio/
 author_profile: false
 ---
-
-{% assign projects = site.data.projects | sort: "priority" %}
-{% assign categories = "neuroscience-signals|Neuroscience / Signals,neuro-ai-rl|Neuro-AI / RL,applied-ml-systems|Applied ML / Systems,robotics-control|Robotics / Control,systems-hardware|Systems / Hardware" | split: "," %}
-
-<div class="portfolio-page">
-  <p class="page-lead">
-    Projects are ordered to support my current research direction first: computational neuroscience, cognitive neuroscience, Neuro-AI, applied machine learning, and then the robotics/control and systems work that built the technical base.
-  </p>
-
-  <div class="portfolio-filters" aria-label="Project categories">
-    {% for entry in categories %}
-      {% assign parts = entry | split: "|" %}
-      <a href="#{{ parts[0] }}">{{ parts[1] }}</a>
-    {% endfor %}
-  </div>
-
-  {% for entry in categories %}
-    {% assign parts = entry | split: "|" %}
-    <section class="project-category" id="{{ parts[0] }}">
-      <div class="section-heading section-heading--compact">
-        <span>{{ parts[1] }}</span>
-        <h2>{{ parts[1] }}</h2>
-      </div>
-      <div class="project-grid">
-        {% for project in projects %}
-          {% if project.category_slug == parts[0] %}
-            {% include project-card.html project=project %}
-          {% endif %}
-        {% endfor %}
-      </div>
-    </section>
-  {% endfor %}
-</div>
+<div class="site-wrap index-page"><header class="page-heading"><h1>Research &amp; Projects</h1><p class="page-lead">Computational neuroscience, cognitive modeling, neural data analysis, and the engineering work behind my research.</p></header><div class="project-filters" role="group" aria-label="Project categories">{% for category in site.data.project_categories %}<button type="button" data-filter="{{ category.id }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}">{{ category.title }} <span>{% if category.id == 'all' %}{{ site.data.projects.size }}{% else %}{% assign matches = site.data.projects | where: 'category_slug', category.id %}{{ matches.size }}{% endif %}</span></button>{% endfor %}</div><p class="filter-count" aria-live="polite">{{ site.data.projects.size }} projects</p><div class="project-archive">{% assign projects = site.data.projects | sort: 'priority' %}{% for project in projects %}{% include project-card.html project=project %}{% endfor %}</div></div>

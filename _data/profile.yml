@@ -1,0 +1,49 @@
+name: Yanzhe Zhao
+alternate_name: Yanzhe (Justin) Zhao
+updated: "2026-11-18"
+fields: "Computational & Cognitive Neuroscience"
+secondary_field: Neurolinguistics
+email: justinzhaoyz@outlook.com
+website: https://justinzhao-05.github.io/
+github: https://github.com/JustinZHAO-05
+orcid: https://orcid.org/0009-0003-5342-6611
+portrait: /images/profile-web.jpg
+portrait_small: /images/profile-avatar.jpg
+cv: /files/Yanzhe_Zhao_CV.pdf
+full_cv: /files/Yanzhe_Zhao_Full_CV.pdf
+intro: "Final-year Automation undergraduate at Tianjin University. Visiting student in Shanshan Qin Lab, Shanghai Jiao Tong University."
+interests_short: "I am interested in how neural population dynamics give rise to cognition across biological levels and evolution, including the neural mechanisms of language processing, language acquisition, and conscious experience."
+interests: "My research interests lie in computational and cognitive neuroscience and neurolinguistics. I am interested in how neural population dynamics implement cognition across levels of biological organization, how neurally based cognitive capacities emerge through evolution, the neural mechanisms of language processing and acquisition, and the neural basis of conscious subjective experience."
+education:
+  institution: Tianjin University
+  school: School of Future Technology
+  degree: B.Eng. in Automation
+  dates: "2023-July 2027 (expected)"
+  start: "2023-09"
+  graduation: "2027-07"
+  track: Intelligent Machine Platform Honors Track
+  short_description: "Selective honors track with two years of intensive mathematics, physics, and engineering foundations before major selection."
+  description: "The School of Future Technology is Tianjin University's elite undergraduate college. Its Intelligent Machine Platform honors track admits students through Gaokao-based selection and internal university selection. After two years of shared mathematics, physics, and engineering training, students freely choose a major; I selected Automation."
+  overall:
+    rank: "16/207"
+    percentile: "Top 7.7%"
+    average: "91.736/100"
+    gpa: "3.85/4.0"
+  year3:
+    rank: "1/8"
+    average: "95.4/100"
+    gpa: "3.96/4.0"
+ielts: "IELTS Overall 7.5 (13 September 2026)"
+skills:
+  - title: Computational Modeling
+    text: "Neural dynamical systems, latent-state modeling, model comparison, statistical analysis, numerical methods."
+  - title: Neural Data Analysis
+    text: "Processing and analysis of public EEG and fMRI datasets; EEG signal processing and neural-state analysis. Introductory cognitive neuroscience laboratory training through coursework."
+  - title: Scientific Computing
+    text: "Python, NumPy, SciPy, pandas, scikit-learn, Matplotlib, PyTorch, Brian2; CPU/GPU implementation with Numba, CUDA workflows, and Triton."
+  - title: Research and Engineering
+    text: "Reproducible analysis, numerical validation, scientific visualization, Git, Linux, Docker, LaTeX, C++, MATLAB/Simulink, and robotics/control."
+neural_project:
+  title: EEG Signal Processing and Decoding
+  summary: "Built reproducible workflows for spectral estimation, time-frequency analysis, ERP preprocessing, and ICA/PCA/LDA and SSVEP-TRCA decoding on public EEG datasets."
+  url: https://github.com/JustinZHAO-05/medical-signal-experiment4

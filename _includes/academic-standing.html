@@ -1,0 +1,10 @@
+{% assign education = site.data.profile.education %}
+<table class="standing-table">
+  <caption class="visually-hidden">Academic standing by scope</caption>
+  <thead><tr><td></td><th scope="col">Overall</th><th scope="col">Year 3 <span>(Automation)</span></th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Rank</th><td>{{ education.overall.rank }} <span>{{ education.overall.percentile }}</span></td><td>{{ education.year3.rank }}</td></tr>
+    <tr><th scope="row">Weighted average</th><td>{{ education.overall.average }}</td><td>{{ education.year3.average }}</td></tr>
+    <tr><th scope="row">GPA</th><td>{{ education.overall.gpa }}</td><td>{{ education.year3.gpa }}</td></tr>
+  </tbody>
+</table>

@@ -1,0 +1,12 @@
+- id: all
+  title: All
+- id: cognition
+  title: Neuroscience and Cognition
+- id: neuroscience-signals
+  title: Neural Data and Methods
+- id: robotics-control
+  title: Robotics and Control
+- id: applied-ml-systems
+  title: Applied ML
+- id: systems-hardware
+  title: Systems and Hardware

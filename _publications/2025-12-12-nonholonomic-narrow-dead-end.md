@@ -1,13 +1,22 @@
 ---
 title: "Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning"
+layout: publication
+kind: published
+year: 2025
+authors_short: "Xiong, D., Zhao, Y., Chen, Y., and Wang, Z."
+status: Peer-reviewed conference paper
+paperurl: https://doi.org/10.1145/3788149.3788204
+codeurl: https://github.com/JustinZHAO-05/cisDRL-RobotNav
+contribution: "Deep reinforcement-learning training/evaluation workflow, simulation engineering and experimental analysis."
 collection: publications
 category: conferences
-permalink: /publication/nonholonomic-narrow-dead-end-escape
+permalink: /publication/nonholonomic-narrow-dead-end-escape/
 excerpt: "A CSAI 2025 conference paper on reinforcement learning for Ackermann-style nonholonomic robots escaping narrow dead-end environments."
 date: 2025-12-12
 venue: "Proceedings of the 2025 9th International Conference on Computer Science and Artificial Intelligence"
 pages: "126-131"
 authors: "Denghan Xiong, Yanzhe Zhao, Yutong Chen, and Zichun Wang"
+author_names: [Denghan Xiong, Yanzhe Zhao, Yutong Chen, Zichun Wang]
 doi: "10.1145/3788149.3788204"
 doiurl: "https://doi.org/10.1145/3788149.3788204"
 dblpurl: "https://dblp.org/rec/conf/csai/XiongZCW25"

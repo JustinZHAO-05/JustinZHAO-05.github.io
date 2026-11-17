@@ -1,80 +1,16 @@
 ---
-layout: archive
-title: "CV"
+layout: academic
+title: Academic CV
 permalink: /cv/
 author_profile: false
 redirect_from:
   - /resume
 ---
-
-<div class="cv-page">
-  <section class="cv-hero">
-    <img src="/images/profile-avatar.jpg" alt="Yanzhe Zhao portrait">
-    <div>
-      <h2>Yanzhe (Justin) Zhao</h2>
-      <p>Computational Neuroscience | Cognitive Neuroscience | Neuro-AI</p>
-      <p>B.Eng. in Automation, School of Future Technology, Tianjin University. Intelligent Machine Platform Honors Track.</p>
-      <div class="cv-actions">
-        <a class="btn btn--primary" href="/files/Yanzhe_Zhao_CV.pdf">Download PDF CV</a>
-        <a class="btn btn--inverse" href="mailto:justinzhaoyz@outlook.com">Email</a>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <p><strong>Tianjin University</strong>, School of Future Technology. B.Eng. in Automation, 2023-present.</p>
-    <ul>
-      <li><strong>Overall:</strong> rank <strong>8/100</strong>; weighted score <strong>91.54</strong>; GPA <strong>3.85/4.0</strong>.</li>
-      <li><strong>Junior specialization:</strong> rank <strong>1/8</strong>; weighted score <strong>96.55</strong>; GPA <strong>3.98/4.0</strong>.</li>
-      <li>The School of Future Technology is Tianjin University's elite undergraduate college; the Intelligent Machine Platform honors track admits students through Gaokao-based selection and internal university selection.</li>
-      <li>The first two years provide shared training in mathematics, physics, and engineering fundamentals. After sophomore-year major selection, I chose Automation.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Research Interests</h2>
-    <p>Computational neuroscience, cognitive neuroscience, Neuro-AI, predictive processing, world models, natural language acquisition, cognitive maps, neural learning mechanisms, and embodied cognition.</p>
-  </section>
-
-  <section>
-    <h2>Publication</h2>
-    <p><strong>Denghan Xiong, Yanzhe Zhao, Yutong Chen, and Zichun Wang.</strong> Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning. <em>Proceedings of the 2025 9th International Conference on Computer Science and Artificial Intelligence</em>, ACM, pp. 126-131. DOI: <a href="https://doi.org/10.1145/3788149.3788204">10.1145/3788149.3788204</a>.</p>
-  </section>
-
-  <section>
-    <h2>Selected Training</h2>
-    <ul>
-      <li><strong>Summer research visit:</strong> Undergraduate Research Assistant, Shanshan Qin Lab, Shanghai Jiao Tong University, July-September 2026.</li>
-      <li><strong>Neuromatch Academy Computational Neuroscience</strong>, online summer school, July 2026.</li>
-      <li><strong>Junior spring:</strong> Brain and Cognition; Intelligent Medical Signal Processing; Optimization-based Machine Learning; Deep Learning; Pattern Recognition and Brain-like Intelligence.</li>
-      <li><strong>Junior fall:</strong> Equations of Mathematical Physics; Theory of Motor; Numerical Computational Method.</li>
-      <li><strong>Foundational coursework:</strong> Mathematical Analysis; Advanced Linear Algebra; Probability and Mathematical Statistics; Fundamental Physics; Circuit Principles; Analog Circuits; Digital Circuits; Automatic Control; Principles of Programming.</li>
-      <li><strong>Research training:</strong> Imperial College London / NeoScholar research with Prof. Sen Wang; University of Bristol CASE summer school.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Selected Course Grades</h2>
-    <ul>
-      <li>Numerical Computational Method: <strong>99</strong>; Fundamental Physics: <strong>99</strong>; Equations of Mathematical Physics: <strong>98</strong>.</li>
-      <li>Mathematical Analysis: <strong>95</strong>; Principles of Programming: <strong>95</strong>; Probability and Mathematical Statistics: <strong>94</strong>; Circuit Principles: <strong>94</strong>.</li>
-      <li>Advanced Linear Algebra: <strong>93</strong>; Analog Circuits: <strong>93</strong>; Automatic Control: <strong>92</strong>; Discrete Mathematics: <strong>92</strong>.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Selected Projects</h2>
-    {% assign projects = site.data.projects | sort: "priority" %}
-    <ul class="cv-project-list">
-      {% for project in projects %}
-        <li><strong>{{ project.title }}.</strong> {{ project.summary }} <a href="{{ project.links.github }}">GitHub</a></li>
-      {% endfor %}
-    </ul>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <p><strong>Programming:</strong> Python, C++, MATLAB/Simulink, Verilog, Java. <strong>Scientific computing:</strong> NumPy, SciPy, Matplotlib, PyTorch-style workflows, Brian2. <strong>Robotics and systems:</strong> ROS2/ROS1, Gazebo, control, embedded development, SolidWorks, Linux, Docker, Git, LaTeX.</p>
-  </section>
-</div>
+{% assign p = site.data.profile %}
+<div class="site-wrap index-page"><header class="page-heading"><h1>Academic CV</h1><p class="page-lead">{{ p.fields }} &middot; {{ p.secondary_field }}</p><div class="text-links"><a class="button button-primary" href="{{ p.cv | relative_url }}"><i class="far fa-file-pdf" aria-hidden="true"></i> Academic CV</a><a class="button" href="{{ p.full_cv | relative_url }}"><i class="far fa-file-pdf" aria-hidden="true"></i> Full CV</a></div></header><div class="cv-layout"><nav class="cv-index" aria-label="CV sections"><a href="#education">Education</a><a href="#interests">Research interests</a><a href="#experience">Research experience</a><a href="#publications">Publications</a><a href="#projects">Selected projects</a><a href="#coursework">Coursework</a><a href="#skills">Skills &amp; languages</a></nav><div class="cv-content">
+<section id="education"><h2>Education</h2><h3>{{ p.education.institution }}</h3><p>{{ p.education.degree }} &middot; {{ p.education.school }}<br>{{ p.education.dates }}</p><p>{{ p.education.description }}</p>{% include academic-standing.html %}</section>
+<section id="interests"><h2>Research Interests</h2><p>{{ p.interests }}</p></section>
+<section id="experience"><h2>Research Experience &amp; Training</h2>{% for exp in site.data.experience %}<article class="cv-experience"><h3>{{ exp.title }}</h3><p class="entry-date">{{ exp.dates }} &middot; {{ exp.institution }}</p><p>{{ exp.summary }}</p>{% if exp.bullets %}<ul>{% for item in exp.bullets %}<li>{{ item }}</li>{% endfor %}</ul>{% endif %}{% if exp.certificate %}<div class="text-links"><a href="{{ exp.certificate }}">Certificate</a><a href="{{ exp.project | relative_url }}">Project</a><a href="{{ exp.video }}">Presentation</a></div>{% endif %}</article>{% endfor %}</section>
+<section id="publications"><h2>Publications &amp; Preprints</h2>{% assign pubs = site.publications | sort: 'date' | reverse %}{% for pub in pubs %}{% include publication-row.html pub=pub compact=true %}{% endfor %}</section>
+<section id="projects"><h2>Selected Projects</h2>{% assign featured = site.data.projects | where: 'featured', true | sort: 'priority' %}{% for project in featured %}<article class="cv-project"><h3><a href="{{ project.detail | relative_url }}">{{ project.title }}</a></h3><p>{{ project.role }} {{ project.summary }}</p></article>{% endfor %}<article class="cv-project"><h3>{{ p.neural_project.title }}</h3><p>{{ p.neural_project.summary }}</p></article>{% assign engineering = site.data.projects | where: 'main_cv', true | sort: 'priority' %}{% for project in engineering %}<article class="cv-project"><h3><a href="/projects/{{ project.id | downcase }}/">{{ project.title }}</a></h3><p>{{ project.summary }}</p></article>{% endfor %}<p><a href="{{ '/portfolio/' | relative_url }}">Complete project archive</a></p></section>
+<section id="coursework"><h2>Coursework</h2>{% include course-list.html %}</section><section id="skills"><h2>Skills &amp; Languages</h2>{% for skill in p.skills %}<p><strong>{{ skill.title }}:</strong> {{ skill.text }}</p>{% endfor %}<p><strong>Languages:</strong> Chinese (native); English: {{ p.ielts }}.</p></section></div></div></div>

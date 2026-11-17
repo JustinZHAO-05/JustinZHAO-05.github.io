@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Yanzhe Zhao"
 title_separator          : "-"
 name                     : &name "Yanzhe Zhao"
-description              : &description "Computational neuroscience, cognitive neuroscience, and Neuro-AI, grounded in robotics, control, and reproducible scientific computing."
+description              : &description "Computational and cognitive neuroscience, neurolinguistics. Research, publications, and academic CV of Yanzhe Zhao."
 url                      : "https://JustinZHAO-05.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : ""
@@ -26,7 +26,7 @@ author:
   avatar           : "profile-avatar.jpg"
   name             : "Yanzhe (彦喆) Zhao"
   pronouns         : "he/him"  
-  bio              : "B.Eng. in Automation, School of Future Technology, Tianjin University. Computational neuroscience, cognitive neuroscience, and Neuro-AI."
+  bio              : "Final-year Automation undergraduate at Tianjin University and visiting student at Shanshan Qin Lab, Shanghai Jiao Tong University. Computational and cognitive neuroscience; neurolinguistics."
 
   location         : "Tianjin, China"
   employer         : "Tianjin University"
@@ -167,6 +167,11 @@ include:
   - _pages
   - files
 exclude:
+  - scripts
+  - _posts
+  - _talks
+  - _teaching
+  - _portfolio
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

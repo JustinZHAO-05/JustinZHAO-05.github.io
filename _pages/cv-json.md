@@ -1,17 +1,7 @@
 ---
-layout: archive
-title: "CV"
+layout: academic
+title: CV
 permalink: /cv-json/
-author_profile: false
-redirect_from:
-  - /resume-json
+redirect_to: /cv/
+sitemap: false
 ---
-
-{% include base_path %}
-
-{% include cv-template.html %}
-
-<div class="cv-download-links">
-  <a href="{{ base_path }}/files/Yanzhe_Zhao_CV.pdf" class="btn btn--primary">Download CV as PDF</a>
-  <a href="{{ base_path }}/cv/" class="btn btn--inverse">View Web CV</a>
-</div>

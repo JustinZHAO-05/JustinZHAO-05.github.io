@@ -1,0 +1,55 @@
+- id: qin-lab
+  dates: Jul 2026-Present
+  start: "2026-07"
+  title: Visiting Undergraduate Student
+  institution: Shanshan Qin Lab, Shanghai Jiao Tong University
+  url: https://ssqinlab.com/
+  kind: research
+  summary: "Longitudinal neural representations and computational modeling."
+  bullets:
+    - "Analyze longitudinal neural recordings to investigate the relationship between representational drift and representational sparsity."
+    - "Develop computational models to investigate candidate mechanisms underlying representational drift."
+    - "Initiating an undergraduate thesis project on computational modeling of circadian clock networks."
+- id: neuromatch
+  dates: 6-24 Jul 2026
+  start: "2026-07-06"
+  end: "2026-07-24"
+  title: Computational Neuroscience
+  institution: Neuromatch Academy
+  kind: training
+  summary: "Completed the interactive track and course project (128 hours); certificate issued 25 July 2026."
+  url: https://neuromatch.io/
+  certificate: https://portal.neuromatchacademy.org/certificate/0d72799e-57c7-45aa-b7ef-6f89a2958f52
+  project: /research/temporal-persistence/
+  video: https://youtu.be/NiODNrcgzmI
+  bullets:
+    - "Conceived the central project idea on temporal persistence in perceptual inference."
+    - "Contributed substantially to code, computational modeling, analysis and interpretation, and co-presented the final team project."
+- id: imperial-research
+  dates: Jul-Aug 2025
+  start: "2025-07"
+  end: "2025-08"
+  title: In-person Summer Research
+  institution: NeoScholar and Imperial College London
+  kind: research
+  summary: "Research supervised by Prof. Sen Wang; developed and evaluated deep reinforcement learning for nonholonomic narrow dead-end escape, leading to the CSAI 2025 paper. Evaluation: A."
+  bullets:
+    - "Developed and evaluated deep reinforcement learning for constrained robot navigation, with simulation engineering and experimental analysis."
+- id: perception-training
+  dates: Mar-Jun 2025
+  title: Robot Perception, Localization and Navigation (audit)
+  institution: NeoScholar and Imperial College London
+  kind: earlier
+  summary: "Studied SLAM, localization, navigation and implementation-oriented robotics methods."
+- id: manipulation-training
+  dates: Oct 2024-Jan 2025
+  title: Robotic Manipulation
+  institution: NeoScholar and Imperial College London
+  kind: earlier
+  summary: "Completed kinematics, dynamics, grasping, custom gripper design and simulation assignments; high score and CIEI certification."
+- id: bristol
+  dates: Jul 2024
+  title: Computing Applications in Science and Engineering
+  institution: University of Bristol Summer School
+  kind: earlier
+  summary: "Used Java and Go for scientific computing; built satellite-control simulation and Arduino/networked sensing projects."

@@ -1,85 +1,213 @@
 {
   "basics": {
-    "name": "Yanzhe (Justin) Zhao",
-    "label": "Computational Neuroscience | Cognitive Neuroscience | Neuro-AI",
+    "name": "Yanzhe Zhao",
+    "label": "Computational & Cognitive Neuroscience | Neurolinguistics",
+    "image": "https://justinzhao-05.github.io/images/profile-web.jpg",
     "email": "justinzhaoyz@outlook.com",
-    "phone": "+86 17765119079",
-    "website": "https://justinzhao-05.github.io/",
-    "summary": "B.Eng. in Automation student at Tianjin University, School of Future Technology, an elite undergraduate college. Trained through the Intelligent Machine Platform honors track, with two years of shared mathematics, physics, and engineering foundations before selecting Automation. Research interests center on computational neuroscience, cognitive neuroscience, and Neuro-AI, grounded in robotics, control, and reproducible scientific computing.",
-    "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Tianjin",
-      "countryCode": "China",
-      "region": ""
-    },
+    "url": "https://justinzhao-05.github.io/",
+    "summary": "Final-year Automation undergraduate at Tianjin University. Visiting student in Shanshan Qin Lab, Shanghai Jiao Tong University. My research interests lie in computational and cognitive neuroscience and neurolinguistics. I am interested in how neural population dynamics implement cognition across levels of biological organization, how neurally based cognitive capacities emerge through evolution, the neural mechanisms of language processing and acquisition, and the neural basis of conscious subjective experience.",
     "profiles": [
       {
-        "network": "ORCID",
-        "username": "0009-0003-5342-6611",
-        "url": "https://orcid.org/0009-0003-5342-6611"
+        "network": "GitHub",
+        "url": "https://github.com/JustinZHAO-05"
       },
       {
-        "network": "GitHub",
-        "username": "JustinZHAO-05",
-        "url": "https://github.com/JustinZHAO-05"
+        "network": "ORCID",
+        "url": "https://orcid.org/0009-0003-5342-6611"
       }
     ]
   },
-  "work": [
-    {
-      "company": "Shanshan Qin Lab, Shanghai Jiao Tong University",
-      "position": "Visiting Undergraduate Research Assistant",
-      "website": "",
-      "startDate": "2026-07",
-      "endDate": "2026-09",
-      "summary": "Upcoming summer research visit as an undergraduate research assistant.",
-      "highlights": [
-        "Summer research visit at Shanghai Jiao Tong University."
-      ]
-    }
-  ],
   "education": [
     {
-      "institution": "Tianjin University, School of Future Technology",
-      "area": "B.Eng. in Automation, Intelligent Machine Platform Honors Track",
-      "studyType": "Undergraduate",
-      "startDate": "2023",
-      "endDate": "Present",
-      "gpa": "Overall 3.85/4.0; Junior specialization 3.98/4.0",
+      "institution": "Tianjin University",
+      "area": "Automation",
+      "studyType": "B.Eng.",
+      "startDate": "2023-09",
+      "endDate": "2027-07",
+      "gpa": "3.85/4.0",
       "courses": [
-        "Overall standing: rank 8/100, weighted score 91.54, GPA 3.85/4.0",
-        "Junior specialization standing: rank 1/8, weighted score 96.55, GPA 3.98/4.0",
-        "Elite first-two-year training in mathematics, physics, and engineering fundamentals",
-        "Brain and Cognition",
+        "Deep Learning: 97",
+        "Brain and Cognitive Science: 96",
+        "Pattern Recognition and Brain-Inspired Intelligence: 95",
+        "Machine Learning based on Optimization Theory: 92",
         "Intelligent Medical Signal Processing",
-        "Optimization-based Machine Learning",
-        "Deep Learning",
-        "Pattern Recognition and Brain-like Intelligence",
-        "Equations of Mathematical Physics",
-        "Theory of Motor",
-        "Numerical Computational Method",
-        "Circuit Principles",
-        "Analog Circuits",
+        "Numerical Computational Method: 99",
+        "Fundamental Physics: 99",
+        "Equations of Mathematical Physics: 98",
+        "Mathematical Analysis: 95",
+        "Probability and Mathematical Statistics: 94",
+        "Advanced Linear Algebra: 93",
+        "Discrete Mathematics: 92",
+        "Principles of Programming: 95",
+        "Circuit Principles: 94",
+        "Analog Circuits: 93",
+        "Automatic Control: 92",
         "Digital Circuits",
-        "Principles of Programming",
-        "Selected grades: Numerical Computational Method 99, Fundamental Physics 99, Equations of Mathematical Physics 98, Mathematical Analysis 95, Principles of Programming 95, Probability and Mathematical Statistics 94, Circuit Principles 94, Advanced Linear Algebra 93, Analog Circuits 93, Automatic Control 92, Discrete Mathematics 92"
+        "Signals and Systems",
+        "Theory of Motor",
+        "Robot Kinematics and Dynamics",
+        "Computer Organization and Architecture",
+        "C++ Programming"
+      ],
+      "summary": "Overall: 16/207, Top 7.7%, 91.736/100, 3.85/4.0; Year 3: 1/8, 95.4/100, 3.96/4.0"
+    }
+  ],
+  "work": [
+    {
+      "name": "Shanshan Qin Lab, Shanghai Jiao Tong University",
+      "position": "Visiting Undergraduate Student",
+      "startDate": "2026-07",
+      "endDate": "",
+      "summary": "Longitudinal neural representations and computational modeling.",
+      "highlights": [
+        "Analyze longitudinal neural recordings to investigate the relationship between representational drift and representational sparsity.",
+        "Develop computational models to investigate candidate mechanisms underlying representational drift.",
+        "Initiating an undergraduate thesis project on computational modeling of circadian clock networks."
+      ]
+    },
+    {
+      "name": "NeoScholar and Imperial College London",
+      "position": "In-person Summer Research",
+      "startDate": "2025-07",
+      "endDate": "2025-08",
+      "summary": "Research supervised by Prof. Sen Wang; developed and evaluated deep reinforcement learning for nonholonomic narrow dead-end escape, leading to the CSAI 2025 paper. Evaluation: A.",
+      "highlights": [
+        "Developed and evaluated deep reinforcement learning for constrained robot navigation, with simulation engineering and experimental analysis."
       ]
     }
   ],
-  "certificates": [],
+  "certificates": [
+    {
+      "name": "Computational Neuroscience - interactive track and course project (128 hours)",
+      "date": "2026-07-25",
+      "issuer": "Neuromatch Academy",
+      "url": "https://portal.neuromatchacademy.org/certificate/0d72799e-57c7-45aa-b7ef-6f89a2958f52"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Observation architecture and the identifiability of temporal irreversibility",
+      "publisher": "Submitted to Physical Review E",
+      "releaseDate": "2026-11-17",
+      "url": "https://doi.org/10.5281/zenodo.24306357",
+      "summary": "A theoretical study of how observation architecture shapes the identifiability of temporal irreversibility in multichannel recordings."
+    },
+    {
+      "name": "HP-GSBS: Accelerating greedy state boundary search with reusable interval statistics",
+      "publisher": "Under review at Neuroinformatics",
+      "releaseDate": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.25898",
+      "summary": "Reusable interval statistics and CPU/GPU implementations for efficient neural-state segmentation, evaluated with synthetic signals, EEG, and naturalistic fMRI."
+    },
+    {
+      "name": "Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning",
+      "publisher": "Peer-reviewed conference paper",
+      "releaseDate": "2025-12-12",
+      "url": "https://doi.org/10.1145/3788149.3788204",
+      "summary": "A CSAI 2025 conference paper on reinforcement learning for Ackermann-style nonholonomic robots escaping narrow dead-end environments."
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "HP-GSBS",
+      "url": "https://justinzhao-05.github.io/research/hp-gsbs/",
+      "summary": "Reusable interval statistics and CPU/GPU implementations for fast, reproducible segmentation of neural recordings."
+    },
+    {
+      "name": "Observation Architecture and Temporal Irreversibility",
+      "url": "https://justinzhao-05.github.io/research/temporal-irreversibility/",
+      "summary": "A theoretical investigation of how measurement structure shapes inference about the arrow of time in multichannel signals."
+    },
+    {
+      "name": "Temporal Persistence of Perceptual Inference",
+      "url": "https://justinzhao-05.github.io/research/temporal-persistence/",
+      "summary": "Latent-state models of how sensory-reliant and prior-reliant inference modes persist across perceptual decisions."
+    },
+    {
+      "name": "EEG Time-Frequency Analysis with OpenBMI",
+      "url": "https://justinzhao-05.github.io/projects/time-frequency-analysis-eeg-openbmi/",
+      "summary": "A reproducible Python workflow for STFT, CWT, wavelet multiresolution, and OpenBMI motor imagery EEG ERD/lateralization analysis."
+    },
+    {
+      "name": "EEG Feature Enhancement and Single-Trial Classification",
+      "url": "https://justinzhao-05.github.io/projects/medical-signal-experiment4/",
+      "summary": "A reproducible Python implementation of ERP ICA/PCA/LDA target detection and SSVEP TRCA single-trial EEG recognition."
+    },
+    {
+      "name": "EEG Spectral Estimation",
+      "url": "https://justinzhao-05.github.io/projects/medical-signal-spectral-estimation-eeg/",
+      "summary": "A reproducible study of classical and AR spectral estimators on synthetic signals and LEMON closed-eye resting-state EEG."
+    },
+    {
+      "name": "ERP Filtering and EEG Preprocessing",
+      "url": "https://justinzhao-05.github.io/projects/medical-signal-filtering-erp-analysis/",
+      "summary": "A complete ERP filtering study covering IIR/FIR filter design, EEG preprocessing, waveform interpretation, and bilingual reporting."
+    },
+    {
+      "name": "Brunel Balance Network",
+      "url": "https://justinzhao-05.github.io/projects/brunel-balance-network/",
+      "summary": "A Brian2 reproduction and analysis of canonical sparse excitatory/inhibitory spiking network regimes from Brunel 2000."
+    },
+    {
+      "name": "Nonholonomic Dead-End Escape with Deep RL",
+      "url": "https://justinzhao-05.github.io/projects/cisdrl-robotnav/",
+      "summary": "A SAC-based navigation and evaluation stack for Ackermann-style robots escaping narrow dead-end environments."
+    },
+    {
+      "name": "Eight-Cable-Driven Parallel Robot",
+      "url": "https://justinzhao-05.github.io/projects/eight-cable-driven-parallel-robot/",
+      "summary": "A desktop-scale 6-DOF cable-driven parallel robot built from mechanism design through modeling and control."
+    },
+    {
+      "name": "Deep Learning Exp2: MNIST Noise Robustness",
+      "url": "https://justinzhao-05.github.io/projects/dl-exp2-english-report/",
+      "summary": "A reproducible PyTorch study of LeNet-style MNIST recognition, feature visualization, self-collected handwriting samples, and Gaussian-noise robustness."
+    },
+    {
+      "name": "SAGIN ML: Satellite Link Optimization",
+      "url": "https://justinzhao-05.github.io/projects/sagin-ml-satellite-link-optimization/",
+      "summary": "A Space-Air-Ground-Sea network project combining PCA-based satellite image transmission and cost-aware UAV link switching."
+    },
+    {
+      "name": "Q-RIS-UAV Secure Energy Optimization",
+      "url": "https://justinzhao-05.github.io/projects/qris-uav-public-report/",
+      "summary": "A public academic report and reproducible simulation for QKD-protected RIS-UAV offshore monitoring with secure energy-efficiency optimization."
+    },
+    {
+      "name": "MNIST MLP Experiment Diagnosis",
+      "url": "https://justinzhao-05.github.io/projects/mnist-mlp-experiment-diagnosis/",
+      "summary": "A complete NumPy MLP project for MNIST training, abnormal-case diagnosis, repair experiments, and photographed handwriting generalization."
+    },
+    {
+      "name": "VeriRotate: BMP Rotation in Verilog",
+      "url": "https://justinzhao-05.github.io/projects/verirotate/",
+      "summary": "A pure-hardware pipeline for rotating 24-bit BMP images 90 degrees counter-clockwise."
+    }
+  ],
   "skills": [
     {
-      "name": "Programming and Scientific Computing",
-      "keywords": ["Python", "C++", "MATLAB/Simulink", "Verilog", "Java", "NumPy", "SciPy", "scikit-learn", "Matplotlib", "Brian2"]
+      "name": "Computational Modeling",
+      "keywords": [
+        "Neural dynamical systems, latent-state modeling, model comparison, statistical analysis, numerical methods."
+      ]
     },
     {
-      "name": "Research Methods",
-      "keywords": ["Computational neuroscience", "EEG/ERP signal processing", "Deep reinforcement learning", "Applied machine learning", "Experiment diagnosis", "Reproducible workflows", "Technical writing"]
+      "name": "Neural Data Analysis",
+      "keywords": [
+        "Processing and analysis of public EEG and fMRI datasets; EEG signal processing and neural-state analysis. Introductory cognitive neuroscience laboratory training through coursework."
+      ]
     },
     {
-      "name": "Robotics and Systems",
-      "keywords": ["ROS2", "Gazebo", "Control", "Embedded systems", "SolidWorks", "Linux", "Docker", "Git", "LaTeX"]
+      "name": "Scientific Computing",
+      "keywords": [
+        "Python, NumPy, SciPy, pandas, scikit-learn, Matplotlib, PyTorch, Brian2; CPU/GPU implementation with Numba, CUDA workflows, and Triton."
+      ]
+    },
+    {
+      "name": "Research and Engineering",
+      "keywords": [
+        "Reproducible analysis, numerical validation, scientific visualization, Git, Linux, Docker, LaTeX, C++, MATLAB/Simulink, and robotics/control."
+      ]
     }
   ],
   "languages": [
@@ -89,57 +217,18 @@
     },
     {
       "language": "English",
-      "fluency": "Proficient"
+      "fluency": "IELTS Overall 7.5 (13 September 2026)"
     }
   ],
   "interests": [
     {
       "name": "Research",
-      "keywords": ["Computational neuroscience", "Cognitive neuroscience", "Neuro-AI", "Predictive processing", "World models", "Embodied cognition"]
+      "keywords": [
+        "My research interests lie in computational and cognitive neuroscience and neurolinguistics. I am interested in how neural population dynamics implement cognition across levels of biological organization, how neurally based cognitive capacities emerge through evolution, the neural mechanisms of language processing and acquisition, and the neural basis of conscious subjective experience."
+      ]
     }
   ],
   "references": [],
-  "publications": [
-    {
-      "name": "Nonholonomic Narrow Dead-End Escape with Deep Reinforcement Learning",
-      "publisher": "Proceedings of the 2025 9th International Conference on Computer Science and Artificial Intelligence, ACM",
-      "releaseDate": "2025-12-12",
-      "website": "https://doi.org/10.1145/3788149.3788204",
-      "summary": "Conference paper on deep reinforcement learning for nonholonomic robots escaping narrow dead-end environments."
-    }
-  ],
   "presentations": [],
-  "teaching": [],
-  "portfolio": [
-    {
-      "name": "EEG Feature Enhancement and Single-Trial Classification",
-      "url": "https://github.com/JustinZHAO-05/medical-signal-experiment4",
-      "summary": "Reproducible Python implementation of ERP ICA/PCA/LDA target detection and SSVEP TRCA single-trial EEG recognition."
-    },
-    {
-      "name": "EEG Time-Frequency Analysis with OpenBMI",
-      "url": "https://github.com/JustinZHAO-05/time-frequency-analysis-eeg-openbmi",
-      "summary": "Reproducible Python workflow for STFT, CWT, wavelet multiresolution, and OpenBMI motor imagery EEG ERD/lateralization analysis."
-    },
-    {
-      "name": "Deep Learning Exp2: MNIST Noise Robustness",
-      "url": "https://github.com/JustinZHAO-05/dl-exp2-english-report",
-      "summary": "PyTorch study of LeNet-style MNIST recognition, feature visualization, self-collected handwriting samples, and Gaussian-noise robustness."
-    },
-    {
-      "name": "Q-RIS-UAV Secure Energy Optimization",
-      "url": "https://github.com/JustinZHAO-05/qris-uav-public-report",
-      "summary": "Public report and simulation for QKD-protected RIS-UAV offshore monitoring with secure energy-efficiency optimization."
-    },
-    {
-      "name": "SAGIN ML: Satellite Link Optimization",
-      "url": "https://github.com/JustinZHAO-05/sagin-ml-satellite-link-optimization",
-      "summary": "Applied ML project for PCA-based satellite image transmission and cost-aware UAV communication-link switching."
-    },
-    {
-      "name": "MNIST MLP Experiment Diagnosis",
-      "url": "https://github.com/JustinZHAO-05/mnist-mlp-experiment-diagnosis",
-      "summary": "NumPy MLP experiment covering MNIST training, abnormal-case diagnosis, repair experiments, and photographed handwriting generalization."
-    }
-  ]
+  "teaching": []
 }
