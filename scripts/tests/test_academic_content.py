@@ -60,18 +60,28 @@ class AcademicContentTests(unittest.TestCase):
         for full in (False, True):
             cv = self.cv(full)
             research = cv.split(r"\section{Research Experience}", 1)[1].split(r"\section{Publications and Preprints}", 1)[0]
-            self.assertIn("Temporal Persistence of Perceptual Inference", research)
-            self.assertIn("Neuromatch Academy", research)
-            self.assertIn("Zenodo preprint. DOI:", cv)
+            self.assertIn("Temporal Persistence of Perceptual Inference" if full else "Neuromatch Academy Computational Neuroscience", research)
+            self.assertIn("Zenodo preprint", cv)
             self.assertIn("10.5281/zenodo.24306357", cv)
-            self.assertIn("arXiv preprint. DOI:", cv)
+            self.assertIn("arXiv preprint", cv)
             self.assertIn("10.48550/arXiv.2610.25898", cv)
             self.assertIn(r"\href{https://github.com/JustinZHAO-05/HP-GSBS}{GitHub}", cv)
             skills = cv.split(r"\section{Skills and Languages}", 1)[1]
             for omitted in ("pandas", "scikit-learn", "Brian2", "Triton"):
                 self.assertNotIn(omitted, skills)
             self.assertIn("Intelligent Medical Signal Processing coursework", cv)
-        self.assertEqual(self.cv().count("Temporal Persistence of Perceptual Inference"), 1)
+
+    def test_main_cv_publications_and_neuromatch_project(self):
+        first, second = self.cv().split(r"\newpage", 1)
+        self.assertIn("From robots to minds: read my intellectual journey.", first)
+        for pub in ACADEMIC.publication_records():
+            self.assertIn(ACADEMIC.tex(pub["title"]), first)
+            self.assertIn(ACADEMIC.link(pub["doiurl"], "DOI"), first)
+            self.assertNotIn("}{" + pub["doi"] + "}", first)
+        self.assertTrue(second.lstrip().startswith(r"\section{Selected Research and Projects}"))
+        self.assertIn("Temporal Persistence of Perceptual Inference", second)
+        self.assertIn(ACADEMIC.link(self.profile["website"] + "research/temporal-persistence/", "Project"), second)
+        self.assertIn(ACADEMIC.link("https://youtu.be/NiODNrcgzmI", "Presentation"), second)
 
     def test_essay_chapters_and_anonymization(self):
         metadata = ACADEMIC.read(ROOT / "_data/essay.yml")

@@ -61,7 +61,8 @@ def render_cv(p, experience, projects, courses, pubs, studies, reading, full):
     out = (r"\cvheader{" + tex(p["name"]) + "}{" + tex(p["fields"]) + "}{" + tex(p["secondary_field"]) + "}{" + tex(p["email"]) + "}{" + contact_lines + "}\n")
     out += section("Research Interests") + tex(p["interests"] + " " + p["trajectory"]) + "\\par\n"
     journey_url = p["website"].rstrip("/") + p["journey"]
-    out += r"\contactline{" + link(journey_url, "Intellectual journey and research philosophy: " + urlsplit(p["website"]).netloc + p["journey"]) + "}\n"
+    journey_label = "Intellectual journey and research philosophy: " + urlsplit(p["website"]).netloc + p["journey"] if full else "From robots to minds: read my intellectual journey."
+    out += r"\contactline{" + link(journey_url, journey_label) + "}\n"
     out += section("Education") + entry(e["institution"], e["dates"], e["degree"] + ", " + e["school"])
     out += tex(e["track"] + ". " + e["short_description"]) + "\\par\n"
     out += "\\begin{tabularx}{\\linewidth}{@{}lXX@{}}\n"
@@ -71,28 +72,39 @@ def render_cv(p, experience, projects, courses, pubs, studies, reading, full):
         out += tex(label) + " & " + tex(overall) + " & " + tex(e["year3"][key]) + r" \\" + "\n"
     out += "\\end{tabularx}\n" + section("Research Experience")
     out += entry(lab["title"], lab["dates"], lab["institution"]) + bullets(lab["bullets"])
-    out += entry(nma_project["title"], nma["dates"], nma["institution"] + ", " + nma["team"])
-    out += tex(nma["research_summary"]) + " " + link(p["website"].rstrip("/") + nma["project"], "Project") + ".\\par\n"
+    nma_url = p["website"].rstrip("/") + nma["project"]
+    if full:
+        out += entry(nma_project["title"], nma["dates"], nma["institution"] + ", " + nma["team"])
+        out += tex(nma["research_summary"]) + " " + link(nma_url, "Project") + ".\\par\n"
+    else:
+        out += entry(nma["institution"] + " " + nma["title"], nma["dates"], text=nma["research_summary"])
     out += entry(imperial["title"], imperial["dates"], imperial["institution"], imperial["summary"])
     out += section("Publications and Preprints")
     for kind, title in [("preprint", "Preprints and manuscripts under review"), ("published", "Peer-reviewed publication")]:
-        out += r"\pubgroup{" + title + "}\n"
+        compact_group = not full and kind == "published"
+        out += r"\pubgroup" + ("[4]" if compact_group else "") + "{" + title + "}\n"
         for pub in pubs:
             if pub.get("kind", "published") != kind:
                 continue
             authors = tex(pub["authors"]).replace("Yanzhe Zhao", r"\textbf{Yanzhe Zhao}")
-            out += r"\needspace{4\baselineskip}" + "\n" + authors + ". " + link(pub.get("paperurl", pub["doiurl"]), pub["title"]) + ". " + tex(pub["year"]) + ". "
+            if not compact_group:
+                out += r"\needspace{4\baselineskip}" + "\n"
+            out += authors + ". " + link(pub.get("paperurl", pub["doiurl"]), pub["title"]) + ". " + tex(pub["year"]) + ". "
             if kind == "preprint":
                 out += r"\textit{" + tex(pub["status"]) + "}."
-                out += r"\newline " + tex(pub["preprint_server"]) + " preprint. DOI: " + link(pub["doiurl"], pub["doi"])
-                if pub["preprint_server"] == "arXiv" and pub.get("codeurl"):
-                    out += " / " + link(pub["codeurl"], "GitHub")
+                code = link(pub["codeurl"], "GitHub") if pub["preprint_server"] == "arXiv" and pub.get("codeurl") else ""
+                if full:
+                    out += r"\newline " + tex(pub["preprint_server"]) + " preprint. DOI: " + link(pub["doiurl"], pub["doi"])
+                    if code:
+                        out += " / " + code
+                else:
+                    out += " " + tex(pub["preprint_server"]) + " preprint (" + link(pub["doiurl"], "DOI") + ("; " + code if code else "") + ")."
             else:
                 out += "CSAI 2025, ACM, pp. 126-131. " + link(pub["doiurl"], "DOI")
             if pub.get("contribution") and (full or kind == "preprint"):
                 out += r"\newline " + tex("Contribution: " + pub["contribution"])
             out += "\\par\\smallskip\n"
-    out += "\\needspace{6\\baselineskip}\n"
+    out += "\\needspace{6\\baselineskip}\n" if full else "\\newpage\n"
     out += section("Research and Project Portfolio" if full else "Selected Research and Projects")
     for project in projects if full else []:
         course = project.get("coursework")
@@ -106,6 +118,9 @@ def render_cv(p, experience, projects, courses, pubs, studies, reading, full):
         out += ".\\par\n"
         out += tex("Methods: " + project["methods"]) + "\\par\n"
     if not full:
+        out += entry(nma_project["title"], "2026", nma_project["subtitle"])
+        out += tex("Compared latent-state models of perceptual inference using run-level cross-validation on 83,210 judgments from 12 participants.")
+        out += " " + " / ".join([link(nma_url, "Project"), link(nma_project["links"]["github"], "Code"), link(nma["video"], "Presentation")]) + ".\\par\n"
         out += entry(p["neural_project"]["title"], text=p["neural_project"]["summary"]) + link(p["neural_project"]["url"], "Code and reports") + "\\par\n"
         for project in projects:
             if project.get("main_cv"):
