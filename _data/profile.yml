@@ -42,10 +42,10 @@ skills:
   - title: Neural Data Analysis
     text: "Processing and analysis of public EEG and fMRI datasets; EEG signal processing and neural-state analysis. Introductory cognitive neuroscience laboratory training through coursework."
   - title: Scientific Computing
-    text: "Python, NumPy, SciPy, pandas, scikit-learn, Matplotlib, PyTorch, Brian2; CPU/GPU implementation with Numba, CUDA workflows, and Triton."
+    text: "Python, NumPy, SciPy, Matplotlib, and PyTorch; CPU/GPU implementation with Numba and CUDA."
   - title: Research and Engineering
     text: "Reproducible analysis, numerical validation, scientific visualization, Git, Linux, Docker, LaTeX, C++, MATLAB/Simulink, and robotics/control."
 neural_project:
   title: EEG Signal Processing and Decoding
-  summary: "Built reproducible workflows for spectral estimation, time-frequency analysis, ERP preprocessing, and ICA/PCA/LDA and SSVEP-TRCA decoding on public EEG datasets."
+  summary: "For Intelligent Medical Signal Processing coursework, built reproducible workflows for spectral estimation, time-frequency analysis, ERP preprocessing, and ICA/PCA/LDA and SSVEP-TRCA decoding on public EEG datasets."
   url: https://github.com/JustinZHAO-05/medical-signal-experiment4

@@ -56,6 +56,23 @@ class AcademicContentTests(unittest.TestCase):
             self.assertNotIn("Stanford", text)
             self.assertNotIn("University of Washington", text)
 
+    def test_research_experience_preprints_and_skill_list(self):
+        for full in (False, True):
+            cv = self.cv(full)
+            research = cv.split(r"\section{Research Experience}", 1)[1].split(r"\section{Publications and Preprints}", 1)[0]
+            self.assertIn("Temporal Persistence of Perceptual Inference", research)
+            self.assertIn("Neuromatch Academy", research)
+            self.assertIn("Zenodo preprint. DOI:", cv)
+            self.assertIn("10.5281/zenodo.24306357", cv)
+            self.assertIn("arXiv preprint. DOI:", cv)
+            self.assertIn("10.48550/arXiv.2610.25898", cv)
+            self.assertIn(r"\href{https://github.com/JustinZHAO-05/HP-GSBS}{GitHub}", cv)
+            skills = cv.split(r"\section{Skills and Languages}", 1)[1]
+            for omitted in ("pandas", "scikit-learn", "Brian2", "Triton"):
+                self.assertNotIn(omitted, skills)
+            self.assertIn("Intelligent Medical Signal Processing coursework", cv)
+        self.assertEqual(self.cv().count("Temporal Persistence of Perceptual Inference"), 1)
+
     def test_essay_chapters_and_anonymization(self):
         metadata = ACADEMIC.read(ROOT / "_data/essay.yml")
         for language in ("en", "zh"):

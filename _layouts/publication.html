@@ -5,6 +5,7 @@ layout: academic
 <article class="site-wrap detail-page reading-page">
   <a class="back-link" href="{{ '/publications/' | relative_url }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> All publications</a>
   <h1>{{ page.title }}</h1><p class="page-lead">{{ page.authors | replace: 'Yanzhe Zhao', '<strong>Yanzhe Zhao</strong>' }}</p><p class="research-status">{{ page.status }}</p>
-  <div class="text-links"><a href="{{ page.paperurl }}">{% if page.kind == 'preprint' %}Read preprint{% else %}DOI{% endif %}</a><a href="{{ page.codeurl }}">Code</a><a href="{{ page.bibtexurl | relative_url }}" download>BibTeX</a><button class="copy-citation icon-button" data-citation="{{ page.bibtexurl | relative_url }}" aria-label="Copy BibTeX" title="Copy BibTeX" hidden><i class="far fa-copy" aria-hidden="true"></i></button></div>
+  {% if page.kind == 'preprint' %}<p class="publication-identifier">{{ page.preprint_server }} preprint &middot; DOI: <a href="{{ page.doiurl }}">{{ page.doi }}</a></p>{% endif %}
+  <div class="text-links"><a href="{{ page.paperurl }}">{% if page.kind == 'preprint' %}Read on {{ page.preprint_server }}{% else %}DOI{% endif %}</a><a href="{{ page.codeurl }}">GitHub</a><a href="{{ page.bibtexurl | relative_url }}" download>BibTeX</a><button class="copy-citation icon-button" data-citation="{{ page.bibtexurl | relative_url }}" aria-label="Copy BibTeX" title="Copy BibTeX" hidden><i class="far fa-copy" aria-hidden="true"></i></button></div>
   <div class="publication-body">{{ content }}</div><h2>Contribution</h2><p>{{ page.contribution }}</p>{% if page.researchurl %}<p><a href="{{ page.researchurl | relative_url }}">Research overview and figures <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>{% endif %}
 </article>

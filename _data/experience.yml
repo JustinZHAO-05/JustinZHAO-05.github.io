@@ -21,6 +21,9 @@
   url: https://neuromatch.io/
   certificate: https://portal.neuromatchacademy.org/certificate/0d72799e-57c7-45aa-b7ef-6f89a2958f52
   project: /research/temporal-persistence/
+  project_id: temporal-persistence
+  team: Team Doraemon
+  research_summary: "Proposed the research question, developed code and analyzed latent-state models of perceptual inference, and co-presented the findings."
   video: https://youtu.be/NiODNrcgzmI
   bullets:
     - "Conceived the central project idea on temporal persistence in perceptual inference."

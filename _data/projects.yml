@@ -80,6 +80,7 @@
   category: "Neuroscience / Signals"
   category_slug: "neuroscience-signals"
   status: "Medical signal processing course project"
+  coursework: Intelligent Medical Signal Processing
   summary: "A reproducible Python workflow for STFT, CWT, wavelet multiresolution, and OpenBMI motor imagery EEG ERD/lateralization analysis."
   role: "Implemented time-frequency analysis and baseline-corrected motor imagery EEG ERD and lateralization workflows."
   methods: "Fourier analysis, STFT parameter sweep, CWT, DWT multiresolution, baseline-corrected mu/beta ERD, C3/C4 lateralization"
@@ -99,6 +100,7 @@
   category: "Neuroscience / Signals"
   category_slug: "neuroscience-signals"
   status: "Medical signal processing course project"
+  coursework: Intelligent Medical Signal Processing
   summary: "A reproducible Python implementation of ERP ICA/PCA/LDA target detection and SSVEP TRCA single-trial EEG recognition."
   role: "Implemented the public analysis workflow, generated English figures/tables/report, and added regression tests for split logic, PCA/LDA isolation, and TRCA behavior."
   methods: "ERP preprocessing, ICA artifact inspection, PCA dimension reduction, LDA classification, SSVEP TRCA, leave-one-block-out validation"
@@ -118,6 +120,7 @@
   category: "Neuroscience / Signals"
   category_slug: "neuroscience-signals"
   status: "Reproducible lab project"
+  coursework: Intelligent Medical Signal Processing
   summary: "A reproducible study of classical and AR spectral estimators on synthetic signals and LEMON closed-eye resting-state EEG."
   role: "Designed the experiments, implemented the analysis pipeline, produced report figures, and wrote the technical report."
   methods: "FFT, Hamming periodogram, autocorrelation PSD, Welch PSD, Yule-Walker AR spectra, FPE order selection"
@@ -137,6 +140,7 @@
   category: "Neuroscience / Signals"
   category_slug: "neuroscience-signals"
   status: "Reproducible lab project"
+  coursework: Intelligent Medical Signal Processing
   summary: "A complete ERP filtering study covering IIR/FIR filter design, EEG preprocessing, waveform interpretation, and bilingual reporting."
   role: "Implemented filter comparisons, ERP analysis, quantitative summaries, and publication-style reports."
   methods: "IIR/FIR filter design, zero-phase filtering, delay analysis, baseline drift suppression, ERP waveform comparison"

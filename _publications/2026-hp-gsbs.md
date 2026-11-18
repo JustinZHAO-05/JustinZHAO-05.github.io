@@ -5,6 +5,7 @@ permalink: /publication/hp-gsbs/
 date: 2026-10-23
 year: 2026
 kind: preprint
+preprint_server: arXiv
 authors: "Yanzhe Zhao and Yongzhang Ji"
 author_names: [Yanzhe Zhao, Yongzhang Ji]
 authors_short: "Zhao, Y., and Ji, Y."

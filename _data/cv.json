@@ -118,6 +118,8 @@
       "publisher": "Submitted to Physical Review E",
       "releaseDate": "2026-11-17",
       "url": "https://doi.org/10.5281/zenodo.24306357",
+      "doi": "10.5281/zenodo.24306357",
+      "codeUrl": "https://github.com/JustinZHAO-05/observation-architecture-temporal-irreversibility",
       "summary": "A theoretical study of how observation architecture shapes the identifiability of temporal irreversibility in multichannel recordings."
     },
     {
@@ -125,6 +127,8 @@
       "publisher": "Under review at Neuroinformatics",
       "releaseDate": "2026-10-23",
       "url": "https://arxiv.org/abs/2610.25898",
+      "doi": "10.48550/arXiv.2610.25898",
+      "codeUrl": "https://github.com/JustinZHAO-05/HP-GSBS",
       "summary": "Reusable interval statistics and CPU/GPU implementations for efficient neural-state segmentation, evaluated with synthetic signals, EEG, and naturalistic fMRI."
     },
     {
@@ -132,6 +136,8 @@
       "publisher": "Peer-reviewed conference paper",
       "releaseDate": "2025-12-12",
       "url": "https://doi.org/10.1145/3788149.3788204",
+      "doi": "10.1145/3788149.3788204",
+      "codeUrl": "https://github.com/JustinZHAO-05/cisDRL-RobotNav",
       "summary": "A CSAI 2025 conference paper on reinforcement learning for Ackermann-style nonholonomic robots escaping narrow dead-end environments."
     }
   ],
@@ -228,7 +234,7 @@
     {
       "name": "Scientific Computing",
       "keywords": [
-        "Python, NumPy, SciPy, pandas, scikit-learn, Matplotlib, PyTorch, Brian2; CPU/GPU implementation with Numba, CUDA workflows, and Triton."
+        "Python, NumPy, SciPy, Matplotlib, and PyTorch; CPU/GPU implementation with Numba and CUDA."
       ]
     },
     {
@@ -272,6 +278,9 @@
       "url": "https://neuromatch.io/",
       "certificate": "https://portal.neuromatchacademy.org/certificate/0d72799e-57c7-45aa-b7ef-6f89a2958f52",
       "project": "/research/temporal-persistence/",
+      "project_id": "temporal-persistence",
+      "team": "Team Doraemon",
+      "research_summary": "Proposed the research question, developed code and analyzed latent-state models of perceptual inference, and co-presented the findings.",
       "video": "https://youtu.be/NiODNrcgzmI",
       "bullets": [
         "Conceived the central project idea on temporal persistence in perceptual inference.",

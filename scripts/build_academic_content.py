@@ -50,13 +50,15 @@ def render_cv(p, experience, projects, courses, pubs, studies, reading, full):
     e = p["education"]
     lab = next(x for x in experience if x["id"] == "qin-lab")
     nma = next(x for x in experience if x["id"] == "neuromatch")
+    nma_project = next(x for x in projects if x["id"] == nma["project_id"])
     imperial = next(x for x in experience if x["id"] == "imperial-research")
     contacts = []
     for key, label in [("website", "Website"), ("github", "GitHub"), ("orcid", "ORCID")]:
         url = urlsplit(p[key])
         display = url.path.strip("/") if key == "orcid" else url.netloc + url.path.rstrip("/")
         contacts.append(tex(label) + ": " + link(p[key], display))
-    out = (r"\cvheader{" + tex(p["name"]) + "}{" + tex(p["fields"]) + "}{" + tex(p["secondary_field"]) + "}{" + tex(p["email"]) + "}{" + r"\\ ".join(contacts) + "}\n")
+    contact_lines = contacts[0] + r"\\ " + r"\quad ".join(contacts[1:])
+    out = (r"\cvheader{" + tex(p["name"]) + "}{" + tex(p["fields"]) + "}{" + tex(p["secondary_field"]) + "}{" + tex(p["email"]) + "}{" + contact_lines + "}\n")
     out += section("Research Interests") + tex(p["interests"] + " " + p["trajectory"]) + "\\par\n"
     journey_url = p["website"].rstrip("/") + p["journey"]
     out += r"\contactline{" + link(journey_url, "Intellectual journey and research philosophy: " + urlsplit(p["website"]).netloc + p["journey"]) + "}\n"
@@ -69,6 +71,8 @@ def render_cv(p, experience, projects, courses, pubs, studies, reading, full):
         out += tex(label) + " & " + tex(overall) + " & " + tex(e["year3"][key]) + r" \\" + "\n"
     out += "\\end{tabularx}\n" + section("Research Experience")
     out += entry(lab["title"], lab["dates"], lab["institution"]) + bullets(lab["bullets"])
+    out += entry(nma_project["title"], nma["dates"], nma["institution"] + ", " + nma["team"])
+    out += tex(nma["research_summary"]) + " " + link(p["website"].rstrip("/") + nma["project"], "Project") + ".\\par\n"
     out += entry(imperial["title"], imperial["dates"], imperial["institution"], imperial["summary"])
     out += section("Publications and Preprints")
     for kind, title in [("preprint", "Preprints and manuscripts under review"), ("published", "Peer-reviewed publication")]:
@@ -78,24 +82,29 @@ def render_cv(p, experience, projects, courses, pubs, studies, reading, full):
                 continue
             authors = tex(pub["authors"]).replace("Yanzhe Zhao", r"\textbf{Yanzhe Zhao}")
             out += r"\needspace{4\baselineskip}" + "\n" + authors + ". " + link(pub.get("paperurl", pub["doiurl"]), pub["title"]) + ". " + tex(pub["year"]) + ". "
-            out += (r"\textit{" + tex(pub["status"]) + "}." if kind == "preprint" else "CSAI 2025, ACM, pp. 126-131. " + link(pub["doiurl"], "DOI"))
+            if kind == "preprint":
+                out += r"\textit{" + tex(pub["status"]) + "}."
+                out += r"\newline " + tex(pub["preprint_server"]) + " preprint. DOI: " + link(pub["doiurl"], pub["doi"])
+                if pub["preprint_server"] == "arXiv" and pub.get("codeurl"):
+                    out += " / " + link(pub["codeurl"], "GitHub")
+            else:
+                out += "CSAI 2025, ACM, pp. 126-131. " + link(pub["doiurl"], "DOI")
             if pub.get("contribution") and (full or kind == "preprint"):
                 out += r"\newline " + tex("Contribution: " + pub["contribution"])
             out += "\\par\\smallskip\n"
-    if not full:
-        out += "\\newpage\n"
+    out += "\\needspace{6\\baselineskip}\n"
     out += section("Research and Project Portfolio" if full else "Selected Research and Projects")
-    selected = projects if full else [x for x in projects if x["id"] == "temporal-persistence"]
-    for project in selected:
-        out += entry(project["title"], "2026" if project.get("featured") else "", project.get("subtitle", project["category"]))
-        text = project.get("results", project["summary"]) if full else "Compared latent-state models using run-level cross-validation on 83,210 perceptual judgments from 12 participants."
+    for project in projects if full else []:
+        course = project.get("coursework")
+        context = course + " coursework" if course else project.get("subtitle", project["category"])
+        out += entry(project["title"], "2026" if project.get("featured") else "", context)
+        text = project.get("results", project["summary"])
         out += tex(project["role"] + " " + text) + " " + link(project["links"]["github"], "Code")
         for key, label in [("paper", "Paper"), ("video", "Presentation")]:
             if project["links"].get(key):
                 out += " / " + link(project["links"][key], label)
         out += ".\\par\n"
-        if full:
-            out += tex("Methods: " + project["methods"]) + "\\par\n"
+        out += tex("Methods: " + project["methods"]) + "\\par\n"
     if not full:
         out += entry(p["neural_project"]["title"], text=p["neural_project"]["summary"]) + link(p["neural_project"]["url"], "Code and reports") + "\\par\n"
         for project in projects:
@@ -166,7 +175,7 @@ def build(cv_dir):
         "education": [{"institution": e["institution"], "area": "Automation", "studyType": "B.Eng.", "startDate": e["start"], "endDate": e["graduation"], "gpa": e["overall"]["gpa"], "courses": [c["title"] + (": " + str(c["grade"]) if c.get("grade") is not None else "") for c in courses], "summary": "Overall: " + ", ".join(e["overall"].values()) + "; Year 3: " + ", ".join(e["year3"].values())}],
         "work": [{"name": x["institution"], "position": x["title"], "startDate": x.get("start", ""), "endDate": x.get("end", ""), "summary": x["summary"], "highlights": x.get("bullets", [])} for x in experience if x["kind"] == "research"],
         "certificates": [{"name": "Computational Neuroscience - interactive track and course project (128 hours)", "date": "2026-07-25", "issuer": "Neuromatch Academy", "url": next(x for x in experience if x["id"] == "neuromatch")["certificate"]}],
-        "publications": [{"name": x["title"], "publisher": x.get("status", x["venue"]), "releaseDate": str(x["date"]), "url": x.get("paperurl", x["doiurl"]), "summary": x["excerpt"]} for x in pubs],
+        "publications": [{"name": x["title"], "publisher": x.get("status", x["venue"]), "releaseDate": str(x["date"]), "url": x.get("paperurl", x["doiurl"]), "doi": x["doi"], "codeUrl": x.get("codeurl"), "summary": x["excerpt"]} for x in pubs],
         "portfolio": [{"name": x["title"], "url": p["website"].rstrip("/") + x.get("detail", "/projects/" + x["id"].lower() + "/"), "summary": x["summary"]} for x in projects],
         "skills": [{"name": x["title"], "keywords": [x["text"]]} for x in p["skills"]],
         "languages": [{"language": "Chinese", "fluency": "Native"}, {"language": "English", "fluency": p["ielts"]}],

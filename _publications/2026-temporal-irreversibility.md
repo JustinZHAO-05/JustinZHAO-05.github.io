@@ -5,6 +5,7 @@ permalink: /publication/temporal-irreversibility/
 date: 2026-11-17
 year: 2026
 kind: preprint
+preprint_server: Zenodo
 authors: Yanzhe Zhao
 author_names: [Yanzhe Zhao]
 authors_short: "Zhao, Y."
