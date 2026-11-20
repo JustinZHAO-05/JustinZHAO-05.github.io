@@ -5,6 +5,7 @@ permalink: /publication/history-bearing-thalamocortical-signals/
 date: 2026-11-21
 year: 2026
 kind: preprint
+status: Submitted to eNeuro
 preprint_server: Zenodo
 authors: "Yanzhe Zhao and Yongzhang Ji"
 author_names: [Yanzhe Zhao, Yongzhang Ji]

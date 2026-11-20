@@ -86,18 +86,24 @@ class AcademicContentTests(unittest.TestCase):
         self.assertIn(ACADEMIC.link(self.profile["website"] + "research/temporal-persistence/", "Project"), second)
         self.assertIn(ACADEMIC.link("https://youtu.be/NiODNrcgzmI", "Presentation"), second)
 
-    def test_new_zenodo_preprints_use_version_dois_without_review_claims(self):
+    def test_zenodo_preprints_keep_dois_and_submission_status(self):
         pubs = {p["doi"]: p for p in ACADEMIC.publication_records()}
         self.assertEqual(list(pubs)[:2], ["10.5281/zenodo.24404929", "10.5281/zenodo.24400851"])
-        for record, authors in (("24400851", ["Yanzhe Zhao"]), ("24404929", ["Yanzhe Zhao", "Yongzhang Ji"])):
+        records = (
+            ("24400851", ["Yanzhe Zhao"], "Submitted to Cognitive Science"),
+            ("24404929", ["Yanzhe Zhao", "Yongzhang Ji"], "Submitted to eNeuro"),
+        )
+        for record, authors, status in records:
             doi = f"10.5281/zenodo.{record}"
             pub = pubs[doi]
             self.assertEqual(pub["kind"], "preprint")
             self.assertEqual(pub["author_names"], authors)
             self.assertEqual(pub["paperurl"], f"https://zenodo.org/records/{record}")
-            self.assertNotIn("status", pub)
+            self.assertEqual(pub["status"], status)
             self.assertIn(doi, (ROOT / pub["bibtexurl"].lstrip("/")).read_text(encoding="utf-8"))
             self.assertIn(ACADEMIC.link(pub["doiurl"], doi), self.cv(full=True))
+            for full in (False, True):
+                self.assertIn(r"\textit{" + status + "}", self.cv(full))
         self.assertEqual(pubs["10.5281/zenodo.24400851"]["version"], "v3")
 
     def test_contribution_statements_only_for_coauthored_papers(self):

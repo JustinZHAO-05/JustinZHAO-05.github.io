@@ -5,6 +5,7 @@ permalink: /publication/informative-absence/
 date: 2026-11-20
 year: 2026
 kind: preprint
+status: Submitted to Cognitive Science
 preprint_server: Zenodo
 version: v3
 authors: Yanzhe Zhao
