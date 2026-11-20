@@ -27,7 +27,7 @@ redirect_from:
 </section>
 <section class="site-wrap section-space publication-section" id="publications">
   <div class="section-heading-row"><h2 class="section-title">Publications &amp; Preprints</h2><a href="{{ '/publications/' | relative_url }}">All publications</a></div>
-  {% assign pubs = site.publications | sort: 'date' | reverse %}{% assign groups = 'preprint|published' | split: '|' %}{% for group in groups %}<h3 class="publication-group">{% if group == 'preprint' %}Preprints &amp; Manuscripts Under Review{% else %}Peer-Reviewed Publications{% endif %}</h3>{% for pub in pubs %}{% if pub.kind == group %}{% include publication-row.html pub=pub compact=true %}{% endif %}{% endfor %}{% endfor %}
+  {% assign pubs = site.publications | sort: 'date' | reverse %}{% assign groups = 'preprint|published' | split: '|' %}{% for group in groups %}<h3 class="publication-group">{% if group == 'preprint' %}Preprints{% else %}Peer-Reviewed Publications{% endif %}</h3>{% for pub in pubs %}{% if pub.kind == group %}{% include publication-row.html pub=pub compact=true %}{% endif %}{% endfor %}{% endfor %}
 </section>
 <section class="journey-band" id="journey"><div class="site-wrap section-space">
   <div class="journey-heading"><p class="essay-kicker">An Evolving Research Path</p><h2>Academic &amp; Intellectual Journey</h2><p>From engineered agents to the neural mechanisms of cognition.</p></div>

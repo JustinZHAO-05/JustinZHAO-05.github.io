@@ -18,7 +18,7 @@ redirect_from:
         {% if exp.project_id %}<article class="cv-experience"><h3>{{ exp.institution }} {{ exp.title }}</h3><p class="entry-date">{{ exp.dates }} &middot; {{ exp.team }}</p><p>{{ exp.research_summary }}</p></article>
         {% elsif exp.kind == 'research' %}<article class="cv-experience"><h3>{{ exp.title }}</h3><p class="entry-date">{{ exp.dates }} &middot; {{ exp.institution }}</p><p>{{ exp.summary }}</p>{% if exp.bullets %}<ul>{% for item in exp.bullets %}<li>{{ item }}</li>{% endfor %}</ul>{% endif %}</article>{% endif %}
       {% endfor %}</section>
-      <section id="publications"><h2>Publications &amp; Preprints</h2>{% assign pubs = site.publications | sort: 'date' | reverse %}{% for pub in pubs %}{% include publication-row.html pub=pub compact=true %}{% endfor %}</section>
+      <section id="publications"><h2>Publications &amp; Preprints</h2>{% assign pubs = site.publications | sort: 'date' | reverse %}{% for pub in pubs %}{% include publication-row.html pub=pub %}{% endfor %}</section>
       <section id="projects"><h2>Selected Research and Projects</h2>
         {% assign featured = site.data.projects | where: 'featured', true | sort: 'priority' %}
         {% for project in featured %}<article class="cv-project"><h3><a href="{{ project.detail | relative_url }}">{{ project.title }}</a></h3>

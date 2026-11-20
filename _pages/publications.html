@@ -4,4 +4,4 @@ title: Publications & Preprints
 permalink: /publications/
 author_profile: false
 ---
-<div class="site-wrap index-page"><header class="page-heading"><h1>Publications &amp; Preprints</h1></header>{% assign groups = 'preprint|published' | split: '|' %}{% assign pubs = site.publications | sort: 'date' | reverse %}{% for group in groups %}<section><h2 class="publication-group">{% if group == 'preprint' %}Preprints &amp; Manuscripts Under Review{% else %}Peer-Reviewed Publications{% endif %}</h2>{% for pub in pubs %}{% if pub.kind == group %}{% include publication-row.html pub=pub %}{% endif %}{% endfor %}</section>{% endfor %}</div>
+<div class="site-wrap index-page"><header class="page-heading"><h1>Publications &amp; Preprints</h1></header>{% assign groups = 'preprint|published' | split: '|' %}{% assign pubs = site.publications | sort: 'date' | reverse %}{% for group in groups %}<section><h2 class="publication-group">{% if group == 'preprint' %}Preprints{% else %}Peer-Reviewed Publications{% endif %}</h2>{% for pub in pubs %}{% if pub.kind == group %}{% include publication-row.html pub=pub %}{% endif %}{% endfor %}</section>{% endfor %}</div>

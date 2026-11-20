@@ -7,7 +7,7 @@ authors_short: "Xiong, D., Zhao, Y., Chen, Y., and Wang, Z."
 status: Peer-reviewed conference paper
 paperurl: https://doi.org/10.1145/3788149.3788204
 codeurl: https://github.com/JustinZHAO-05/cisDRL-RobotNav
-contribution: "Deep reinforcement-learning training/evaluation workflow, simulation engineering and experimental analysis."
+contribution: "Built the simulation and reinforcement learning pipeline, designed experiments, and co-wrote the paper."
 collection: publications
 category: conferences
 permalink: /publication/nonholonomic-narrow-dead-end-escape/

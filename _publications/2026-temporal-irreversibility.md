@@ -17,7 +17,6 @@ paperurl: https://doi.org/10.5281/zenodo.24306357
 codeurl: https://github.com/JustinZHAO-05/observation-architecture-temporal-irreversibility
 bibtexurl: /files/bib/temporal_irreversibility_2026.bib
 researchurl: /research/temporal-irreversibility/
-contribution: "Sole-author theoretical work combining identifiability results, spectral analysis, numerical experiments, and EEG validation."
 excerpt: "A theoretical study of how observation architecture shapes the identifiability of temporal irreversibility in multichannel recordings."
 ---
 

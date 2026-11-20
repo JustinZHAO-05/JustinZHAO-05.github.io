@@ -73,6 +73,9 @@ class AcademicContentTests(unittest.TestCase):
 
     def test_main_cv_publications_and_neuromatch_project(self):
         first, second = self.cv().split(r"\newpage", 1)
+        self.assertIn("Gaokao or internal university selection", first)
+        self.assertIn("two years of shared training in mathematics, physics, and engineering", first)
+        self.assertIn("I chose Automation as my major in Year 3.", first)
         self.assertIn("From robots to minds: read my intellectual journey.", first)
         for pub in ACADEMIC.publication_records():
             self.assertIn(ACADEMIC.tex(pub["title"]), first)
@@ -82,6 +85,31 @@ class AcademicContentTests(unittest.TestCase):
         self.assertIn("Temporal Persistence of Perceptual Inference", second)
         self.assertIn(ACADEMIC.link(self.profile["website"] + "research/temporal-persistence/", "Project"), second)
         self.assertIn(ACADEMIC.link("https://youtu.be/NiODNrcgzmI", "Presentation"), second)
+
+    def test_new_zenodo_preprints_use_version_dois_without_review_claims(self):
+        pubs = {p["doi"]: p for p in ACADEMIC.publication_records()}
+        self.assertEqual(list(pubs)[:2], ["10.5281/zenodo.24404929", "10.5281/zenodo.24400851"])
+        for record, authors in (("24400851", ["Yanzhe Zhao"]), ("24404929", ["Yanzhe Zhao", "Yongzhang Ji"])):
+            doi = f"10.5281/zenodo.{record}"
+            pub = pubs[doi]
+            self.assertEqual(pub["kind"], "preprint")
+            self.assertEqual(pub["author_names"], authors)
+            self.assertEqual(pub["paperurl"], f"https://zenodo.org/records/{record}")
+            self.assertNotIn("status", pub)
+            self.assertIn(doi, (ROOT / pub["bibtexurl"].lstrip("/")).read_text(encoding="utf-8"))
+            self.assertIn(ACADEMIC.link(pub["doiurl"], doi), self.cv(full=True))
+        self.assertEqual(pubs["10.5281/zenodo.24400851"]["version"], "v3")
+
+    def test_contribution_statements_only_for_coauthored_papers(self):
+        pubs = ACADEMIC.publication_records()
+        for pub in pubs:
+            self.assertEqual(bool(pub.get("contribution")), len(pub["author_names"]) > 1)
+        for full in (False, True):
+            cv = self.cv(full)
+            self.assertEqual(cv.count("Contribution: "), 3)
+            for pub in pubs:
+                if pub.get("contribution"):
+                    self.assertIn(ACADEMIC.tex("Contribution: " + pub["contribution"]), cv)
 
     def test_essay_chapters_and_anonymization(self):
         metadata = ACADEMIC.read(ROOT / "_data/essay.yml")

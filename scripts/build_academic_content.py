@@ -39,11 +39,11 @@ def bullets(items):
 
 def publication_records():
     records = []
-    for path in sorted((ROOT / "_publications").glob("*.md"), reverse=True):
+    for path in sorted((ROOT / "_publications").glob("*.md")):
         data = yaml.safe_load(path.read_text(encoding="utf-8").split("---", 2)[1])
         data.setdefault("year", str(data["date"])[:4])
         records.append(data)
-    return records
+    return sorted(records, key=lambda record: str(record["date"]), reverse=True)
 
 
 def render_cv(p, experience, projects, courses, pubs, studies, reading, full):
@@ -80,7 +80,7 @@ def render_cv(p, experience, projects, courses, pubs, studies, reading, full):
         out += entry(nma["institution"] + " " + nma["title"], nma["dates"], text=nma["research_summary"])
     out += entry(imperial["title"], imperial["dates"], imperial["institution"], imperial["summary"])
     out += section("Publications and Preprints")
-    for kind, title in [("preprint", "Preprints and manuscripts under review"), ("published", "Peer-reviewed publication")]:
+    for kind, title in [("preprint", "Preprints"), ("published", "Peer-reviewed publication")]:
         compact_group = not full and kind == "published"
         out += r"\pubgroup" + ("[4]" if compact_group else "") + "{" + title + "}\n"
         for pub in pubs:
@@ -91,24 +91,29 @@ def render_cv(p, experience, projects, courses, pubs, studies, reading, full):
                 out += r"\needspace{4\baselineskip}" + "\n"
             out += authors + ". " + link(pub.get("paperurl", pub["doiurl"]), pub["title"]) + ". " + tex(pub["year"]) + ". "
             if kind == "preprint":
-                out += r"\textit{" + tex(pub["status"]) + "}."
+                if pub.get("status"):
+                    out += r"\textit{" + tex(pub["status"]) + "}." + (r"\newline " if full else " ")
+                venue = tex(pub["preprint_server"] + " preprint")
+                version = tex(pub["version"]) if pub.get("version") else ""
                 code = link(pub["codeurl"], "GitHub") if pub["preprint_server"] == "arXiv" and pub.get("codeurl") else ""
                 if full:
-                    out += r"\newline " + tex(pub["preprint_server"]) + " preprint. DOI: " + link(pub["doiurl"], pub["doi"])
+                    out += venue + (" (" + version + ")" if version else "") + ". DOI: " + link(pub["doiurl"], pub["doi"])
                     if code:
                         out += " / " + code
                 else:
-                    out += " " + tex(pub["preprint_server"]) + " preprint (" + link(pub["doiurl"], "DOI") + ("; " + code if code else "") + ")."
+                    identifiers = [version, link(pub["doiurl"], "DOI"), code]
+                    out += venue + " (" + "; ".join(x for x in identifiers if x) + ")."
             else:
                 out += "CSAI 2025, ACM, pp. 126-131. " + link(pub["doiurl"], "DOI")
-            if pub.get("contribution") and (full or kind == "preprint"):
+            if pub.get("contribution"):
                 out += r"\newline " + tex("Contribution: " + pub["contribution"])
-            out += "\\par\\smallskip\n"
+            out += "\\par\\smallskip\n" if full else "\\par\n"
     out += "\\needspace{6\\baselineskip}\n" if full else "\\newpage\n"
     out += section("Research and Project Portfolio" if full else "Selected Research and Projects")
     for project in projects if full else []:
         course = project.get("coursework")
         context = course + " coursework" if course else project.get("subtitle", project["category"])
+        out += r"\needspace{8\baselineskip}" + "\n"
         out += entry(project["title"], "2026" if project.get("featured") else "", context)
         text = project.get("results", project["summary"])
         out += tex(project["role"] + " " + text) + " " + link(project["links"]["github"], "Code")

@@ -114,6 +114,24 @@
   ],
   "publications": [
     {
+      "name": "History-bearing thalamocortical signals reconstruct and redirect later decisions in a circuit model",
+      "publisher": "Zenodo preprint",
+      "releaseDate": "2026-11-21",
+      "url": "https://zenodo.org/records/24404929",
+      "doi": "10.5281/zenodo.24404929",
+      "codeUrl": null,
+      "summary": "A study of how thalamocortical input and recurrent dynamics carry the effects of sensory history across decisions."
+    },
+    {
+      "name": "From Novel Combinations to Informative Absence: Structural permission, communicative opportunity, and form choice in language learning",
+      "publisher": "Zenodo preprint",
+      "releaseDate": "2026-11-20",
+      "url": "https://zenodo.org/records/24400851",
+      "doi": "10.5281/zenodo.24400851",
+      "codeUrl": null,
+      "summary": "A generative account of how language learners infer which new combinations are possible and when repeated absences become informative."
+    },
+    {
       "name": "Observation architecture and the identifiability of temporal irreversibility",
       "publisher": "Submitted to Physical Review E",
       "releaseDate": "2026-11-17",
