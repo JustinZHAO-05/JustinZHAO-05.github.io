@@ -4,6 +4,15 @@ permalink: /
 title: Yanzhe Zhao
 description: Computational and Cognitive Neuroscience, Neurolinguistics. Research, publications, and academic CV of Yanzhe Zhao.
 author_profile: false
+selected_papers:
+  - url: /publication/informative-absence/
+    figure: /images/research/informative-absence-figure-3.webp
+    height: 1474
+    alt: "Six panels showing how positive examples and contextual opportunities change what word combinations learners infer from repeated absences."
+  - url: /publication/history-bearing-thalamocortical-signals/
+    figure: /images/research/history-bearing-figure-1.webp
+    height: 1487
+    alt: "Mouse brain interventions, the history-probe task, and comparisons of their effects on current judgments and history-dependent choices."
 redirect_from:
   - /about/
   - /about.html
@@ -23,6 +32,23 @@ redirect_from:
 </div></section>
 <section class="site-wrap section-space" id="research">
   <div class="section-heading-row"><h2 class="section-title">Selected Research</h2><a href="{{ '/portfolio/' | relative_url }}">All projects <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div>
+  {% for selection in page.selected_papers %}
+    {% assign paper = site.publications | where: 'url', selection.url | first %}
+    {% if paper %}
+      <article class="research-row research-row--paper">
+        <a class="research-visual" href="{{ selection.figure | relative_url }}" aria-label="View full-size figure for {{ paper.title | escape }}">
+          <img src="{{ selection.figure | relative_url }}" alt="{{ selection.alt | escape }}" loading="lazy" width="1600" height="{{ selection.height }}">
+        </a>
+        <div class="research-row__copy">
+          <h3><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h3>
+          <p class="research-subtitle">{{ paper.authors }} &middot; {{ paper.year }}</p>
+          <p>{{ paper.excerpt }}</p>
+          {% if paper.status %}<p class="research-status">{{ paper.status }}</p>{% endif %}
+          <div class="text-links"><a href="{{ paper.paperurl }}">Read on {{ paper.preprint_server }}</a><a href="{{ paper.url | relative_url }}">Details <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div>
+        </div>
+      </article>
+    {% endif %}
+  {% endfor %}
   {% assign featured = site.data.projects | where: 'featured', true | sort: 'priority' %}{% for project in featured %}{% include research-row.html project=project %}{% endfor %}
 </section>
 <section class="site-wrap section-space publication-section" id="publications">

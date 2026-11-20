@@ -66,6 +66,7 @@
 .research-row:last-child { border-bottom: 0; padding-bottom: 0; }
 .research-visual { display: flex; align-items: center; justify-content: center; min-width: 0; }
 .research-visual img { display: block; width: 100%; height: 315px; object-fit: contain; }
+.research-row--paper .research-visual img { height: auto; max-height: none; }
 .academic-site .research-row h3 { font-size: 28px; }
 .academic-site .research-row h3 a, .archive-project h2 a { color: var(--ink); text-decoration: none; }
 .academic-site .research-subtitle { color: var(--muted); margin-bottom: 16px; }
