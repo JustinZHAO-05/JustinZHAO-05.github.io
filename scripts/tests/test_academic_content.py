@@ -62,7 +62,7 @@ class AcademicContentTests(unittest.TestCase):
             research = cv.split(r"\section{Research Experience}", 1)[1].split(r"\section{Publications and Preprints}", 1)[0]
             self.assertIn("Temporal Persistence of Perceptual Inference" if full else "Neuromatch Academy Computational Neuroscience", research)
             self.assertIn("Zenodo preprint", cv)
-            self.assertIn("10.5281/zenodo.24306357", cv)
+            self.assertIn("10.5281/zenodo.24400331", cv)
             self.assertIn("arXiv preprint", cv)
             self.assertIn("10.48550/arXiv.2610.25898", cv)
             self.assertIn(r"\href{https://github.com/JustinZHAO-05/HP-GSBS}{GitHub}", cv)
@@ -92,6 +92,7 @@ class AcademicContentTests(unittest.TestCase):
         records = (
             ("24400851", ["Yanzhe Zhao"], "Submitted to Cognitive Science"),
             ("24418936", ["Yanzhe Zhao", "Yongzhang Ji"], "Submitted to eNeuro"),
+            ("24400331", ["Yanzhe Zhao"], "Submitted to Physical Review E"),
         )
         for record, authors, status in records:
             doi = f"10.5281/zenodo.{record}"
@@ -106,6 +107,10 @@ class AcademicContentTests(unittest.TestCase):
                 self.assertIn(r"\textit{" + status + "}", self.cv(full))
         self.assertEqual(pubs["10.5281/zenodo.24400851"]["version"], "v3")
         self.assertEqual(pubs["10.5281/zenodo.24418936"]["version"], "v2")
+        observation = pubs["10.5281/zenodo.24400331"]
+        self.assertEqual(observation["version"], "1.2")
+        project = next(p for p in self.projects if p.get("detail") == observation["researchurl"])
+        self.assertEqual(project["links"]["paper"], observation["doiurl"])
 
     def test_contribution_statements_only_for_coauthored_papers(self):
         pubs = ACADEMIC.publication_records()

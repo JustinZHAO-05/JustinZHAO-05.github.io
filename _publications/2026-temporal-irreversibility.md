@@ -6,14 +6,15 @@ date: 2026-11-17
 year: 2026
 kind: preprint
 preprint_server: Zenodo
+version: "1.2"
 authors: Yanzhe Zhao
 author_names: [Yanzhe Zhao]
 authors_short: "Zhao, Y."
 status: Submitted to Physical Review E
 venue: Zenodo preprint
-doi: 10.5281/zenodo.24306357
-doiurl: https://doi.org/10.5281/zenodo.24306357
-paperurl: https://doi.org/10.5281/zenodo.24306357
+doi: 10.5281/zenodo.24400331
+doiurl: https://doi.org/10.5281/zenodo.24400331
+paperurl: https://zenodo.org/records/24400331
 codeurl: https://github.com/JustinZHAO-05/observation-architecture-temporal-irreversibility
 bibtexurl: /files/bib/temporal_irreversibility_2026.bib
 researchurl: /research/temporal-irreversibility/

@@ -43,7 +43,7 @@
   results: "The study characterizes observational equivalence, identifies structural assumptions that preserve informative invariants, and develops finite-sample lower bounds. EEG coordinate transformations and rereferencing illustrate the importance of the observation basis."
   links:
     github: https://github.com/JustinZHAO-05/observation-architecture-temporal-irreversibility
-    paper: https://doi.org/10.5281/zenodo.24306357
+    paper: https://doi.org/10.5281/zenodo.24400331
   highlights:
     - "Theoretical results linking latent dynamics and measurement structure."
     - "Spectral invariants, resource bounds and finite-record calibration."
