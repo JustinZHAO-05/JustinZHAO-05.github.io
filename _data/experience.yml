@@ -9,7 +9,7 @@
   bullets:
     - "Analyze longitudinal neural recordings to investigate the relationship between representational drift and representational sparsity."
     - "Develop computational models to investigate candidate mechanisms underlying representational drift."
-    - "Conduct an undergraduate thesis project on computational modeling of circadian clock networks."
+    - "Conduct an undergraduate thesis project on computational modeling of circadian clock networks using coupled oscillator dynamics."
 - id: neuromatch
   dates: 6-24 Jul 2026
   start: "2026-07-06"
@@ -33,9 +33,9 @@
   start: "2025-07"
   end: "2025-08"
   title: In-person Summer Research
-  institution: NeoScholar and Imperial College London
+  institution: "NeoScholar Program \u2014 Supervised by Prof. Sen Wang (Imperial College London)."
   kind: research
-  summary: "Research supervised by Prof. Sen Wang; developed and evaluated deep reinforcement learning for nonholonomic narrow dead-end escape, leading to the CSAI 2025 paper. Evaluation: A."
+  summary: "Developed and evaluated deep reinforcement learning for nonholonomic narrow dead-end escape, leading to the CSAI 2025 paper. Evaluation: A."
   bullets:
     - "Developed and evaluated deep reinforcement learning for constrained robot navigation, with simulation engineering and experimental analysis."
 - id: perception-training

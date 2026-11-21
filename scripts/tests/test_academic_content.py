@@ -60,7 +60,10 @@ class AcademicContentTests(unittest.TestCase):
         for full in (False, True):
             cv = self.cv(full)
             research = cv.split(r"\section{Research Experience}", 1)[1].split(r"\section{Publications and Preprints}", 1)[0]
+            self.assertIn("computational modeling of circadian clock networks using coupled oscillator dynamics", research)
             self.assertIn("Temporal Persistence of Perceptual Inference" if full else "Neuromatch Academy Computational Neuroscience", research)
+            self.assertIn("NeoScholar Program \u2014 Supervised by Prof. Sen Wang (Imperial College London).", research)
+            self.assertNotIn("Research supervised by Prof. Sen Wang;", research)
             self.assertIn("Zenodo preprint", cv)
             self.assertIn("10.5281/zenodo.24400331", cv)
             self.assertIn("arXiv preprint", cv)
