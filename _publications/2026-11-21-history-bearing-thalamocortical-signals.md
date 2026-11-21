@@ -7,13 +7,14 @@ year: 2026
 kind: preprint
 status: Submitted to eNeuro
 preprint_server: Zenodo
+version: v2
 authors: "Yanzhe Zhao and Yongzhang Ji"
 author_names: [Yanzhe Zhao, Yongzhang Ji]
 authors_short: "Zhao, Y., and Ji, Y."
 venue: Zenodo preprint
-doi: 10.5281/zenodo.24404929
-doiurl: https://doi.org/10.5281/zenodo.24404929
-paperurl: https://zenodo.org/records/24404929
+doi: 10.5281/zenodo.24418936
+doiurl: https://doi.org/10.5281/zenodo.24418936
+paperurl: https://zenodo.org/records/24418936
 bibtexurl: /files/bib/history_bearing_thalamocortical_signals_2026.bib
 contribution: "Led theory development, experiments, data analysis, and writing of the main text."
 excerpt: "A study of how thalamocortical input and recurrent dynamics carry the effects of sensory history across decisions."

@@ -88,10 +88,10 @@ class AcademicContentTests(unittest.TestCase):
 
     def test_zenodo_preprints_keep_dois_and_submission_status(self):
         pubs = {p["doi"]: p for p in ACADEMIC.publication_records()}
-        self.assertEqual(list(pubs)[:2], ["10.5281/zenodo.24404929", "10.5281/zenodo.24400851"])
+        self.assertEqual(list(pubs)[:2], ["10.5281/zenodo.24418936", "10.5281/zenodo.24400851"])
         records = (
             ("24400851", ["Yanzhe Zhao"], "Submitted to Cognitive Science"),
-            ("24404929", ["Yanzhe Zhao", "Yongzhang Ji"], "Submitted to eNeuro"),
+            ("24418936", ["Yanzhe Zhao", "Yongzhang Ji"], "Submitted to eNeuro"),
         )
         for record, authors, status in records:
             doi = f"10.5281/zenodo.{record}"
@@ -105,6 +105,7 @@ class AcademicContentTests(unittest.TestCase):
             for full in (False, True):
                 self.assertIn(r"\textit{" + status + "}", self.cv(full))
         self.assertEqual(pubs["10.5281/zenodo.24400851"]["version"], "v3")
+        self.assertEqual(pubs["10.5281/zenodo.24418936"]["version"], "v2")
 
     def test_contribution_statements_only_for_coauthored_papers(self):
         pubs = ACADEMIC.publication_records()
